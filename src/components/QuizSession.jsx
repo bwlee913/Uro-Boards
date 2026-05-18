@@ -1,0 +1,193 @@
+import { useState, useEffect, useRef } from 'react'
+import { SAMPLE_QUESTIONS, AUA_TOPICS } from '../sampleQuestions.js'
+import MultipleChoice from './MultipleChoice.jsx'
+import FillBlank from './FillBlank.jsx'
+
+const SESSION_SIZE = 3
+
+// Track shown question IDs across sessions (within page load)
+const shownIds = new Set()
+
+function pickQuestions(pool, count) {
+  const unseen = pool.filter(q => !shownIds.has(q.id))
+  const source = unseen.length >= count ? unseen : pool
+  const shuffled = [...source].sort(() => Math.random() - 0.5)
+  return shuffled.slice(0, count)
+}
+
+async function fetchAIQuestion(topic) {
+  try {
+    const res = await fetch('/api/generate-question', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ topic }),
+    })
+    if (!res.ok) return null
+    const data = await res.json()
+    return data.question || null
+  } catch {
+    return null
+  }
+}
+
+export default function QuizSession({ userName, onComplete }) {
+  const [questions, setQuestions] = useState([])
+  const [currentIdx, setCurrentIdx] = useState(0)
+  const [answers, setAnswers] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [aiLoading, setAiLoading] = useState(false)
+
+  const fetchedAI = useRef(false)
+
+  // ── Load questions on mount ──────────────────────────────
+
+  useEffect(() => {
+    const load = async () => {
+      setLoading(true)
+
+      // Start with sample questions
+      const samples = pickQuestions(SAMPLE_QUESTIONS, SESSION_SIZE)
+      setQuestions(samples)
+      setLoading(false)
+
+      // Attempt to enrich with one AI-generated question (non-blocking)
+      if (!fetchedAI.current) {
+        fetchedAI.current = true
+        setAiLoading(true)
+        const topic = AUA_TOPICS[Math.floor(Math.random() * AUA_TOPICS.length)]
+        const aiQ = await fetchAIQuestion(topic)
+        if (aiQ) {
+          setQuestions(prev => {
+            // Replace the last sample question with the AI one if it loaded before we reached it
+            const currentAnswer = answers.length
+            if (currentAnswer < SESSION_SIZE - 1) {
+              const next = [...prev]
+              next[SESSION_SIZE - 1] = aiQ
+              return next
+            }
+            return prev
+          })
+        }
+        setAiLoading(false)
+      }
+    }
+
+    load()
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // ── Handle answer submission ─────────────────────────────
+
+  const handleAnswer = (isCorrect) => {
+    const q = questions[currentIdx]
+    shownIds.add(q.id)
+
+    setAnswers(prev => [
+      ...prev,
+      { questionId: q.id, correct: isCorrect, question: q },
+    ])
+  }
+
+  const handleNext = () => {
+    const nextIdx = currentIdx + 1
+    if (nextIdx < SESSION_SIZE) {
+      setCurrentIdx(nextIdx)
+    }
+    // If this was the last question, the useEffect will fire onComplete
+  }
+
+  // After the final answer is recorded, wait a beat then complete
+  useEffect(() => {
+    if (answers.length === SESSION_SIZE && questions.length === SESSION_SIZE) {
+      const timer = setTimeout(() => {
+        onComplete({ answers, questions })
+      }, 2200) // give user time to read the explanation before screen transitions
+      return () => clearTimeout(timer)
+    }
+  }, [answers.length, questions.length]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // ── Render ───────────────────────────────────────────────
+
+  if (loading || questions.length === 0) {
+    return (
+      <div className="loading-spinner">
+        <div className="spinner-dots">
+          <span /><span /><span />
+        </div>
+        <div className="spinner-label">Loading questions...</div>
+      </div>
+    )
+  }
+
+  const q = questions[currentIdx]
+  const answered = answers.length > currentIdx
+  const currentAnswer = answers[currentIdx]
+  const progress = ((currentIdx) / SESSION_SIZE) * 100
+
+  return (
+    <div className="quiz-session">
+      {/* Progress + meta */}
+      <div className="quiz-meta">
+        <span>
+          {userName && (
+            <span style={{ color: 'var(--text-2)', marginRight: 8 }}>
+              {userName} /
+            </span>
+          )}
+          <span className="quiz-meta__count">
+            Q{currentIdx + 1} of {SESSION_SIZE}
+          </span>
+        </span>
+        <span>
+          {aiLoading && (
+            <span style={{ color: 'var(--text-3)', fontSize: 10 }}>
+              ◦ AI generating next...
+            </span>
+          )}
+        </span>
+      </div>
+
+      <div className="progress-bar">
+        <div className="progress-fill" style={{ width: `${progress}%` }} />
+      </div>
+
+      {/* Score so far */}
+      {answers.length > 0 && (
+        <div className="flex gap-8" style={{ fontSize: 11, color: 'var(--text-3)', letterSpacing: '0.1em' }}>
+          <span className="text-correct">✓ {answers.filter(a => a.correct).length}</span>
+          <span>·</span>
+          <span className="text-incorrect">✗ {answers.filter(a => !a.correct).length}</span>
+        </div>
+      )}
+
+      {/* Question card */}
+      <div className="question-card" key={q.id}>
+        <div className="question-card__header">
+          <span className="tag">{q.topic}</span>
+          <span className="label">{q.type === 'mc' ? 'Multiple Choice' : 'Guideline Recall'}</span>
+        </div>
+
+        <div className="question-card__body">
+          <p className="question-text">{q.question}</p>
+
+          {q.type === 'mc' ? (
+            <MultipleChoice
+              question={q}
+              onAnswer={handleAnswer}
+              onNext={handleNext}
+              answered={answered}
+              result={currentAnswer}
+            />
+          ) : (
+            <FillBlank
+              question={q}
+              onAnswer={handleAnswer}
+              onNext={handleNext}
+              answered={answered}
+              result={currentAnswer}
+            />
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
