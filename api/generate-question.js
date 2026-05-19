@@ -1,20 +1,15 @@
 // ============================================================
 //  /api/generate-question.js
 //  Vercel Serverless Function — AI Question Generator
-//
-//  POST { topic: string, pdfContent?: string }
-//  Returns { question: QuestionObject }
-//
-//  Env var required: ANTHROPIC_API_KEY
+//  Uses web search to pull from live AUA guideline pages
 // ============================================================
 
 export default async function handler(req, res) {
-  // Only allow POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { topic, pdfContent } = req.body || {}
+  const { topic } = req.body || {}
 
   if (!topic) {
     return res.status(400).json({ error: 'topic is required' })
@@ -25,48 +20,34 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'ANTHROPIC_API_KEY not configured' })
   }
 
-  // ── Build the prompt ────────────────────────────────────────
+  const systemPrompt = `You are an expert urology educator creating board exam questions for urology residents preparing for the AUA board certification exam.
 
-  const systemPrompt = `You are an expert urology educator creating board exam review questions for urology residents preparing for the American Urological Association (AUA) board certification exam.
+Your job:
+1. Use web search to find the current AUA clinical practice guideline for the given topic at auanet.org
+2. Read the actual guideline statements
+3. Pick ONE specific, testable guideline statement
+4. Write a single fill-in-the-blank flashcard question from that exact statement
 
-Generate questions that are:
-- Clinically accurate and guideline-concordant (AUA guidelines take precedence)
-- Board-exam difficulty (not too easy, not obscure trivia)
-- Either multiple choice (4 options, A–D) OR fill-in-the-blank guideline recall
-- Based on current AUA clinical practice guidelines where applicable
+Rules:
+- The blank should test the single most important fact in the statement (a number, a drug, a timeframe, a classification)
+- Keep the question concise — one sentence with one blank (___)
+- The answer should be short and precise (a number, name, or brief phrase)
+- The explanation should be 2-3 sentences max
+- Always cite the exact guideline name, year, and statement number
+- If the guideline has been recently amended, use the most current version
 
-You must respond with ONLY a valid JSON object matching this exact schema — no markdown, no preamble:
+You must respond with ONLY valid JSON — no markdown, no preamble:
 
-For multiple choice:
-{
-  "id": "ai-<random 8 char hex>",
-  "type": "mc",
-  "topic": "<short topic name>",
-  "topicFull": "<full topic name>",
-  "question": "<full question text>",
-  "options": ["<option A>", "<option B>", "<option C>", "<option D>"],
-  "answer": <0-3 integer index of correct option>,
-  "explanation": "<concise rationale, 2-4 sentences>",
-  "guideline": "<specific AUA guideline name, year, statement number if applicable>"
-}
-
-For fill-in-the-blank:
 {
   "id": "ai-<random 8 char hex>",
   "type": "fib",
   "topic": "<short topic name>",
   "topicFull": "<full topic name>",
-  "question": "<question with ___ for the blank>",
-  "answer": "<the answer to fill in the blank>",
-  "explanation": "<concise rationale, 2-4 sentences>",
-  "guideline": "<specific AUA guideline name, year, statement number if applicable>"
+  "question": "<one sentence with ___ for the blank>",
+  "answer": "<short precise answer>",
+  "explanation": "<2-3 sentence rationale>",
+  "guideline": "<AUA Guideline Name (Year), Statement N>"
 }`
-
-  const userContent = pdfContent
-    ? `Generate one board-style question about: ${topic}\n\nAdditional context from the urology textbook:\n\n${pdfContent.slice(0, 8000)}`
-    : `Generate one board-style question about: ${topic}\n\nBase it on current AUA clinical practice guidelines. Choose randomly between multiple choice or fill-in-the-blank format.`
-
-  // ── Call Anthropic API ──────────────────────────────────────
 
   try {
     const response = await fetch('https://api.anthropic.com/v1/messages', {
@@ -78,10 +59,21 @@ For fill-in-the-blank:
       },
       body: JSON.stringify({
         model: 'claude-sonnet-4-20250514',
-        max_tokens: 1000,
+        max_tokens: 1024,
         system: systemPrompt,
+        tools: [
+          {
+            type: 'web_search_20250305',
+            name: 'web_search',
+          }
+        ],
         messages: [
-          { role: 'user', content: userContent },
+          {
+            role: 'user',
+            content: `Search the AUA website (auanet.org) for the current clinical practice guideline on: ${topic}
+
+Find a specific numbered guideline statement that would make a good board exam question. Then write a fill-in-the-blank flashcard from it. Focus on testable facts: specific numbers, thresholds, drug names, timeframes, or classifications that appear directly in the guideline text.`
+          }
         ],
       }),
     })
@@ -93,13 +85,19 @@ For fill-in-the-blank:
     }
 
     const data = await response.json()
-    const rawText = data.content?.[0]?.text || ''
 
-    // ── Parse the JSON response ─────────────────────────────
+    // Extract the final text response (after web search tool use)
+    const textBlock = data.content?.find(block => block.type === 'text')
+    const rawText = textBlock?.text || ''
 
+    if (!rawText) {
+      console.error('No text in response:', JSON.stringify(data.content))
+      return res.status(502).json({ error: 'No text response from AI' })
+    }
+
+    // Parse JSON
     let question
     try {
-      // Strip any accidental markdown fences
       const cleaned = rawText.replace(/```json\n?|```\n?/g, '').trim()
       question = JSON.parse(cleaned)
     } catch (parseErr) {
@@ -107,27 +105,17 @@ For fill-in-the-blank:
       return res.status(502).json({ error: 'Failed to parse AI question' })
     }
 
-    // ── Validate the question object ────────────────────────
-
-    if (!question.type || !question.question || !question.answer === undefined) {
+    // Validate
+    if (!question.type || !question.question || question.answer === undefined) {
       return res.status(502).json({ error: 'Malformed AI question response' })
     }
 
-    if (question.type === 'mc') {
-      if (!Array.isArray(question.options) || question.options.length !== 4) {
-        return res.status(502).json({ error: 'MC question must have 4 options' })
-      }
-      if (typeof question.answer !== 'number' || question.answer < 0 || question.answer > 3) {
-        return res.status(502).json({ error: 'MC answer must be 0–3' })
-      }
-    }
-
-    // Ensure a unique ID
     if (!question.id) {
       question.id = 'ai-' + Math.random().toString(16).slice(2, 10)
     }
 
     return res.status(200).json({ question })
+
   } catch (err) {
     console.error('generate-question error:', err)
     return res.status(500).json({ error: 'Internal server error' })

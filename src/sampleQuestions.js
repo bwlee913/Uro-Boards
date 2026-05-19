@@ -196,23 +196,24 @@ export const SAMPLE_QUESTIONS = [
   // ── OVERACTIVE BLADDER ─────────────────────────────────
 
   {
-    id: 'oab-001',
-    type: 'mc',
-    topic: 'Overactive Bladder',
-    topicFull: 'Overactive Bladder',
-    question:
-      'A 52-year-old woman presents with urgency, frequency, and urge incontinence. Urinalysis is negative. Per AUA/SUFU guidelines, what is the first-line treatment?',
-    options: [
-      'Oxybutynin (anticholinergic)',
-      'Mirabegron (beta-3 agonist)',
-      'Behavioral and lifestyle therapies (bladder training, PFMT, fluid management)',
-      'Onabotulinumtoxin A 100 units intravesical',
-    ],
-    answer: 2,
-    explanation:
-      'Behavioral therapies — including bladder training, scheduled voiding, pelvic floor muscle training (PFMT), and fluid/caffeine modification — are first-line for OAB. Pharmacotherapy (antimuscarinics, beta-3 agonists) is second-line. Onabotulinumtoxin A and neuromodulation are third-line.',
-    guideline: 'AUA/SUFU OAB Guideline (2019, amended 2023), Statements 5–11',
-  },
+    {
+  id: 'oab-001',
+  type: 'mc',
+  topic: 'Overactive Bladder',
+  topicFull: 'Overactive Bladder',
+  question:
+    'The 2024 AUA/SUFU OAB guideline made a major departure from prior guidelines by eliminating step therapy in favor of:',
+  options: [
+    'Antimuscarinics as mandatory first-line pharmacotherapy',
+    'Shared decision-making with a menu of treatment options offered simultaneously',
+    'Onabotulinumtoxin A as preferred initial treatment',
+    'Mandatory urodynamics before any pharmacotherapy',
+  ],
+  answer: 1,
+  explanation:
+    'The 2024 AUA/SUFU OAB guideline eliminated the prior step-therapy approach. Clinicians now offer patients a personalized "menu" of options — behavioral/lifestyle interventions, antimuscarinics, beta-3 agonists (mirabegron), onabotulinumtoxin A, and neuromodulation — through shared decision-making based on patient goals, preferences, and tolerance. No single treatment is mandated as first-line.',
+  guideline: 'AUA/SUFU Idiopathic OAB Guideline (2024), Cameron et al., J Urol 2024',
+},
 
   // ── ERECTILE DYSFUNCTION ────────────────────────────────
 
@@ -1319,4 +1320,195 @@ export const DROPKIN_CARDS = [
     guideline: 'Dropkin 2024 — Kidney Stones; Drug-Induced Stones',
   },
 
-];
+];// ══════════════════════════════════════════════════════════
+  //  TESTIS ONCOLOGY
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-testis-001', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Tumor Marker Half-Lives',
+    question: 'Tumor marker half-lives in testicular cancer (mnemonic BLA-246): B-hCG = ___ days, LDH = ___ days, AFP = ___ days.',
+    answer: 'B-hCG = 2 days, LDH = 4 days, AFP = 6 days',
+    explanation: 'Markers should normalize within 4 half-lives of effective treatment. If AFP or hCG remains borderline elevated (within 3× upper limit), a rising trend must be established before using this for treatment decisions. LDH alone should never be used to determine stage or guide treatment.',
+    guideline: 'Dropkin 2024 — Testis Oncology; AUA Early Stage Testicular Cancer Guideline (2019, amended 2023)',
+  },
+
+  {
+    id: 'd-testis-002', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — AFP and Tumor Type',
+    question: 'AFP is produced by cells of the yolk sac. Seminoma ___ (can/cannot) make AFP — so any AFP elevation confirms at least partial ___ component.',
+    answer: 'Cannot / NSGCT (non-seminomatous germ cell tumor)',
+    explanation: 'Pure seminoma cannot produce AFP. Any AFP elevation in a testicular tumor rules out pure seminoma and confirms NSGCT, even if pathology appears to show seminoma. Non-malignant AFP elevations can occur with liver damage (drugs, hepatitis, alcohol).',
+    guideline: 'Dropkin 2024 — Testis Oncology; Testing Pearls',
+  },
+
+  {
+    id: 'd-testis-003', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — False Positive B-hCG',
+    question: 'Two causes of non-malignant B-hCG elevation are ___ (because elevated LH cross-reacts with the assay) and marijuana use.',
+    answer: 'Hypogonadism',
+    explanation: 'Hypogonadism causes elevated LH, which can cross-react with B-hCG assays giving a false positive. This should normalize within 48–72 hours of starting exogenous testosterone. Marijuana is the other non-malignant cause. Both must be excluded before attributing B-hCG elevation to tumor.',
+    guideline: 'Dropkin 2024 — Testis Oncology; Testing Pearls',
+  },
+
+  {
+    id: 'd-testis-004', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Initial Imaging',
+    question: 'For newly diagnosed GCT, initial imaging should be ___ abdomen/pelvis with contrast. PET scan should ___ (always/never) be obtained at initial staging.',
+    answer: 'CT (CTAP) / Never (do not get PET)',
+    explanation: 'PET is not used in initial GCT staging. Chest imaging is also required — CXR is sufficient for clinical stage I seminoma (low risk), but CT chest is preferred for NSGCT and mandatory if STMs are elevated/rising post-op or if any metastatic disease is seen on CTAP/CXR/PE.',
+    guideline: 'Dropkin 2024 — Testis Oncology; AUA Guideline (2019, amended 2023)',
+  },
+
+  {
+    id: 'd-testis-005', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Testis-Sparing Surgery',
+    question: 'Testis-sparing surgery (TSS) is indicated for masses < ___ cm plus one of: equivocal US with negative markers, congenital/functional solitary testis, or bilateral synchronous tumors.',
+    answer: '2 cm',
+    explanation: 'TSS is primarily intended to preserve testosterone production — consider radical orchiectomy more strongly when severe hypogonadism is already present. Ipsilateral biopsies must be performed in addition to mass excision and reviewed by an experienced GU pathologist. XRT contraindicated in Crohn\'s disease patients.',
+    guideline: 'Dropkin 2024 — Testis Oncology; AUA Guideline (2019, amended 2023)',
+  },
+
+  {
+    id: 'd-testis-006', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — GCNIS',
+    question: 'Germ Cell Neoplasia In Situ (GCNIS) on testis biopsy carries approximately a ___% risk of progressing to invasive GCT within 5 years.',
+    answer: '50%',
+    explanation: 'GCNIS (formerly ITGCN) options: surveillance (if fertility/androgen production are priorities), XRT 18–20 Gy (lower risk of hypogonadism than orchiectomy), or orchiectomy (if cancer control prioritized). GCNIS found on infertility workup: 50+% develop invasive GCT by 5 years.',
+    guideline: 'Dropkin 2024 — Testis Oncology; AUA Guideline (2019, amended 2023)',
+  },
+
+  {
+    id: 'd-testis-007', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Stage I Seminoma Management',
+    question: 'For stage I seminoma, ___ is the preferred management over adjuvant XRT or single-dose carboplatin, per the SWENOTECA trial which showed 14% relapse rate but 99.8% disease-specific survival.',
+    answer: 'Surveillance',
+    explanation: 'SWENOTECA seminoma trial (J Clin Oncol, 2011): 1181 men with stage I seminoma → surveillance vs. aXRT vs. carboplatin → relapse rates 14 vs. 4 vs. 1% but disease-specific survival 99.8 vs. 100 vs. 100%. Adjuvant XRT is no longer favored due to risk of secondary malignancy. Both XRT and carboplatin are non-inferior to each other (Lancet, 2005).',
+    guideline: 'Dropkin 2024 — Testis Oncology; SWENOTECA (J Clin Oncol, 2011)',
+  },
+
+  {
+    id: 'd-testis-008', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Adjuvant XRT Dose',
+    question: 'When adjuvant XRT is used for stage I seminoma, ___ Gy is better tolerated than 30 Gy with only 0.7% higher absolute risk of relapse at 2 years.',
+    answer: '20 Gy',
+    explanation: 'MRC TE18 trial: 625 men randomized to 20 vs. 30 Gy adjuvant XRT for stage I seminoma → 20 Gy was better tolerated with only a marginal increase in relapse risk. This established 20 Gy as the preferred dose when adjuvant XRT is chosen.',
+    guideline: 'Dropkin 2024 — Testis Oncology; J Clin Oncol 2005',
+  },
+
+  {
+    id: 'd-testis-009', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Stage IIA/IIB Seminoma',
+    question: 'For stage IIB seminoma with lymph nodes > 3 cm, ___ is the preferred treatment. For LN ≤ 3 cm (IIA), XRT, chemotherapy, or RPLND are all options via shared decision-making.',
+    answer: 'Chemotherapy (3 cycles BEP or 4 cycles EP)',
+    explanation: 'Stage IIA seminoma (LN ≤ 3 cm): SDM between XRT, chemo (3 BEP or 4 EP), or RPLND (added as option in 2023 update per SEMS/PRIMETEST trials). Stage IIB (LN > 3 cm): chemotherapy preferred. RPLND for seminoma is very technically difficult due to tissue fibrosis.',
+    guideline: 'Dropkin 2024 — Testis Oncology; AUA Guideline (2019, amended 2023)',
+  },
+
+  {
+    id: 'd-testis-010', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Stage IA NSGCT',
+    question: 'For stage IA NSGCT with normal post-orchiectomy markers, ___ is the preferred management. RPLND or 1 cycle of BEP are appropriate alternatives for patients who decline surveillance.',
+    answer: 'Surveillance',
+    explanation: 'Stage IA NSGCT: surveillance preferred. Stage IB: recommend surveillance, RPLND, or 1–2 cycles BEP. Stage I NSGCT with somatic malignancy (teratoma with malignant transformation) in primary tumor → RPLND. SWENOTECA NSGCT trial: LVI(+) has 42% relapse on surveillance vs. 13% for LVI(–).',
+    guideline: 'Dropkin 2024 — Testis Oncology; AUA Guideline (2019, amended 2023)',
+  },
+
+  {
+    id: 'd-testis-011', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Stage I NSGCT Relapse Predictors',
+    question: 'In stage I NSGCT after orchiectomy, the presence of both embryonal histology and lymphovascular invasion (pT2) carries a ___% relapse risk, while neither factor carries ___% risk. Median time to relapse is ___ months.',
+    answer: '45% / 15% / 6 months',
+    explanation: 'LVI and embryonal cell carcinoma are the two strongest predictors of relapse in stage I NSGCT. Patients with LVI(+) have 42% relapse on surveillance (SWENOTECA). Median time to relapse is 6 months — the vast majority of relapses occur in the first 2 years, supporting intensive early surveillance.',
+    guideline: 'Dropkin 2024 — Testis Oncology; Miscellaneous',
+  },
+
+  {
+    id: 'd-testis-012', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Post-Chemo NSGCT RP Mass',
+    question: 'After chemotherapy for NSGCT, a residual RP mass should go to RPLND UNLESS the mass has shrunk to < ___% of its original size AND all nodes are < ___ cm at time of marker normalization.',
+    answer: '10% of original size / 1 cm',
+    explanation: 'There is NO role for PET in NSGCT — PET, CT, and tumor markers all perform equally poorly (~55%) in predicting residual viable tumor. Teratoma is not FDG-avid. Even when predictors of fibrosis are present (>90% size reduction, pure embryonal primary), false-negative rate remains 20% — so surgery is still needed when a mass is present.',
+    guideline: 'Dropkin 2024 — Testis Oncology; Post-Chemo RP Mass (Very High Yield)',
+  },
+
+  {
+    id: 'd-testis-013', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Post-Chemo Lung Masses',
+    question: 'Post-chemo lung and retroperitoneal masses have only ___% pathology concordance, so lung masses require resection even if the RP mass shows only fibrosis.',
+    answer: '75%',
+    explanation: 'Because of 25% discordance between lung and RP pathology, lung masses cannot be assumed to be fibrotic just because the RP mass was fibrotic. However, if the RP mass is fibrosis only, small (e.g., 1 cm) non-RP residual masses can be monitored with surveillance rather than resected.',
+    guideline: 'Dropkin 2024 — Testis Oncology; RPLND Related',
+  },
+
+  {
+    id: 'd-testis-014', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — RPLND Sympathetic Chain',
+    question: 'The biggest risk of damage to the sympathetic chain during RPLND is injury to the ___ plexus, which lies anterior to the aortic bifurcation.',
+    answer: 'Hypogastric plexus',
+    explanation: 'The hypogastric plexus (also called the superior hypogastric plexus) lies anterior to the aortic bifurcation and contains the sympathetic fibers responsible for emission and ejaculation. Nerve-sparing RPLND preserves these fibers. Full bilateral template boundaries: renal vessels (superiorly), ureters bilaterally, common iliacs (inferiorly).',
+    guideline: 'Dropkin 2024 — Testis Oncology; RPLND Related',
+  },
+
+  {
+    id: 'd-testis-015', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — IMA Sacrifice',
+    question: 'If the inferior mesenteric artery (IMA) is sacrificed during RPLND, the colon gets its blood supply via the internal iliac → ___ arteries → marginal artery.',
+    answer: 'Middle and inferior hemorrhoidal (rectal) arteries',
+    explanation: 'This is also relevant during pyeloplasty where the IMA may be accidentally injured. The collateral blood supply via the internal iliac → hemorrhoidal → marginal artery of Drummond is generally sufficient to prevent ischemia, but surgeons must be aware of this anatomy.',
+    guideline: 'Dropkin 2024 — Testis Oncology; RPLND Related',
+  },
+
+  {
+    id: 'd-testis-016', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Paratesticular RMS',
+    question: 'For paratesticular rhabdomyosarcoma: boys < 10 get chemo alone (if cN0). Boys ≥ 10 get ipsilateral RPLND prior to chemo because of a ___% false-negative rate on RP imaging.',
+    answer: '50%',
+    explanation: 'Paratesticular RMS (>90% embryonal type, excellent survival): boys ≥ 10 → orchiectomy + CTAP to assess LNs → ipsilateral RPLND regardless of LN status (because 50% FN rate on imaging). If disease found on RPLND → XRT. Boys < 10 with cN0 → chemo (vincristine + dactinomycin) without RPLND.',
+    guideline: 'Dropkin 2024 — Testis Oncology; RPLND Related',
+  },
+
+  {
+    id: 'd-testis-017', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Chemotherapy Side Effects',
+    question: 'In testicular cancer chemotherapy: Bleomycin → ___, Cisplatin → nephrotoxicity + ___, Ifosfamide → hemorrhagic cystitis (prevent with ___).',
+    answer: 'Pulmonary fibrosis / Ototoxicity / Mesna',
+    explanation: 'High-yield chemo side effects: Bleomycin (glycopeptide) → pulmonary fibrosis → limit perioperative fluids and FiO₂. Cisplatin → nephrotoxicity + ototoxicity. Ifosfamide → hemorrhagic cystitis (mesna is mandatory) + encephalopathy. Carboplatin and etoposide → myelosuppression. BEP = bleomycin/etoposide/cisplatin; TIP = paclitaxel/ifosfamide/cisplatin (salvage).',
+    guideline: 'Dropkin 2024 — Testis Oncology; Chemotherapy Side Effects',
+  },
+
+  {
+    id: 'd-testis-018', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — TRISST Trial',
+    question: 'The TRISST trial (J Clin Oncol, 2022) showed that surveillance for stage I seminoma with ___ scans over 36 months and ___ imaging is non-inferior to 7 scans over 60 months with CT.',
+    answer: '3 scans / MRI',
+    explanation: 'TRISST (669 men, factorial RCT): 3 vs. 7 scans AND CT vs. MRI for stage I seminoma surveillance. Stage ≥IIC relapse was non-inferior for 3 scans vs. 7 (2.8 vs. 0.3%, p > 0.05) and for MRI vs. CT (0.6 vs. 2.6%, p > 0.05). OS was similar (99%) with no tumor-related deaths. This supports less-frequent MRI surveillance.',
+    guideline: 'Dropkin 2024 — Testis Oncology; TRISST (J Clin Oncol, 2022)',
+  },
+
+  {
+    id: 'd-testis-019', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Miscellaneous',
+    question: 'The most common testicular tumor in men > 50 years old is ___, not germ cell tumor.',
+    answer: 'Lymphoma',
+    explanation: 'In men over 50, testicular lymphoma (typically diffuse large B-cell lymphoma) is the most common testicular malignancy. GCTs predominate in younger men (peak: seminoma 30s–40s, NSGCT 20s–30s). Gynecomastia occurs in 5% of men with GCTs and 30–50% of men with Sertoli or Leydig cell tumors.',
+    guideline: 'Dropkin 2024 — Testis Oncology; Miscellaneous',
+  },
+
+  {
+    id: 'd-testis-020', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — GI Complications: Chylous Ascites',
+    question: 'Chylous ascites after major abdominal surgery presents with painless high-output milky fluid with TG > ___ mg/dL. Initial management is low TG diet ± percutaneous drainage → NPO + TPN → somatostatin.',
+    answer: '150 mg/dL',
+    explanation: 'Chylous ascites treatment ladder: low TG diet ± perc drainage → NPO + TPN → somatostatin (↓ fat absorption, ↓ motor activity of intestines) → invasive closure of lymphatic channels. High-output enterocutaneous fistula (> 500 mL/day): NPO/TPN → bowel motility meds → octreotide (weakest evidence) → surgery.',
+    guideline: 'Dropkin 2024 — Testis Oncology; GI Complications after Major Abdominal Surgery',
+  },
+
+  {
+    id: 'd-testis-021', type: 'fib', topic: 'Testicular Cancer',
+    topicFull: 'Testicular Cancer — Accidental Scrotal Approach',
+    question: 'After accidental transscrotal orchiectomy for low-stage NSGCT requiring subsequent primary RPLND: wide excision of the ___ and removal of the spermatic cord remnant are required.',
+    answer: 'Scrotal scar',
+    explanation: 'Transscrotal approach disrupts lymphatic drainage to inguinal nodes (instead of retroperitoneal). For primary RPLND: wide excision of scrotal scar + spermatic cord remnant removal. For post-chemo RPLND: no need for scar excision unless local recurrence; only remove spermatic cord remnant. High threshold for additional therapy beyond scar excision if metastatic evaluation is normal.',
+    guideline: 'Dropkin 2024 — Testis Oncology; Testing Pearls',
+  },
