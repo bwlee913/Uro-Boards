@@ -1319,8 +1319,7 @@ export const DROPKIN_CARDS = [
     explanation: 'Topiramate creates a urinary milieu identical to distal RTA: high urine pH, hypercalciuria, severe hypocitraturia. Treatment: either stop topiramate or start K-Cit. Similarly, zonisamide (sulfonamide anticonvulsant) affects 4% of long-term users with CaPhos stones by the same mechanism.',
     guideline: 'Dropkin 2024 — Kidney Stones; Drug-Induced Stones',
   },
-
-];// ══════════════════════════════════════════════════════════
+// ══════════════════════════════════════════════════════════
   //  TESTIS ONCOLOGY
   // ══════════════════════════════════════════════════════════
 
@@ -1511,4 +1510,483 @@ export const DROPKIN_CARDS = [
     answer: 'Scrotal scar',
     explanation: 'Transscrotal approach disrupts lymphatic drainage to inguinal nodes (instead of retroperitoneal). For primary RPLND: wide excision of scrotal scar + spermatic cord remnant removal. For post-chemo RPLND: no need for scar excision unless local recurrence; only remove spermatic cord remnant. High threshold for additional therapy beyond scar excision if metastatic evaluation is normal.',
     guideline: 'Dropkin 2024 — Testis Oncology; Testing Pearls',
+  },// ══════════════════════════════════════════════════════════
+  //  KIDNEY ONCOLOGY — GAPS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-rcc-g001', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Mass Staging — T Sizes',
+    question: 'Renal mass T-staging size thresholds: T1a ≤ ___ cm, T1b ≤ ___ cm, T2a ≤ ___ cm, T2b > ___ cm.',
+    answer: '4 cm / 7 cm / 10 cm / 10 cm',
+    explanation: 'T1a ≤ 4 cm, T1b ≤ 7 cm, T2a ≤ 10 cm, T2b > 10 cm — all confined to kidney. T3a = renal vein/pelvicalyceal/perirenal fat within Gerota. T3b = IVC below diaphragm. T3c = IVC above diaphragm. T4 = beyond Gerota or involving adrenal. Stage III = T3N0-1M0 or T1-2N1M0.',
+    guideline: 'Dropkin 2024 — Kidney; AUA Renal Mass Guideline (2021)',
   },
+
+  {
+    id: 'd-rcc-g002', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Mass — Evaluation Rule',
+    question: 'Initial evaluation of a renal mass requires "___ images + ___ labs": multi-phase cross-sectional abdominal imaging (enhancing = ↑ 20 HU), CBC, UA, and CMP + chest imaging.',
+    answer: '2 images + 3 labs',
+    explanation: 'The 2+3 rule: 2 imaging studies (multi-phase abdominal CT/MRI; consider MRI if IVC thrombus suspected) + 3 labs (CBC, UA, CMP) + chest imaging if malignancy suspected. For Bosniak 3/4 or solid masses, use GFR to assign CKD stage (90+, 60+, 30+, 15+, <15 or dialysis).',
+    guideline: 'Dropkin 2024 — Kidney; AUA Renal Mass Guideline (2021)',
+  },
+
+  {
+    id: 'd-rcc-g003', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Mass Biopsy — Predictive Values',
+    question: 'Renal mass biopsy (RMB) has a PPV of ___%, NPV of ~___%, and a non-diagnostic rate of ~___%. Multiple cores are preferred over FNA for solid masses.',
+    answer: 'PPV 100% / NPV ~60% / Non-Dx ~15%',
+    explanation: 'RMB is most useful when results would change management (e.g., before ablation, active surveillance, or when hematologic/metastatic/inflammatory etiology is suspected). The ~15% non-diagnostic rate is clinically important — a non-diagnostic biopsy does not exclude malignancy.',
+    guideline: 'Dropkin 2024 — Kidney; AUA Renal Mass Guideline (2021)',
+  },
+
+  {
+    id: 'd-rcc-g004', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Mass — Genetics Consult',
+    question: 'A genetics consult is recommended for patients with renal masses who are age ≤ ___, have multifocal/bilateral masses, or have a personal/family history suggesting a familial renal neoplastic syndrome.',
+    answer: '46 years old',
+    explanation: 'Young age (≤46), bilaterality, multifocality, or pathology suggesting a hereditary syndrome (VHL, HLRCC, BHD, TSC) should trigger genetics referral. Nephrology consult is indicated when eGFR < 45 mL/min/1.73m², expected post-op eGFR < 30, proteinuria, or DM with CKD.',
+    guideline: 'Dropkin 2024 — Kidney; AUA Renal Mass Guideline (2021)',
+  },
+
+  {
+    id: 'd-rcc-g005', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Surgery — Renal Artery Vasospasm',
+    question: 'Renal artery vasospasm during hilar dissection causes reduced perfusion and a pale kidney. Treatment is topical ___ applied to the renal hilar vessels.',
+    answer: 'Papaverine (opium alkaloid antispasmodic vasodilator)',
+    explanation: 'Papaverine relaxes vascular smooth muscle and reverses renal artery vasospasm during partial or radical nephrectomy. Insufflation pressure is then reduced. This is a common intraoperative complication during hilar dissection and is easily managed with topical papaverine.',
+    guideline: 'Dropkin 2024 — Kidney Oncology; Renal Surgery Testing Pearls',
+  },
+
+  {
+    id: 'd-rcc-g006', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Surgery — Lumbar Vein',
+    question: 'Acute bleed following ligation/division of the LEFT renal hilum should raise concern for disruption of the ___ vein, which inserts into the renal vein posteriorly.',
+    answer: 'Lumbar vein',
+    explanation: 'The lumbar vein inserts posteriorly into the left renal vein near the hilum. Inadvertent avulsion during left renal hilum dissection can cause significant hemorrhage. Interaortocaval nodes primarily drain the right kidney and drain the left kidney only with advanced disease.',
+    guideline: 'Dropkin 2024 — Kidney Oncology; Renal Surgery Testing Pearls',
+  },
+
+  {
+    id: 'd-rcc-g007', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Surgery — Urine Leak',
+    question: 'A urine leak after partial nephrectomy should be managed with percutaneous drain placement first. If it persists, place a ___ and ureteral stent → PCNT if stent cannot be placed.',
+    answer: 'Retrograde pyelogram (RPG)',
+    explanation: 'Urine leak management after pNx: start with percutaneous drain (if not already present) → ensure drain is not directly on the leak site and not on active suction → RPG + ureteral stent → PCNT if stent cannot be placed. Most leaks resolve with adequate drainage and stenting.',
+    guideline: 'Dropkin 2024 — Kidney Oncology; Renal Surgery Testing Pearls',
+  },
+
+  {
+    id: 'd-rcc-g008', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Surgery — Post-op Back Pain',
+    question: 'Severe persistent back pain after left-sided renal surgery that is resistant to NSAIDs/opioids should raise concern for ___ (check CK) on the ipsilateral side and ___ injury (check amylase/lipase).',
+    answer: 'Rhabdomyolysis / Pancreatic injury',
+    explanation: 'After left-sided renal surgery: rhabdomyolysis if pain is contralateral to the surgical side (from positioning); pancreatic injury if pain is on the left (the pancreatic tail is at risk). Check CK for rhabdo and amylase/lipase for pancreatic injury. This is a high-yield surgical complication pearl.',
+    guideline: 'Dropkin 2024 — Kidney Oncology; Renal Surgery Testing Pearls',
+  },
+
+  {
+    id: 'd-rcc-g009', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Surgery — Juxtaglomerular Tumor',
+    question: 'Juxtaglomerular cell tumors are benign, rare, typically occur in patients < ___ years old, and present with elevated peripheral ___ causing hypertension. They are cured with surgery.',
+    answer: '20 years old / Renin',
+    explanation: 'Juxtaglomerular (renin-secreting) tumors are benign neoplasms of renin-producing cells. They cause secondary hyperaldosteronism and refractory hypertension. Diagnosis: elevated peripheral renin + imaging showing a small renal mass. Surgical excision is curative.',
+    guideline: 'Dropkin 2024 — Kidney Oncology; Renal Tumors',
+  },
+
+  {
+    id: 'd-rcc-g010', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Mass — Renal Pseudotumor',
+    question: 'A renal pseudotumor (column of Bertin or focal cortical hyperplasia) is best confirmed with a ___ scan, which shows normal renal function in the pseudo-mass.',
+    answer: 'DMSA (dimercaptosuccinic acid) scan',
+    explanation: 'Renal pseudotumors are normal renal parenchyma (column of Bertin) that bulge into the collecting system or renal sinus and can mimic a mass on CT/US. DMSA scan shows normal radiotracer uptake in the "mass," confirming normal renal tissue rather than neoplasm.',
+    guideline: 'Dropkin 2024 — Kidney Oncology; Renal Tumors',
+  },
+
+  {
+    id: 'd-rcc-g011', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Surgery — Cryoablation Optimization',
+    question: 'Optimal renal cryoablation requires: real-time intraoperative U/S, cryoprobe tip at the ___ margin of the tumor, target temperature below ___°C, cryo lesion extended ~1 cm beyond tumor margin, and active double freeze-thaw cycle.',
+    answer: 'Deepest margin / –40°C',
+    explanation: 'The cryoprobe tip should be placed at the deepest margin of the tumor to ensure adequate treatment. Target temperature must reach below –40°C to achieve lethal iceball temperatures. The cryo lesion should extend ~1 cm beyond the tumor margin. The double freeze-thaw cycle maximizes cell death.',
+    guideline: 'Dropkin 2024 — Kidney Oncology; Small Renal Mass Related',
+  },
+
+  {
+    id: 'd-rcc-g012', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Renal Surgery — EORTC Partial vs Radical Nx',
+    question: 'The EORTC pNx vs. rNx trial (Eur Urol, 2014) showed that pNx substantially reduced the incidence of moderate renal dysfunction (eGFR < 60) — ___ vs. 86% of patients. However, OS was ___.',
+    answer: '65% / Similar (no OS benefit)',
+    explanation: 'EORTC (550 patients, renal tumors ≤5 cm): pNx vs. rNx → at 6.7 yr median f/u, 65 vs. 86% developed eGFR < 60 (p < 0.05), but advanced CKD (eGFR < 30) and kidney failure rates were similar. The renal function benefit of pNx did not translate to improved survival in this population.',
+    guideline: 'Dropkin 2024 — Kidney Oncology; EORTC pNx vs. rNx (Eur Urol, 2014)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  ADRENAL ONCOLOGY
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-adrenal-001', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal Incidentaloma — Workup',
+    question: 'Biochemical workup for an adrenal incidentaloma includes: ___ dexamethasone suppression test, plasma fractionated ___, and (if hypertensive) aldosterone + renin.',
+    answer: '1-mg overnight / Metanephrines/normetanephrines',
+    explanation: 'The 1-mg overnight dexamethasone suppression test screens for cortisol-producing adenoma (Cushing\'s). Plasma fractionated metanephrines/normetanephrines screen for pheochromocytoma and should be done BEFORE any biopsy. If hypertensive, aldosterone-to-renin ratio (ARR) screens for primary hyperaldosteronism.',
+    guideline: 'Dropkin 2024 — Adrenal; AACE/AAES Guideline (2009)',
+  },
+
+  {
+    id: 'd-adrenal-002', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal — Primary Hyperaldosteronism Workup',
+    question: 'A positive screen for primary hyperaldosteronism is ARR > ___. Confirmation requires demonstrating lack of aldosterone suppression despite ___ loading.',
+    answer: 'ARR > 20 / Salt loading',
+    explanation: 'Workup: ARR > 20 → confirm with 24-hr urine salt loading test → high-resolution CT for all confirmed cases → adrenal venous sampling (AVS) for patients > 40 years old. Unilateral lesions → adrenalectomy. Bilateral lesions or surgical candidates who decline → mineralocorticoid receptor blockers (spironolactone, eplerenone).',
+    guideline: 'Dropkin 2024 — Adrenal; AACE/AAES Guideline (2009)',
+  },
+
+  {
+    id: 'd-adrenal-003', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal — Adrenalectomy Indications',
+    question: 'Adrenalectomy is indicated for ANY lesion with concerning radiographic features AND most lesions ≥ ___ cm due to increased risk of adrenal cortical carcinoma.',
+    answer: '4 cm',
+    explanation: 'Lesions ≥ 4 cm carry increased ACC risk and warrant adrenalectomy. Always perform biochemical workup preoperatively to rule out pheochromocytoma, guide perioperative management, and identify tumor markers. Incidentalomas managed with observation get repeat imaging at 3–6 months, then annually × 1–2 years, with biochemical re-evaluation annually × 5 years.',
+    guideline: 'Dropkin 2024 — Adrenal; AACE/AAES Guideline (2009)',
+  },
+
+  {
+    id: 'd-adrenal-004', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal — Pheochromocytoma Preop',
+    question: 'Preoperative management of pheochromocytoma: start with ___ (e.g., phenoxybenzamine). Beta-blockers should NOT be given first because they can cause increased ___ stimulation.',
+    answer: 'Alpha-blocker / Alpha-receptor (unopposed alpha stimulation)',
+    explanation: 'Alpha-blockade first is mandatory — beta-blockers alone can cause unopposed alpha-stimulation and hypertensive crisis. If alpha-blockade is inadequate, add metyrosine (Demser®; inhibits tyrosine hydroxylase, the rate-limiting step in catecholamine synthesis), then Ca²⁺ channel blocker. Beta-blockers are used only in the context of tachyarrhythmias after alpha blockade is established.',
+    guideline: 'Dropkin 2024 — Adrenal; Periop Management for Adrenalectomy',
+  },
+
+  {
+    id: 'd-adrenal-005', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal — Post-Adrenalectomy Hypotension',
+    question: 'If blood pressure drops after adrenal vein ligation during pheochromocytoma resection, first-line treatment is ___ bolus. Vasopressors are rarely required.',
+    answer: 'Normal saline (NS) volume expansion',
+    explanation: 'Post-ligation hypotension occurs due to sudden withdrawal of catecholamines. Management: NS bolus first. Vasopressors (norepinephrine if needed) are rarely required. Postoperative steroids may be needed in any patient due to preoperative contralateral adrenal suppression (from cortisol-producing tumors or surgical stress).',
+    guideline: 'Dropkin 2024 — Adrenal; Periop Management',
+  },
+
+  {
+    id: 'd-adrenal-006', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal — Neuroblastoma',
+    question: 'Neuroblastoma is the MC malignant tumor of infancy (6 months – 2.5 years), arises from ___ cells, and is diagnosed with elevated urinary catecholamines, imaging (including ___), and tissue biopsy.',
+    answer: 'Neural crest cells / MIBG scan',
+    explanation: 'Neuroblastoma: 70% are metastatic at presentation. Unlike Wilms\', these children look ILL. Poor risk factors: n-myc amplification, 1p deletion, unfavorable histology. Favorable: age < 1 year, non-adrenal primary, diagnosed by prenatal US. Key: mets + age < 1 year → spontaneous regression may occur → start with observation.',
+    guideline: 'Dropkin 2024 — Pediatric GU Malignancy; Neuroblastoma',
+  },
+
+  {
+    id: 'd-adrenal-007', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal Hemorrhage',
+    question: 'The classic triad of adrenal hemorrhage in newborns is mass, ___, and jaundice (from blood reabsorption in the retroperitoneum). Males may also have scrotal hemorrhage.',
+    answer: 'Anemia',
+    explanation: 'Adrenal hemorrhage in neonates: triad = mass + anemia + jaundice. Adrenal US should be performed to exclude neuroblastoma. Most adrenal hemorrhages completely resolve with observation and serial imaging. No intervention is needed unless neuroblastoma is suspected.',
+    guideline: 'Dropkin 2024 — Adrenal; Adrenal Hemorrhage',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  WILMS' TUMOR / PEDIATRIC RENAL
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-wilms-001', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Pediatric Renal Tumors — Age Mnemonic',
+    question: 'Pediatric renal tumors by age (mnemonic C0_5yN2_5yW): Congenital Mesoblastic Nephroma = MC in infants < ___ months; Neuroblastoma = MC malignant tumor at ___ months to 2.5 years; Wilms\' = MC primary renal cancer in children age ___ years+.',
+    answer: '6 months / 6 months–2.5 years / 2.5 years',
+    explanation: 'Age-based mnemonic: CMN < 6 months (spindle cells, rNx almost always curative), Neuroblastoma 6 mo–2.5 yrs (neural crest, 70% metastatic), Wilms\' 2.5 yrs+ (80% between ages 3–5). Wilms\' presents with palpable mass ± GH, HTN, abdominal pain.',
+    guideline: 'Dropkin 2024 — Pediatric GU Malignancy; Testing Pearls',
+  },
+
+  {
+    id: 'd-wilms-002', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Wilms\' Tumor — Syndromes',
+    question: 'WAGR syndrome (WT-1 mutation on 11p13) includes: Wilms\' tumor, ___, Genital abnormalities, and mental Retardation. Denys-Drash adds ___ and membranoproliferative glomerulonephritis.',
+    answer: 'Aniridia / Hypospadias or cryptorchidism (DSD)',
+    explanation: 'Non-overgrowth WT syndromes (WT-1, 11p13): WAGR and Denys-Drash. Overgrowth syndromes (WT-2, 11p15): Beckwith-Wiedemann (macroglossia, nephromegaly, hepatomegaly, hemihypertrophy). Survey children at increased risk with RUS q3 months until age 10. Perilobar nephrogenic rests → abd US q3 months × 5 years.',
+    guideline: 'Dropkin 2024 — Pediatric GU Malignancy; Wilms\' Tumor',
+  },
+
+  {
+    id: 'd-wilms-003', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Wilms\' Tumor — Treatment',
+    question: 'Wilms\' treatment is radical nephrectomy with LND (goal ___ LNs). NAC (vincristine + actinomycin) is used ONLY for bilateral disease (stage V), IVC extension above hepatic veins, solitary kidney, inoperable tumor, or predisposition syndrome.',
+    answer: '6–10 lymph nodes',
+    explanation: 'Do NOT biopsy bilateral Wilms\' masses — biopsy upstages disease and necessitates doxorubicin (which carries cardiac toxicity risk). Tumor spillage, positive LNs, or positive margins = Stage III → adjuvant chemo (dactinomycin + vincristine + doxorubicin) + XRT. Doxorubicin cardiac toxicity is the major dose-limiting side effect.',
+    guideline: 'Dropkin 2024 — Pediatric GU Malignancy; Wilms\' Treatment',
+  },
+
+  {
+    id: 'd-wilms-004', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Wilms\' Tumor — Staging',
+    question: 'Wilms\' Stage III includes incomplete resection with residual abdominal disease AND any case with ___ (which automatically upstages to Stage III).',
+    answer: 'Preoperative biopsy',
+    explanation: 'Wilms\' staging: I = confined to kidney, completely resected. II = beyond kidney but completely resected. III = incomplete resection OR any biopsy (biopsy = Stage III). IV = metastatic. V = bilateral at diagnosis. This is why biopsy is contraindicated in bilateral Wilms\' — it upstages and mandates more intensive therapy including doxorubicin.',
+    guideline: 'Dropkin 2024 — Pediatric GU Malignancy; Wilms\' Tumor Staging',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  NMIBC / BLADDER — GAPS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-nmibc-g001', type: 'fib', topic: 'NMIBC',
+    topicFull: 'Bladder Cancer — Risk of Upper Tract UC',
+    question: 'The risk of upper tract UC in patients with a bladder cancer diagnosis is ~___%. Conversely, the risk of bladder cancer in patients with a UTUC diagnosis is ~___%, warranting lifelong bladder surveillance.',
+    answer: '~10% / ~40%',
+    explanation: 'This bidirectional risk is important for surveillance planning. Patients with UTUC have a ~40% risk of developing bladder cancer and require regular cystoscopy. Patients with bladder cancer have ~10% risk of upper tract involvement. For IR/HR NMIBC, upper tract imaging is recommended q1–2 years.',
+    guideline: 'Dropkin 2024 — NMIBC; Miscellaneous',
+  },
+
+  {
+    id: 'd-nmibc-g002', type: 'fib', topic: 'NMIBC',
+    topicFull: 'Bladder Cancer — Ileal Conduit Urine Cultures',
+    question: 'Asymptomatic ileal conduit urine cultures are generally positive in ~___% of cases. Treatment is only indicated if the culture grows ___ or ___, due to the risk of stone formation.',
+    answer: '75% / Proteus / Pseudomonas',
+    explanation: 'Asymptomatic bacteriuria in ileal conduits should NOT be routinely treated — the exception is Proteus or Pseudomonas, which produce urease and alkalize urine, creating struvite stones. Treating all positive cultures leads to antibiotic resistance without clinical benefit.',
+    guideline: 'Dropkin 2024 — NMIBC; Major Surgery Related',
+  },
+
+  {
+    id: 'd-nmibc-g003', type: 'fib', topic: 'NMIBC',
+    topicFull: 'Bladder Cancer — Positive Cytology Normal Cystoscopy',
+    question: 'Positive urinary cytology with a normal cystoscopy in a patient with NMIBC history should prompt: upper tract imaging, prostatic urethral biopsies, ___ cystoscopy, ureteroscopy, and random bladder biopsies.',
+    answer: 'Blue light (fluorescence) cystoscopy',
+    explanation: 'Blue light cystoscopy (using hexaminolevulinate) increases detection of CIS and papillary tumors and should be offered at TURBT when available. Narrow-band imaging (NBI) is an alternative. In the setting of positive cytology with negative white light cystoscopy, blue light cysto and upper tract evaluation are essential.',
+    guideline: 'Dropkin 2024 — NMIBC; AUA/SUO NMIBC Guideline (2024)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  PROSTATE — GAPS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-pca-g001', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'Prostate Cancer — Active Surveillance and Transplant',
+    question: 'Men with prostate cancer who qualify for active surveillance can undergo organ transplant ___. Those with high-risk disease require treatment (surgery or XRT) and recovery (~___ months) prior to transplant.',
+    answer: 'Immediately (without delay) / 6 months',
+    explanation: 'This is a practical clinical pearl: AS-eligible PCa patients do not need to delay transplant. However, high-risk PCa requires definitive treatment and ~6 months of recovery before transplant can proceed, due to immunosuppression risks with uncontrolled high-risk disease.',
+    guideline: 'Dropkin 2024 — Prostate Oncology',
+  },
+
+  {
+    id: 'd-pca-g002', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'Prostate Cancer — Obturator Nerve Injury',
+    question: 'Obturator nerve injury during prostatectomy requires debridement of thermally injured ends followed by end-to-end repair with interrupted, fine, ___ (absorbable/non-absorbable), monofilament suture.',
+    answer: 'Non-absorbable',
+    explanation: 'Obturator nerve injury → debride thermally injured areas → primary end-to-end repair with interrupted, fine, non-absorbable, monofilament suture. Recognized intraoperative rectal injury in non-radiated patients → primary repair (get cystogram before catheter removal). In radiated field → diverting colostomy.',
+    guideline: 'Dropkin 2024 — Prostate Oncology; Prostatectomy Complications',
+  },
+
+  {
+    id: 'd-pca-g003', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'Prostate Cancer — Seminal Vesicle Invasion',
+    question: '___ invasion (but NOT bladder neck invasion) is an independent predictor of poor outcome after robot-assisted laparoscopic prostatectomy (RALP).',
+    answer: 'Seminal vesicle',
+    explanation: 'Seminal vesicle invasion (pT3b) is an independent adverse pathological feature after RALP. Bladder neck invasion alone does not carry the same independent prognostic weight. The Rocco stitch is a stabilizing suture thrown between Denonvilliers\' fascia and tissue posterior to the urethra to reduce tension on the vesicourethral anastomosis.',
+    guideline: 'Dropkin 2024 — Prostate Oncology; Prostatectomy',
+  },// ══════════════════════════════════════════════════════════
+  //  SEXUAL MEDICINE — ED, PEYRONIE'S, EJACULATION
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-ed-001', type: 'fib', topic: 'Erectile Dysfunction',
+    topicFull: 'ED — Smooth Muscle Physiology',
+    question: 'Baseline penile flaccidity is maintained by tonic contraction of penile vascular smooth muscle via ___ release from postganglionic sympathetic nerves.',
+    answer: 'Norepinephrine',
+    explanation: 'Erection requires parasympathetic stimulation → NOx release from NANC nerves → guanylyl cyclase → ↑cGMP → protein kinase → opens K+ channels, closes Ca++ channels → ↓intracellular Ca++ → smooth muscle relaxation → ↑arterial blood flow. PDE5 breaks down cGMP → detumescence.',
+    guideline: 'Dropkin 2024 — Penis; Erectile SM Physiology Testing Pearls',
+  },
+
+  {
+    id: 'd-ed-002', type: 'fib', topic: 'Erectile Dysfunction',
+    topicFull: 'ED — Alprostadil Mechanism',
+    question: 'PGE1 (alprostadil) causes smooth muscle relaxation by increasing conversion of ___ to cAMP via adenylate cyclase, reducing intracellular Ca²⁺.',
+    answer: 'ATP',
+    explanation: 'PGE1 (alprostadil = MUSE® intraurethral, Caverject®/Edex® intracorporeal) works via the cAMP pathway, distinct from the NOx/cGMP pathway used by PDE5 inhibitors. This is why alprostadil can be effective when PDE5 inhibitors fail — it bypasses the guanylyl cyclase pathway entirely.',
+    guideline: 'Dropkin 2024 — Penis; Erectile SM Physiology Testing Pearls',
+  },
+
+  {
+    id: 'd-ed-003', type: 'fib', topic: 'Erectile Dysfunction',
+    topicFull: 'ED — Penile Duplex Ultrasound',
+    question: 'On penile duplex ultrasound: cavernous arterial insufficiency = PSV < ___ cm/s. Veno-occlusive dysfunction (venous leak) = EDV > ___ cm/s with normal PSV.',
+    answer: 'PSV < 25 cm/s / EDV > 5 cm/s',
+    explanation: 'Normal PSV > 35 cm/s (some use > 25). PSV < 25 → cavernous arterial insufficiency → consider cardiology referral (higher CAD risk). EDV > 5 with normal PSV → venous leak. Resistive Index = (PSV–EDV)/PSV; RI < 0.75 → venous leak. Psychogenic ED = normal PSV + EDV < 5 (or negative).',
+    guideline: 'Dropkin 2024 — Penis; Penile Duplex Ultrasound Testing Pearls',
+  },
+
+  {
+    id: 'd-ed-004', type: 'fib', topic: 'Erectile Dysfunction',
+    topicFull: 'ED — Not Recommended Treatments',
+    question: 'Per AUA ED guidelines, ___, testosterone (if serum level is normal), ___, herbal therapies, and penile venous surgeries are NOT recommended for erectile dysfunction.',
+    answer: 'Trazodone / Yohimbine',
+    explanation: 'Any ED treatment CAN be offered at any time per the 2018 AUA guideline — a mandatory step-therapy progression is not required. Experimental (not yet recommended): ESWT, intracavernosal stem cell therapy, PRP. Arterial reconstruction: only for healthy patients with recently acquired ED from focal arterial occlusion without generalized vascular disease or veno-occlusive dysfunction.',
+    guideline: 'Dropkin 2024 — Penis; AUA ED Guideline (2018)',
+  },
+
+  {
+    id: 'd-ed-005', type: 'fib', topic: 'Erectile Dysfunction',
+    topicFull: 'ED — Penile Prosthesis Contraindications',
+    question: 'Penile prosthesis implantation should NOT be performed in the setting of systemic, cutaneous, or ___ infection. Perioperative antibiotics must cover both Gram-___ and Gram-___ organisms.',
+    answer: 'Urinary tract (UTI) / Gram-negative and Gram-positive',
+    explanation: 'Penile prosthesis infection is a devastating complication. Antibiotic-impregnated prostheses reduce infection risk. Periop coverage must include Gram-negative (e.g., gentamicin) and Gram-positive (e.g., vancomycin) organisms. Patients must understand risks of infection, erosion, mechanical failure, penile shortening, and reduced response if the device is removed.',
+    guideline: 'Dropkin 2024 — Penis; AUA ED Guideline (2018)',
+  },
+
+  {
+    id: 'd-ed-006', type: 'fib', topic: 'Erectile Dysfunction',
+    topicFull: 'ED — Ejaculation Physiology',
+    question: 'Emission is mediated by ___ (T10–L2) sympathetics → hypogastric plexus → epididymis/vas/prostate/SVs. Ejection is mediated by ___ (S2–S4) via the pudendal nerve → bulbospongiosus + ischiocavernosus contractions.',
+    answer: 'Sympathetic / Somatic (pudendal nerve)',
+    explanation: 'The bulbospongiosus muscle is MOST responsible for antegrade ejaculation through rhythmic contractions that compress the bulb. Orgasm is the pleasurable cerebral processing of sensory input from pelvic muscle contraction and seminal fluid ejection — it is separate from ejaculation physiologically.',
+    guideline: 'Dropkin 2024 — Sexual Dysfunction; Ejaculation Physiology Testing Pearls',
+  },
+
+  {
+    id: 'd-ed-007', type: 'fib', topic: 'Erectile Dysfunction',
+    topicFull: 'ED — Erection Neural Pathways',
+    question: 'Psychogenic erections: visual/sensory → cerebral cortex → parasympathetic ___ nerves → cavernosal nerves → NOx release. Reflexogenic erections: penile stimulation → dorsal nerve → pudendal nerve → spinal cord via ___ sensory nerves → parasympathetics.',
+    answer: 'S2–S4 (both psychogenic and reflexogenic use S2–S4)',
+    explanation: 'Both psychogenic and reflexogenic erections ultimately activate the same S2–S4 parasympathetic pathway and release NOx from NANC nerves. This is why patients with upper spinal cord injuries (above S2–S4) may still have reflexogenic erections (preserved by the sacral reflex arc) but lose psychogenic erections.',
+    guideline: 'Dropkin 2024 — Penis; Neural Pathways for Sexual Function',
+  },
+
+  // ── PREMATURE EJACULATION ──────────────────────────────────
+
+  {
+    id: 'd-pree-001', type: 'fib', topic: 'Sexual Dysfunction',
+    topicFull: 'Premature Ejaculation — Definitions',
+    question: 'Lifelong premature ejaculation is defined as IELT < approximately ___ minute(s) since onset of sexual activity. Acquired PreE is IELT < ~___ minutes, markedly reduced from prior experience.',
+    answer: '1 minute / 3 minutes',
+    explanation: 'Lifelong PreE is caused by variation in sensitivity of two serotonin receptor classes. Acquired PreE causes: performance anxiety, psychological concerns, ED, prostatitis, hyperthyroidism, drug withdrawal/detox. In patients with PE + ED → treat ED first. Ejaculatory latency is NOT affected by circumcision status.',
+    guideline: 'Dropkin 2024 — Sexual Dysfunction; AUA/SMSNA Disorders of Ejaculation Guideline (2020)',
+  },
+
+  {
+    id: 'd-pree-002', type: 'fib', topic: 'Sexual Dysfunction',
+    topicFull: 'Premature Ejaculation — First-Line Treatment',
+    question: 'First-line pharmacotherapy for premature ejaculation: daily ___, on-demand clomipramine or dapoxetine, and topical penile anesthetics. All SSRIs are contraindicated with ___ due to serotonin syndrome risk.',
+    answer: 'SSRIs / MAOIs (monoamine oxidase inhibitors)',
+    explanation: 'SSRIs that delay ejaculation: fluoxetine, paroxetine, sertraline, clomipramine. SSRIs that do NOT work for PreE: nefazodone, citalopram, fluvoxamine. Paroxetine has the most evidence. Second-line: tramadol or alpha-1 blockers. Combining behavioral therapy + pharmacotherapy increases IELT by ~1 minute. Surgical options (bulking agents) are experimental only.',
+    guideline: 'Dropkin 2024 — Sexual Dysfunction; AUA Premature Ejaculation Guideline (2010)',
+  },
+
+  // ── PEYRONIE'S DISEASE ────────────────────────────────────
+
+  {
+    id: 'd-pd-001', type: 'fib', topic: "Peyronie's Disease",
+    topicFull: "Peyronie's Disease — Pathophysiology",
+    question: "Peyronie's disease is caused by ___ without typical scar remodeling. While curvature rarely resolves spontaneously, ___ virtually always resolves within 12 months of onset.",
+    answer: 'Abnormal wound healing / Penile pain',
+    explanation: "PD associated conditions: aging, DM, ED, psychological distress, prostatectomy, hypogonadism, Dupuytren's contracture, Ledderhose's plantar contracture, tympanosclerosis. Most common curve direction: dorsal (70%), lateral (15–20%), ventral (10–15%). ICI is NOT recommended in PD as it may worsen scarring.",
+    guideline: "Dropkin 2024 — Penis; PD Testing Pearls; AUA PD Guideline (2015)",
+  },
+
+  {
+    id: 'd-pd-002', type: 'fib', topic: "Peyronie's Disease",
+    topicFull: "Peyronie's Disease — Natural History",
+    question: "The natural history of active-phase PD follows the '15/40/45 rule': ___% improve (avg 15°), ___% stay the same, and ___% worsen (avg 22°).",
+    answer: '12% improve / 40% stable / 48% worsen',
+    explanation: "Mulhall natural history study (J Urol, 2006): patients followed ≥12 months from symptom onset. Average stretched penile length declined from 12.2 to 11.4 cm. Pain always resolves with time in the active phase. Complete spontaneous resolution of curvature is extremely rare.",
+    guideline: "Dropkin 2024 — Penis; Natural History of PD (J Urol, 2006)",
+  },
+
+  {
+    id: 'd-pd-003', type: 'fib', topic: "Peyronie's Disease",
+    topicFull: "Peyronie's Disease — Collagenase (Xiaflex)",
+    question: "Clostridial collagenase (Xiaflex®) is the only FDA-approved injection for PD. It is indicated for stable disease with curvature between ___ and ___ degrees, with up to ___ total injections approved.",
+    answer: '31° and 89° / 8 injections',
+    explanation: "Xiaflex selectively degrades Type I and Type III collagen. IMPRESS I+II trials: collagenase reduced curvature by 17° vs. 9° for placebo (p < 0.01). 0.5% of patients experience penile fracture after injections — maintain high index of suspicion. Interferon alpha-2b is also an option (not FDA-approved for PD) — can continue despite flu-like side effects.",
+    guideline: "Dropkin 2024 — Penis; AUA PD Guideline (2015); IMPRESS I+II (J Urol, 2013)",
+  },
+
+  {
+    id: 'd-pd-004', type: 'fib', topic: "Peyronie's Disease",
+    topicFull: "Peyronie's Disease — Surgical Options",
+    question: "The most common patient complaint after penile plication for PD is ___. Plaque incision and grafting (PIG/PEG) is reserved for non-ventral curves > ___° with hinging, shaft narrowing, or extensive calcification.",
+    answer: 'Perception of penile shortening / 60°',
+    explanation: "Plication goal: shorten the convex side to straighten the penis. Nesbit = transverse ellipse of tunica excised; Yachia = vertical incision. PIG/PEG risk: de novo ED and sensation changes. IPP indications: ED + PD present ≥12 months, deformity stable ≥6 months, failed conservative therapy, unable to have intercourse. Residual curve > 60° after IPP → PIG vs. plication.",
+    guideline: "Dropkin 2024 — Penis; AUA PD Guideline (2015)",
+  },
+
+  {
+    id: 'd-pd-005', type: 'fib', topic: "Peyronie's Disease",
+    topicFull: "Peyronie's Disease — Medical Therapy",
+    question: "Pentoxifylline (Trental®) is used in PD as a xanthine derivative that reduces TGF-β → ↓ ___ collagen deposition + ↑ fibrinolysis. Oral vitamin E, tamoxifen, and omega-3 fatty acids are ___ (recommended/not recommended) by AUA.",
+    answer: 'Type I collagen / NOT recommended',
+    explanation: "The AUA does not recommend oral therapies other than NSAIDs (for pain) in routine practice. Pentoxifylline, colchicine (for acute pain only), and low-dose daily tadalafil (inhibits collagen synthesis) are sometimes used but not formally recommended. Shock wave therapy should NOT be offered for curvature/plaque reduction but CAN be offered for pain relief.",
+    guideline: "Dropkin 2024 — Penis; AUA PD Guideline (2015)",
+  },
+
+  // ── MALE INFERTILITY ──────────────────────────────────────
+
+  {
+    id: 'd-inf-001', type: 'fib', topic: 'Male Infertility',
+    topicFull: 'Male Infertility — Semen Analysis Reference Values',
+    question: 'Reference semen analysis values: volume ___ mL, pH > ___, concentration > ___ million/mL, total sperm > ___ million/ejaculate, motility > ___%, forward progression > ___ (scale 0–4).',
+    answer: '1.5–5.0 mL / 7.2 / 20 million/mL / 40 million / 40% / 2',
+    explanation: 'Full evaluation requires PMH, PE, and two semen analyses. Initial endocrine evaluation (T and FSH) is indicated for: sperm concentration < 10 million/mL, impaired sexual function, or clinical signs of endocrinopathy. Sperm morphology by strict criteria alone should NOT be used in isolation for prognostic or therapeutic decisions.',
+    guideline: 'Dropkin 2024 — Testis; AUA Infertility Best Practice Statement (2011)',
+  },
+
+  {
+    id: 'd-inf-002', type: 'fib', topic: 'Male Infertility',
+    topicFull: 'Male Infertility — Low Ejaculate Volume',
+    question: 'Ejaculate volume < ___ mL without CBAVD or hypogonadism should prompt a post-ejaculatory urinalysis to evaluate for retrograde ejaculation (any sperm in urine = diagnostic).',
+    answer: '1 mL',
+    explanation: 'Low ejaculate volume differential: retrograde ejaculation (check post-ejaculatory UA), ejaculatory duct obstruction (TRUS in azoospermic patients with palpable vasa and low volume), CBAVD, or hypogonadism. CBAVD patients must be offered CFTR mutation testing + renal imaging (renal anomalies in ~25% with CBAVD without CFTR mutations).',
+    guideline: 'Dropkin 2024 — Testis; AUA Infertility Best Practice Statement (2011)',
+  },
+
+  {
+    id: 'd-inf-003', type: 'fib', topic: 'Male Infertility',
+    topicFull: 'Male Infertility — Azoospermia Workup',
+    question: 'Azoospermia + normal T and LH + elevated FSH + Sertoli-only histology on biopsy → ___ to identify and retrieve sperm, with approximately ___% success rate.',
+    answer: 'Micro-TESE (microsurgical testicular sperm extraction) / 50%',
+    explanation: 'Elevated FSH with Sertoli-only pattern indicates NON-obstructive azoospermia. Micro-TESE finds focal sperm production in ~50% of these patients. Obstructive azoospermia (normal FSH, palpable vasa, normal testis volume) → TRUS to look for ejaculatory duct obstruction → vasovasostomy or vasoepididymostomy.',
+    guideline: 'Dropkin 2024 — Testis; AUA Azoospermic Male Best Practice Statement (2011)',
+  },
+
+  {
+    id: 'd-inf-004', type: 'fib', topic: 'Male Infertility',
+    topicFull: 'Male Infertility — Anabolic Steroids',
+    question: 'In a former anabolic steroid user with infertility, the most effective way to restore testosterone production is ___. Testosterone supplementation itself should NOT be used because it increases ___ feedback and ↓ LH/FSH.',
+    answer: 'hCG (human chorionic gonadotropin) / Negative feedback',
+    explanation: 'Exogenous testosterone suppresses the hypothalamic-pituitary axis via negative feedback → ↓ LH and FSH → testicular atrophy and azoospermia. hCG mimics LH and directly stimulates Leydig cells to produce testosterone without suppressing the axis. Clomiphene citrate (SERM) can also be used to block negative feedback at the hypothalamus/AP.',
+    guideline: 'Dropkin 2024 — Testis; Male Infertility',
+  },
+
+  {
+    id: 'd-inf-005', type: 'fib', topic: 'Male Infertility',
+    topicFull: 'Male Infertility — Varicocele + Vasovasostomy',
+    question: 'Varicocelectomy and vasovasostomy should NOT be performed simultaneously because venous outflow after varicocele repair is dependent on the ___ vessels, which are divided during vasectomy/vasovasostomy → risk of testicular atrophy.',
+    answer: 'Vassal (vas deferens) vessels',
+    explanation: 'After varicocele repair, the testicular venous drainage becomes dependent on collateral vessels including the vassal veins. Simultaneously dividing these during vasovasostomy eliminates this collateral → venous hypertension → testicular atrophy. These procedures must be staged. Varicocele grading: I = Valsalva only; II = palpable at rest; III = visible at rest.',
+    guideline: 'Dropkin 2024 — Testis; Male Infertility',
+  },
+
+  {
+    id: 'd-inf-006', type: 'fib', topic: 'Male Infertility',
+    topicFull: 'Male Infertility — Antisperm Antibodies',
+    question: 'Antisperm antibody (ASA) testing should be considered when there is isolated ___ (reduced motility) with normal sperm concentration. Risk factors include ductal obstruction, genital infection, testicular trauma, and prior vasovasostomy.',
+    answer: 'Asthenospermia',
+    explanation: 'ASA testing is indicated for isolated asthenospermia with normal concentration, agglutination, or abnormal postcoital test. ASA forms when the blood-testis barrier is disrupted. Cryptozoospermia and extremely severe oligozoospermia can both be treated with ICSI (intracytoplasmic sperm injection).',
+    guideline: 'Dropkin 2024 — Testis; AUA Infertility Best Practice Statement (2011)',
+  },
+
+  // ── PENILE CANCER ─────────────────────────────────────────
+
+  {
+    id: 'd-penca-001', type: 'fib', topic: 'Penile Cancer',
+    topicFull: 'Penile Cancer — Staging',
+    question: 'Penile cancer staging: Ta = SCC not invaded deep to epidermis (~10% progress). T1a = through epidermis, no LVI/PNI, not HG. T1b = through epidermis + ___ of: LVI, PNI, or HG (G3 or sarcomatoid). T2 = corpus ___.',
+    answer: '1 or more / Corpus spongiosum',
+    explanation: 'T1b requires only 1 of: LVI, PNI, or high grade (G3/sarcomatoid) to be present. T2 = corpus spongiosum ± urethra. T3 = corpus cavernosum (including TA) ± urethra. T4 = adjacent structures. TIP chemotherapy for advanced/metastatic disease = Paclitaxel, Ifosfamide, Cisplatin.',
+    guideline: 'Dropkin 2024 — Penis; NCCN Penile Cancer Guideline (2024)',
+  },
+];
