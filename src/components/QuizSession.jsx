@@ -8,12 +8,30 @@ import FillBlank from './FillBlank.jsx'
 const SESSION_SIZE = 3
 
 // Track shown question IDs across sessions (within page load)
-const shownIds = new Set()
+const SHOWN_KEY = 'uro-boards-shown'
+
+function getShownIds() {
+  try {
+    return new Set(JSON.parse(localStorage.getItem(SHOWN_KEY) || '[]'))
+  } catch { return new Set() }
+}
+
+function saveShownIds(set) {
+  localStorage.setItem(SHOWN_KEY, JSON.stringify([...set]))
+}
+
+const shownIds = getShownIds()
 
 function pickQuestions(pool, count) {
   const unseen = pool.filter(q => !shownIds.has(q.id))
-  const source = unseen.length >= count ? unseen : pool
-  const shuffled = [...source].sort(() => Math.random() - 0.5)
+  // Reset if you've seen everything
+  if (unseen.length < count) {
+    shownIds.clear()
+    saveShownIds(shownIds)
+    const shuffled = [...pool].sort(() => Math.random() - 0.5)
+    return shuffled.slice(0, count)
+  }
+  const shuffled = [...unseen].sort(() => Math.random() - 0.5)
   return shuffled.slice(0, count)
 }
 
@@ -82,6 +100,7 @@ export default function QuizSession({ userName, onComplete }) {
   const handleAnswer = (isCorrect) => {
     const q = questions[currentIdx]
     shownIds.add(q.id)
+     saveShownIds(shownIds)
 
     setAnswers(prev => [
       ...prev,
