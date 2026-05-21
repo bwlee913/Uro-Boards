@@ -2525,5 +2525,553 @@ export const DROPKIN_CARDS = [
     explanation: 'Flibanserin (DAISY, VIOLET, BEGONIA, SNOWDROP trials): daily oral, works on 5-HT1A/2A receptors and D4 receptors → modest increase in satisfying sexual events. Major SE: somnolence, dizziness — contraindicated with alcohol and CYP3A4 inhibitors. Bremelanotide: on-demand SC injection, α-MSH analogue (melanocortin receptor agonist) → causes nausea in ~40%. Contraindicated in uncontrolled HTN.',
     guideline: 'Dropkin 2024 — Testis; Female Sexual Dysfunction Trials',
   },
+// ══════════════════════════════════════════════════════════
+  //  PROSTATITIS
+  // ══════════════════════════════════════════════════════════
 
+  {
+    id: 'd-prostatitis-001', type: 'fib', topic: 'Prostatitis',
+    topicFull: 'Prostatitis — NIH Classification',
+    question: 'NIH Prostatitis Category III (CPPS) is divided into Type ___ (inflammatory = WBCs in expressed prostatic secretions/post-massage urine/semen) and Type ___ (non-inflammatory = no WBCs). Category IV = ___.',
+    answer: 'Type IIIA (Inflammatory) / Type IIIB (Non-inflammatory) / Asymptomatic inflammatory prostatitis (incidental Dx on TRUS biopsy)',
+    explanation: 'NIH Classification: I = Acute Bacterial (UTI symptoms, MC E. coli). II = Chronic Bacterial (rUTI due to same organism). III = CPPS (urological pain without easily definable pathology). IV = Asymptomatic inflammatory prostatitis (found on biopsy for elevated PSA — no symptoms). Alfuzosin for CPPS showed NO benefit vs. placebo (NEJM, 2008; 49% improvement in BOTH groups, p = 0.99).',
+    guideline: 'Dropkin 2024 — Prostate; NIH Prostatitis Classification (JAMA, 1999)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  RADICAL CYSTECTOMY / URINARY DIVERSION
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-rc-001', type: 'fib', topic: 'Bladder Cancer',
+    topicFull: 'MIBC — Alvimopan',
+    question: 'Alvimopan (Entereg®) is a mu-opioid ___ that accelerates GI recovery after RC/IC. It is contraindicated in patients with therapeutic opioid use ≥ ___ days pre-op.',
+    answer: 'Antagonist / 7 days',
+    explanation: 'Alvimopan trial (Eur Urol, 2014): faster GI recovery (5.5 vs. 6.8 days, p < 0.001), shorter LOS (7.4 vs. 10.1 days), fewer ileus-related morbidities (8 vs. 29%). AUA guideline SHOULD recommend alvimopan after RC unless contraindicated. Contraindicated with chronic opioid use ≥ 7 days pre-op because drug effects can be exacerbated (abdominal pain, N/V, diarrhea).',
+    guideline: 'Dropkin 2024 — MIBC; Alvimopan Trial (Eur Urol, 2014)',
+  },
+
+  {
+    id: 'd-rc-002', type: 'fib', topic: 'Bladder Cancer',
+    topicFull: 'MIBC — RAZOR and iROC Trials',
+    question: 'RAZOR trial (Lancet, 2018): robotic vs. open RC → 2-yr PFS ___% for BOTH groups (non-inferior). iROC trial (JAMA, 2022): robotic RC with INTRAcorporeal diversion had lower ___ (2 vs. 8%) and ___ complications (6 vs. 16%).',
+    answer: '72% / VTE complications / Wound complications',
+    explanation: 'RAZOR: all patients had extracorporeal diversion — no functional difference at 2 years. iROC: intracorporeal diversion (robotic) → more days alive and out of hospital within 90 days (82 vs. 80, p < 0.05), lower VTE and wound complications, worse QoL for open at 3 months but similar beyond. Cancer recurrence and OS were similar in both trials.',
+    guideline: 'Dropkin 2024 — MIBC; RAZOR (Lancet, 2018), iROC (JAMA, 2022)',
+  },
+
+  {
+    id: 'd-rc-003', type: 'fib', topic: 'Bladder Cancer',
+    topicFull: 'MIBC — Neoadjuvant Chemotherapy (SWOG 8710)',
+    question: 'SWOG 8710 (NEJM, 2003): neoadjuvant MVAC before RC improved median OS compared to RC alone (___ vs. 46 months). NAC must be cisplatin-based; carboplatin-based NAC should ___.',
+    answer: '77 months / NOT be used',
+    explanation: 'SWOG 8710 (300 patients, T2-T4a N0M0): 3 cycles MVAC + RC vs. RC alone → median OS 77 vs. 46 months (p = 0.06 but clinically significant). RC should follow within 12 weeks of NAC. Cisplatin-based AC is offered for non-organ-confined disease at cystectomy (T3, T4, or N+). NAC carboplatin is not an acceptable substitute for cisplatin.',
+    guideline: 'Dropkin 2024 — MIBC; SWOG 8710 (NEJM, 2003)',
+  },
+
+  {
+    id: 'd-rc-004', type: 'fib', topic: 'Bladder Cancer',
+    topicFull: 'Ileal Conduit — Key Pearls',
+    question: 'Ileal conduit should be formed ___ (superior/inferior) to the bowel anastomosis ("water under the bridge"). Decreased UOP + increased drain output 4 days after RC/IC → first step is ___.',
+    answer: 'Inferior (under) / Catheter in the stoma',
+    explanation: 'Most accurate renal function assessment after IC: FeNa (fractional excretion of sodium). Ammoniagenic coma: urinary ammonium absorbed by conduit → liver metabolizes to urea (ornithine cycle); if liver dysfunction → ammonia rises → coma → treat with oral neomycin or lactulose. Parastomal hernia: biggest RF = stoma placed LATERAL to the rectus abdominis.',
+    guideline: 'Dropkin 2024 — Bladder; Ileal Conduit Related Testing Pearls',
+  },
+
+  {
+    id: 'd-rc-005', type: 'fib', topic: 'Bladder Cancer',
+    topicFull: 'Neobladder — Contraindications',
+    question: 'Orthotopic neobladder contraindications include: inability/unwillingness to ___, urethral stricture, SUI, GFR < ___, severe liver disease, (+) urethral margin, IBD, short bowel syndrome.',
+    answer: 'CIC (self-catheterize) / GFR < 50',
+    explanation: 'Detubularized ileum is the bowel segment of choice for neobladder (superior compliance, lowest high-pressure contraction risk). Minimum renal function requirements: CrCl > 35 mL/min, urine pH 5.8 with ammonium challenge (can acidify urine), concentrate to 600 mOsm/kg with fluid restriction. Nocturnal incontinence after neobladder = loss of afferent detrusor-to-CNS input that normally triggers reflex urethral pressure rise during filling.',
+    guideline: 'Dropkin 2024 — Bladder; Orthotopic Ileal Neobladder',
+  },
+
+  {
+    id: 'd-rc-006', type: 'fib', topic: 'Bladder Cancer',
+    topicFull: 'Ileal Conduit — Diarrhea after Diversion',
+    question: 'Ileal resection > 40 cm but < 100 cm → ↓ bile salt absorption → ___ diarrhea → treat with ___. Ileocecal valve or colon resection → osmotic diarrhea → treat with bulking agents + ___.',
+    answer: 'Secretory diarrhea / Cholestyramine (bile-acid sequestrant) / Loperamide (Imodium)',
+    explanation: 'Cholestyramine binds bile acids in GI tract, reducing colonic irritation. Loperamide: opioid receptor agonist in myenteric plexus → ↓ bowel transit. Ileal resection > 100 cm → so much bile salt loss and fat malabsorption → osmotic diarrhea predominates → bulking agents. Ureteroenteric strictures: early (< 1 yr) = devascularization/angulation; late = fibrotic. Short strictures (< 2 cm) → endoscopic; long (> 2 cm) → open repair.',
+    guideline: 'Dropkin 2024 — Bladder; Ileal Conduit, Diarrhea after Diversion',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  EMBRYOLOGY
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-embryo-001', type: 'fib', topic: 'Embryology',
+    topicFull: 'Embryology — Germ Layer Derivatives',
+    question: 'Embryonic germ layers: ___ (internal layer) → bladder + urethra. ___ (middle layer) → kidney, ureter, SV, vas deferens, adrenal cortex. Neural Crest (from ectoderm) → peripheral nervous system + adrenal ___.',
+    answer: 'Endoderm / Mesoderm / Adrenal medulla',
+    explanation: 'The adrenal medulla arises from neural crest cells — embryologically distinct from the kidney. Therefore the adrenal is ALWAYS orthotopic regardless of kidney location (e.g., the adrenal stays in the retroperitoneum even if the kidney is ectopic in the pelvis). This is why we do not routinely remove the adrenal at radical nephrectomy unless there is direct invasion.',
+    guideline: 'Dropkin 2024 — Embryology; Larsen\'s Human Embryology 4th Ed.',
+  },
+
+  {
+    id: 'd-embryo-002', type: 'fib', topic: 'Embryology',
+    topicFull: 'Embryology — Kidney Development',
+    question: 'The definitive kidney (metanephros) is induced by ___ buds (from mesonephric/Wolffian ducts in the 5th week) to develop into definitive kidneys, ascending to final position in weeks ___. The metanephric blastema forms Bowman\'s capsule, PCT, loop of Henle, and ___.',
+    answer: 'Ureteric buds / Weeks 6–9 / DCT',
+    explanation: 'Ureteric bud derivatives: collecting tubules, collecting ducts, major/minor calyces, renal pelvis, ureter. Metanephric blastema derivatives: nephron components (Bowman\'s capsule through DCT). Normally the ureteric bud doesn\'t bifurcate until entering the metanephric blastema — premature bifurcation → bifid collecting system. Renal ascent with horseshoe kidney is restricted by the IMA.',
+    guideline: 'Dropkin 2024 — Embryology; Kidney Development',
+  },
+
+  {
+    id: 'd-embryo-003', type: 'fib', topic: 'Embryology',
+    topicFull: 'Embryology — Mesonephric Duct → Trigone',
+    question: 'The mesonephric (Wolffian) ducts grow caudally, give off ureteric buds in the ___ week, and ultimately implant into the UG sinus to give rise to the ___.',
+    answer: '5th week / Trigone',
+    explanation: 'The trigone of the bladder has a mesonephric (Wolffian/urothelial) origin, which is why it has a distinct histological appearance from the rest of the bladder wall. The pronephros (cervical region) is the vestige of primitive kidneys with no function and regresses in the 4th week.',
+    guideline: 'Dropkin 2024 — Embryology; Intermediate Mesoderm',
+  },
+
+  {
+    id: 'd-embryo-004', type: 'fib', topic: 'Embryology',
+    topicFull: 'Embryology — Urogenital Sinus',
+    question: 'The cloaca is partitioned around week ___ by the urorectal septum. Superior UG sinus → bladder. Inferior UG sinus → ___ + vestibule/distal 1/3 of vagina. Phallic segment → ___ urethra. Failure of urethral fusion → hypospadias.',
+    answer: 'Week 7 / Posterior urethra (prostatic/membranous in males) / Penile urethra',
+    explanation: 'Failure of urorectal septum to partition → persistent cloaca. Failure of lateral mesodermal fold fusion → exstrophy (bladder exstrophy if after urorectal partition; cloacal exstrophy if before; epispadias if only inferior portion fails). Bladder exstrophy suspected when multiple prenatal US fail to identify a bladder despite adequate filling time.',
+    guideline: 'Dropkin 2024 — Embryology; Urogenital Sinus',
+  },
+
+  {
+    id: 'd-embryo-005', type: 'fib', topic: 'Embryology',
+    topicFull: 'Embryology — Sexual Differentiation',
+    question: 'SRY gene on ___ arm of Y chromosome → Sertoli cells produce ___ → inhibits Mullerian duct development. hCG → Leydig cells produce T → virilization of Wolffian ducts. T → ___ by 5AR → prostate, penis, scrotum.',
+    answer: 'Short arm / MIS (Mullerian Inhibiting Substance) / DHT',
+    explanation: 'Male Wolffian structures: efferent ductules → epididymis ("Wepididymis") → vas → ejaculatory ducts + SVs. Mullerian remnant in males = prostatic utricle ("Putricle") — present in 10–15% of boys with proximal hypospadias. Female Mullerian structures: fallopian tubes → uterus → proximal vagina. Female external genitalia develop under estrogen. M vs. F determination occurs in the 7th week.',
+    guideline: 'Dropkin 2024 — Embryology; Sexual Differentiation',
+  },
+
+  {
+    id: 'd-embryo-006', type: 'fib', topic: 'Embryology',
+    topicFull: 'Embryology — Homologous Structures',
+    question: 'Female Bartholin\'s gland = male ___ gland. Skene\'s gland (periurethral) = male ___. Gartner\'s duct (anterolateral vaginal wall) = ___ duct remnant.',
+    answer: 'Bulbourethral (Cowper\'s) gland / Prostate / Wolffian (mesonephric) duct',
+    explanation: 'Homolog table: Bartholin = bulbourethral. Skene\'s = prostate. Gartner\'s = Wolffian remnant. Appendix testis = Mullerian remnant (Hydatid of Morgagni) → blue dot sign (30%), treat torsion with NSAIDs. Appendix epididymis = Wolffian remnant → treat torsion with NSAIDs. MRKH = Mullerian agenesis → 1/3 have renal agenesis. VACTERL association a/w renal agenesis.',
+    guideline: 'Dropkin 2024 — Embryology; Homologous Structures Table',
+  },
+
+  {
+    id: 'd-embryo-007', type: 'fib', topic: 'Embryology',
+    topicFull: 'Embryology — Retrocaval Ureter',
+    question: 'Retrocaval ureter (pre-ureteral IVC) occurs when the right ___ cardinal vein (ventral to ureter) persists and forms the renal segment of the IVC instead of the right ___ vein (dorsal to ureter). Treat with dismembered ureteroplasty when symptomatic.',
+    answer: 'Posterior cardinal vein / Subcardinal vein',
+    explanation: 'The right ureter normally passes posterior to the IVC. In retrocaval ureter, the vena cava forms from the wrong embryonic vessel, ending up anterior to the ureter — the ureter then has to hook around it. Presents with hydronephrosis and flank pain. Repair: transect ureter, swing it out from behind the IVC, and re-anastomose (dismembered ureteroplasty).',
+    guideline: 'Dropkin 2024 — Embryology; Testing Pearls',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  STATISTICS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-stats-001', type: 'fib', topic: 'Statistics',
+    topicFull: 'Statistics — Error Types and Power',
+    question: 'Type I error = ___ (rejecting null when it\'s true); probability = alpha. Type II error = ___ (accepting null when it\'s false); probability = beta. Power = probability of avoiding a Type ___ error = 1 – beta.',
+    answer: 'False positive / False negative / Type II error',
+    explanation: 'p < 0.05: ≤ 5% chance results are due to chance → reject null (H0). A 95% CI that INCLUDES 1 (for ratios) or includes 0 (for differences) indicates lack of statistical significance (p > 0.05). Power is the probability of correctly detecting a true difference when one exists. Low power → high risk of Type II error (false negative study).',
+    guideline: 'Dropkin 2024 — Statistics; Testing Pearls',
+  },
+
+  {
+    id: 'd-stats-002', type: 'fib', topic: 'Statistics',
+    topicFull: 'Statistics — SpIN/SnOUT and NNT',
+    question: 'SpIN: a test with high ___ rules IN a diagnosis (few false positives). SnOUT: a test with high ___ rules OUT a diagnosis (few false negatives). NNT = 1 / ___.',
+    answer: 'Specificity / Sensitivity / ARR (Absolute Risk Reduction)',
+    explanation: 'Sensitivity = TP/(TP+FN). Specificity = TN/(TN+FP). PPV = TP/(TP+FP). NPV = TN/(TN+FN). NNT = 1/ARR. Example from SPCG-4: surgery vs. watchful waiting → NNT = 8 to prevent 1 PCa death at 23 years. Hazard Ratio: odds ratio with time incorporated (from Cox Proportional Hazards Model) — used for survival analyses in RCTs.',
+    guideline: 'Dropkin 2024 — Statistics; Testing Pearls',
+  },
+
+  {
+    id: 'd-stats-003', type: 'fib', topic: 'Statistics',
+    topicFull: 'Statistics — Statistical Test Selection',
+    question: 'Two continuous groups with NORMAL distribution → ___-test. Non-normal distribution → ___ Whitney U. Two categorical groups → Chi-square (or Fisher exact if any group has < ___ events).',
+    answer: 't-test / Mann Whitney / 5 events',
+    explanation: 'Binary categorical dependent variable → Logistic Regression → Odds Ratio. Quantitative continuous dependent variable → Linear Regression. Survival data with time → Cox Proportional Hazards Model → Hazard Ratio. Normally distributed data described with mean ± SD; non-normally distributed with median (IQR). >2 groups: normal → ANOVA; non-normal → Kruskal Wallis.',
+    guideline: 'Dropkin 2024 — Statistics; Testing Pearls',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  DVT PROPHYLAXIS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-dvt-001', type: 'fib', topic: 'Perioperative Management',
+    topicFull: 'DVT Prophylaxis — Risk Stratification',
+    question: 'DVT prophylaxis: Low risk → early ambulation only. Moderate risk → SQH 5000u q12h OR Enoxaparin 40 mg qDay. High risk → SQH 5000u ___ (q8h/q12h) OR Enoxaparin 40 mg qDay. Highest risk → SCDs for ALL + ___.',
+    answer: 'q8h / SQH or LMWH',
+    explanation: 'High DVT risk criteria: surgery in patients 40–60 with risk factors OR surgery in any patient > 60. Highest risk: surgery with multiple risk factors. DVT risk factors include: surgery, trauma, immobility, malignancy, cancer therapy, prior VTE, age, pregnancy, estrogen use, SERMs, heart/respiratory failure, IBD, nephrotic syndrome, obesity, central venous catheterization, thrombophilia.',
+    guideline: 'Dropkin 2024 — Perioperative; AUA DVT Prevention Statement (2009)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  ANTICOAGULATION MANAGEMENT
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-ac-001', type: 'fib', topic: 'Perioperative Management',
+    topicFull: 'Anticoagulation — DAPT and Stents',
+    question: 'DAPT should NOT be withdrawn prior to urologic procedures within ___ months of drug-eluting stent (DES) placement or within ___ months of bare metal stent (BMS) placement (older guideline). Newer AHA guideline: at least ___ months for DES and ___ month for BMS.',
+    answer: '12 months / 3 months / 6 months / 1 month',
+    explanation: 'Withdrawal of DAPT within these time windows risks catastrophic stent thrombosis → major adverse cardiac events. Always consult cardiology. Continue ASA perioperatively in patients on it for secondary stroke prevention. Low-dose ASA alone can continue for most procedures without increased transfusion risk (possible exception: TURP).',
+    guideline: 'Dropkin 2024 — Perioperative; ICUD/AUA Anticoagulation White Paper (2014)',
+  },
+
+  {
+    id: 'd-ac-002', type: 'fib', topic: 'Perioperative Management',
+    topicFull: 'Anticoagulation — Warfarin Bridging',
+    question: 'Warfarin for Afib: stop ___ days before surgery → restart ___ hours after surgery if bleeding risk is acceptable. Bridging required when INR falls below ___ in patients with mechanical mitral valve or mechanical aortic valve + any additional risk factor.',
+    answer: '5 days / 12–24 hours / INR < 2.0 (start bridging 48 hours before surgery)',
+    explanation: 'High thrombosis risk = mechanical mitral valve OR mechanical aortic valve + any risk factor → bridge with therapeutic or prophylactic heparin when INR < 2.0 (~48 hrs before surgery). Warfarin-enhancing drugs (enhance hypo-clotting): allopurinol, aminoglycosides, fluoroquinolones, metronidazole, Bactrim, vitamin E, among others.',
+    guideline: 'Dropkin 2024 — Perioperative; ICUD/AUA Anticoagulation White Paper (2014)',
+  },
+
+  {
+    id: 'd-ac-003', type: 'fib', topic: 'Perioperative Management',
+    topicFull: 'Anticoagulation — Procedure-Specific Rules',
+    question: 'URS ___ (can/cannot) be performed with continuation of oral AC/AP therapy. SWL: AC/AP must be ___. Laser prostate surgery (PVP/HoLEP) ___ be safely performed with therapeutic INR.',
+    answer: 'Can / Discontinued and reversed / Can',
+    explanation: 'Procedure-specific anticoagulation rules: URS → continue AC/AP. SWL → must discontinue and reverse AC/AP. PCNL → discontinue AC/AP, bridge where necessary. TURP + AC → increased bleeding risk throughout perioperative period. Laser prostate surgery (PVP) → can be performed with therapeutic INR in patients at significant thrombosis risk without stopping AC. RALP and pNx have been performed with bridging therapy but with increased bleeding risk.',
+    guideline: 'Dropkin 2024 — Perioperative; ICUD/AUA Anticoagulation White Paper (2014)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  FLUOROSCOPY / CONTRAST / URORADIOLOGY
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-rad-001', type: 'fib', topic: 'Uroradiology',
+    topicFull: 'Fluoroscopy Safety — Radiation Dose',
+    question: 'Radiation dose is LOWER with: more ___ (limits scatter), last image hold, and patient positioned ___ from the XR tube and ___ to the image intensifier. Inverse Square Law: doubling SOD reduces exposure to ___ of original.',
+    answer: 'Collimation / Far from XR tube / Close to image intensifier / 1/4 (25%)',
+    explanation: 'Radiation dose is HIGHER with: higher pulse fluoroscopy rate (fps) and more magnification (smaller field of view = higher dose to surgeon). Scatter radiation is the PRIMARY source of radiation exposure to the surgeon. Pregnant physicians can perform fluoroscopy at any point in pregnancy — wear dosimetry badge on abdomen UNDER the lead apron.',
+    guideline: 'Dropkin 2024 — Uroradiology; Fluoroscopy Safety Testing Pearls',
+  },
+
+  {
+    id: 'd-rad-002', type: 'fib', topic: 'Uroradiology',
+    topicFull: 'Contrast Reactions — Management',
+    question: 'Contrast anaphylaxis: subQ epinephrine ___ mL of 1:1000 concentration. Vasovagal reaction: IV ___ 0.5–1 mg. Pre-medication for contrast allergy: prednisone ___ mg at 13, 7, and 1 hour pre-scan + diphenhydramine 50 mg 1 hour pre-scan.',
+    answer: '0.1–0.3 mL of 1:1000 (or IV 1–3 mL of 1:10,000) / Atropine / 50 mg',
+    explanation: 'Contrast-induced nephropathy (CIN): 50% rise in serum Cr, symptoms within 24–48 hours, resolve within 2 weeks. Prevention: aggressive hydration ± NAC ± Na-bicarb. Only patients with HISTORY OF CKD need eGFR/Cr screening prior to CT scan. Duplex US: gray-scale (architecture) + Doppler (flow — red = toward transducer, blue = away).',
+    guideline: 'Dropkin 2024 — Uroradiology; Contrast Complications and Management',
+  },
+  // ══════════════════════════════════════════════════════════
+  //  ADRENAL ONCOLOGY — FULL SECTION
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-adrenal-g001', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal Anatomy — Vasculature',
+    question: 'Adrenal blood supply: ___ arteries (inferior phrenic, aorta at SMA, renal artery). Right adrenal vein = "vein of death" → inserts into ___. Left adrenal vein → ___.',
+    answer: '3 arteries / IVC / Left renal vein (± inferior phrenic vein)',
+    explanation: 'The right adrenal vein is short and drains directly into the IVC — inadvertent avulsion = life-threatening IVC hemorrhage ("vein of death"). The left adrenal vein drains into the left renal vein, similar to the left gonadal vein. If the adrenal is not easily identifiable intraoperatively → use intraoperative US. On left: mobilize spleen, pancreatic tail, and splenic flexure. On right: mobilize hepatic flexure, duodenum, and liver.',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; Adrenal Anatomy Testing Pearls',
+  },
+
+  {
+    id: 'd-adrenal-g002', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal Layers — GFR Mnemonic',
+    question: 'Adrenal cortex layers (superficial to deep, mnemonic GFR): Glomerulosa → ___, Fasciculata → ___, Reticulata → ___. Medulla (neural crest) → chromaffin cells → catecholamines.',
+    answer: 'Mineralocorticoids / Glucocorticoids / Sex hormones',
+    explanation: 'GFR: "The deeper you go, the sweeter it gets" — Glomerulosa (salt/mineralocorticoids), Fasciculata (sugar/glucocorticoids), Reticulata (sex hormones). Catecholamines broken down by COMT and MAO → normetanephrine, metanephrine, and VMA. Dietary precursors: tyrosine and phenylalanine.',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; Adrenal Layers Testing Pearls',
+  },
+
+  {
+    id: 'd-adrenal-g003', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal Incidentaloma — Imaging Characteristics',
+    question: 'On non-contrast CT: < ___ HU = diagnostic for lipid-rich adrenal adenoma. Myelolipoma: < ___ to ___ HU (macroscopic fat), high ___ signal on MRI. Pheochromocytoma: > 10 HU, enhances to > 100 HU, "___ bulb sign" on T2 MRI.',
+    answer: '10 HU / –10 to –15 HU / T1 signal / Light bulb sign',
+    explanation: 'CT washout (15 min post-contrast): > 60% absolute washout AND > 40% relative washout = lipid-poor adenoma ("cancer is greedy and retains contrast"). ~30% of adenomas are lipid-poor and don\'t exhibit < 10 HU. MRI: fat is bright on T1; H2O is bright on T2. ACC: mean 39 HU on non-con CT, generally > 4 cm, heterogeneous with calcifications and necrosis. Adrenal mets: 70% of patients with known extra-adrenal cancer and incidental mass > 10 HU will have metastatic disease.',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; CUA/AUA Adrenal Incidentaloma Guideline (2023)',
+  },
+
+  {
+    id: 'd-adrenal-g004', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Pheochromocytoma — Most Sensitive Test',
+    question: 'The most sensitive test for pheochromocytoma is ___ free metanephrines (drawn supine after ___ minutes of rest, no caffeine for 24 hours). A value ___ × normal is definitive for pheo.',
+    answer: 'Plasma / 20 minutes / 4×',
+    explanation: 'Catecholamines (epi, norepi, dopamine) are paroxysmal and less reliable. False positive metanephrines caused by: stimulants (caffeine, nicotine), TCAs, MAOIs, SSRIs, and acetaminophen (distorts assay). Confirm elevated result after several weeks off these substances. Do NOT perform dexamethasone suppression testing if pheo suspected (> 10 HU on non-con CT) — can trigger catecholaminergic crisis.',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; Pheochromocytoma',
+  },
+
+  {
+    id: 'd-adrenal-g005', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Pheochromocytoma — Rule of 10s',
+    question: 'Rule of 10s for pheochromocytoma: ~10% each are ___, malignant, ___ (both sides), familial, pediatric, extra-adrenal (paraganglioma), and multiple.',
+    answer: 'Normotensive / Bilateral',
+    explanation: 'Extra-adrenal pheochromocytoma = paraganglioma (arises from neural-crest tissue outside the adrenal). After adrenalectomy for pheo: continued HTN → check plasma free metanephrines → if still elevated → MIBG scan (identifies additional lesions in 10–20%). Ga-68 Dotatate PET/CT (high affinity for somatostatin receptors) used for metastatic pheo. Oral clonidine test: differentiates pheo from essential HTN — norepi drops significantly only in essential HTN.',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; Pheochromocytoma Rule of 10s',
+  },
+
+  {
+    id: 'd-adrenal-g006', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenocortical Carcinoma — Weiss Criteria',
+    question: 'Weiss criteria distinguish benign from malignant adrenal lesions — ___ or more criteria = malignant. Key criteria include: high mitotic rate (> ___ /hpf), atypical mitoses, venous invasion, high nuclear grade (Fuhrman 3–4), < 25% clear cells, diffuse growth, necrosis.',
+    answer: '3 or more / 5 mitoses/hpf',
+    explanation: 'ACC: 80% are functional — MC secretions include glucocorticoids + androgens + estradiol + aldosterone. MC presentation = Cushing\'s + virilization/feminization. ACC tends to secrete ketosteroids and DHEA (more pronounced hirsutism vs. adenomas). 5-year OS: 35% clinically localized, 50% pathologically confined. Adjuvant mitotane after resection. Metastatic ACC: mitotane + cisplatin + etoposide + doxorubicin + streptozotocin. FDG PET/CT recommended when ACC suspected.',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; ACC / Weiss Criteria',
+  },
+
+  {
+    id: 'd-adrenal-g007', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal — Cushing\'s Workup',
+    question: 'Cushing\'s syndrome is diagnosed with a ___ cortisol test, then serum ___ to determine if ACTH-dependent (> 10 pg/mL → pituitary/ectopic source) or independent (< 5 pg/mL → adrenal tumor). High-dose dexamethasone ___ (does/does not) suppress ACTH in Cushing\'s disease.',
+    answer: 'Cortisol test (1-mg overnight dex suppression or 24-hr urinary cortisol) / ACTH / Does suppress (but not in adrenal tumor or ectopic ACTH)',
+    explanation: 'Cushing\'s disease = anterior pituitary tumor secreting ACTH (MC cause of Cushing\'s syndrome). High-dose dex suppresses pituitary ACTH → suppresses urinary 17-hydroxycorticosteroids. Does NOT suppress adrenal tumor or ectopic ACTH. Oral contraceptives cause false positive dexamethasone tests. Inferior petrosal vein sampling confirms pituitary source. Iodocholesterol scanning finds ectopic steroid-producing tumors.',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; Hypercortisolism',
+  },
+
+  {
+    id: 'd-adrenal-g008', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal — Nelson\'s Syndrome',
+    question: 'Nelson\'s syndrome develops in ___% of patients who had bilateral adrenalectomy for Cushing\'s syndrome, presenting with headache and visual field changes from pituitary ___ (chromophobe adenoma). Mechanism: ↓ cortisol negative feedback → ↑ CRH → ↑ pituitary tumor growth.',
+    answer: '10–30% / Tumor secreting ACTH',
+    explanation: 'Nelson\'s syndrome: bilateral adrenalectomy removes the cortisol negative feedback → CRH from hypothalamus ↑ → ACTH-secreting pituitary tumor grows → Nelson\'s. Diagnosis: MRI brain + ACTH level. Treatment: radiation (prophylactic or therapeutic), transsphenoidal surgery, or pharmacotherapy (octreotide, temozolomide, pasireotide).',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; Nelson\'s Syndrome',
+  },
+
+  {
+    id: 'd-adrenal-g009', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal — The "M\'s" of Adrenal Massology',
+    question: 'Adrenal "M\'s": ___ = steroidogenesis inhibitor cytotoxic to adrenal cortex (advanced ACC). ___ = tyrosine hydroxylase inhibitor (for pheo if alpha-blockade insufficient). ___ = inhibits 11-deoxycortisol→cortisol conversion (for persistent hypercortisolism after adrenalectomy).',
+    answer: 'Mitotane / Metyrosine (Demser®) / Metyrapone (Metopirone®)',
+    explanation: 'The 4 M\'s: Mitotane (cytotoxic to adrenal cortex, used for advanced ACC), Metyrosine (inhibits tyrosine hydroxylase — rate-limiting step in catecholamine synthesis — used for pheo), Metyrapone (inhibits 11-deoxycortisol → cortisol conversion, used when hypercortisolism persists after adrenalectomy), MIBG scan (identifies additional catecholamine sources post-adrenalectomy; also used therapeutically with I-131-MIBG for metastatic/unresectable pheo).',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; M\'s of Adrenal Massology',
+  },
+
+  {
+    id: 'd-adrenal-g010', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal — Primary Aldosteronism Workup',
+    question: 'Primary aldosteronism (Conn\'s): 70% = aldosteronoma vs. 30% bilateral causes. (+) screen = ARR > 20. Confirm with salt loading test (urine aldosterone > ___ mcg and urine K+ > ___ mEq/24 hr). Adrenal venous sampling required in patients > ___ years old.',
+    answer: '14 mcg / 30 mEq / 40 years old',
+    explanation: 'Primary aldosteronism suppresses renin/angiotensin but does NOT typically cause sustained serum K+, Na+, or overall fluid volume changes. Adrenal venous sampling (under ACTH stimulation): could have bilateral lesions even with unilateral adenoma on CT. Functional adenoma → adrenalectomy. Bilateral hyperplasia → mineralocorticoid receptor antagonist (spironolactone or eplerenone). Pre-op Conn\'s management: K+-sparing diuretics (amiloride, triamterene, spironolactone, eplerenone).',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; Hyperaldosteronism',
+  },
+
+  {
+    id: 'd-adrenal-g011', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal — Key Prognostic Pearls',
+    question: 'Best predictor of MALIGNANT RISK for an adrenal mass = ___. Best predictor of OVERALL SURVIVAL after adrenalectomy for ACC = ___.',
+    answer: 'Size / Margin status (R0 resection)',
+    explanation: 'Adrenal incidentaloma follow-up: adenomas < 4 cm, myelolipomas, small masses with microscopic fat → no follow-up needed. Adenomas 4 cm → repeat imaging in 6–12 months to assess growth. Indeterminate non-functional lesions → repeat imaging in 3–6 months vs. adrenalectomy. Partial adrenalectomy indicated for: solitary gland, bilateral disease, familial syndromes (VHL, MEN). Adrenal and renal embryology are independent — adrenal glands are always orthotopic regardless of kidney location.',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; Miscellaneous Testing Pearls',
+  },
+
+  {
+    id: 'd-adrenal-g012', type: 'fib', topic: 'Adrenal',
+    topicFull: 'Adrenal Insufficiency — Management',
+    question: 'Acute adrenal insufficiency presents with hypotension, fever, lethargy, nausea, anorexia. Treatment: ___ + IV ___. Confirm diagnosis with ___ stimulation test (cortisol doesn\'t rise significantly in adrenal insufficiency).',
+    answer: '3L D5-NS / Corticosteroids (hydrocortisone or dexamethasone) / ACTH stimulation test',
+    explanation: 'Adrenal insufficiency causes: primary (autoimmune, infectious, hemorrhagic) or secondary (metastases, surgical removal after bilateral renal surgery, pituitary disease, exogenous steroids). Don\'t wait on lab results before treating — send CMP + ACTH + cortisol, then start treatment immediately. Begin steroid therapy (fludrocortisone for mineralocorticoid replacement) after diagnosis is confirmed.',
+    guideline: 'Dropkin 2024 — Adrenal Oncology; Adrenal Insufficiency',
+  },
+  // ══════════════════════════════════════════════════════════
+  //  SURGICAL STONE MANAGEMENT
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-surg-stone-001', type: 'fib', topic: 'Urolithiasis',
+    topicFull: 'Surgical Stone Management — Lower Pole Trials',
+    question: 'Lower Pole I (J Urol, 2001): PCNL vs. SWL for > 1 cm LP stones → 3-month stone-free rate ___% vs. ___%. Lower Pole II (J Urol, 2005): SWL and URS have ___ efficacy for < 1 cm LP stones.',
+    answer: '95% PCNL vs. 37% SWL / Similar (50 vs. 35%, p > 0.05)',
+    explanation: 'Lower Pole I: SWL success for LP stones > 1 cm was only 21%. Lower Pole II: QoL favored SWL (p < 0.05) despite similar stone-free rates. Stone sizing table: < 1 cm LP or non-LP → SWL/URS. 1–2 cm LP → URS or PCNL (NOT SWL). > 2 cm anywhere → PCNL (NOT SWL). Total renal burden > 20 mm → PCNL first line.',
+    guideline: 'Dropkin 2024 — Kidney; Lower Pole I (J Urol, 2001), Lower Pole II (J Urol, 2005)',
+  },
+
+  {
+    id: 'd-surg-stone-002', type: 'fib', topic: 'Urolithiasis',
+    topicFull: 'Surgical Stone Management — SWL Pearls',
+    question: 'Decreasing SWL shock rate from 120 to ___ shocks/minute improves stone-free rates by reducing ___. Hardest stones to crack with SWL: brushite, ___, and CaOx ___. Easiest = ___ and struvite.',
+    answer: '60 shocks/minute / Cavitation bubble cloud / Cystine / CaOx monohydrate / Uric acid',
+    explanation: 'SWL cardiac arrhythmias: temporary, resolve when shocks stop; more common with ungated shocks → pause until resolved, switch to gated (R-wave synchronized). Bleeding risk with SWL: pre-op HTN and bilateral SWL are risk factors. SWL contraindications: uncorrected bleeding diathesis, anatomic/functional obstruction distal to stone, symptomatic calyceal diverticulum stones. Steinstrasse → alpha-blocker → serial imaging → URS if persistent at 4 weeks.',
+    guideline: 'Dropkin 2024 — Kidney; SWL Testing Pearls',
+  },
+
+  {
+    id: 'd-surg-stone-003', type: 'fib', topic: 'Urolithiasis',
+    topicFull: 'Surgical Stone Management — Key Rules',
+    question: 'Trial of passage (TOP) should not last more than ___ weeks before definitive stone treatment. Purulent urine encountered during URS or PCNL → ___. Forniceal rupture ___ (is/is not) a contraindication to TOP.',
+    answer: '6 weeks / Abort procedure + drain + culture + antibiotics / Is NOT',
+    explanation: 'No stent should be routinely placed before SWL or URS. URS can be done on anticoagulation. Holmium retropulsion: greater with higher pulse energy, lower frequency, shorter pulse width. Laser dusting: longer pulse width + lower peak power. Laser fragmentation: shorter pulse width + higher peak power. Safety guidewires should be used for most endoscopic procedures.',
+    guideline: 'Dropkin 2024 — Kidney; AUA Surgical Stone Management Guideline (2016)',
+  },
+
+  {
+    id: 'd-surg-stone-004', type: 'fib', topic: 'Urolithiasis',
+    topicFull: 'PCNL — Complications',
+    question: 'PCNL colonic injury: place JJ stent, back nephrostomy tube out so distal end remains in ___, leave ___ days, get contrast study, low residue diet, broad spectrum Abx. Splenic injury recognized post-op in stable patient → ___.',
+    answer: 'Colon / 7–10 days / Observe with bed rest and serial Hct',
+    explanation: 'PCNL access: inferior posterior calyx is usually best. Upper pole access for: complex lower pole anatomy, UPJ stones, proximal ureteral stones, upper pole calyceal diverticulum, horseshoe kidney. Hydrothorax → chest tube + (stent or PCN) + serial CXR. Arterial bleeding after PCN removal or delayed bright red blood → suspect AV fistula or pseudoaneurysm → replace PCN tube → IR for selective angioembolization.',
+    guideline: 'Dropkin 2024 — Kidney; PCNL Testing Pearls',
+  },
+
+  {
+    id: 'd-surg-stone-005', type: 'fib', topic: 'Urolithiasis',
+    topicFull: 'PCNL — Special Situations',
+    question: 'Horseshoe kidney PCNL: puncture more ___ (superior/inferior) than normal, through a ___ calyx (calyces point posteriorly). Renal isthmus is at ___. Pelvic kidney stones → ___ offers highest stone clearance rate.',
+    answer: 'Inferior / Posterior calyx / L3–L4 (adjacent to IMA) / Laparoscopic pyelolithotomy',
+    explanation: 'Horseshoe kidney: renal ascent restricted by IMA → isthmus stays at L3-L4. SWL is an option for non-obstructing calculi in nondependent locations. Retrorenal colon on CT → staged URS favored over PCNL (colonic injury risk). Patient refusing blood products with staghorn → staged URS. Matrix stones (proteus/E. coli) → PCNL is method of choice. 3 mm residual after PCNL → 24-hr urine (medical management has shown benefit).',
+    guideline: 'Dropkin 2024 — Kidney; PCNL Testing Pearls',
+  },
+
+  {
+    id: 'd-surg-stone-006', type: 'fib', topic: 'Urolithiasis',
+    topicFull: 'Stone Imaging — US vs CT',
+    question: 'NEJM 2014 (US vs. CT for suspected nephrolithiasis, 2759 patients): clinical endpoints were ___ between point-of-care US, radiology US, and CT groups. 6-month cumulative radiation was significantly ___ in the US groups (___ vs. 17.3 mSv for CT).',
+    answer: 'Similar / Lower / ~10 mSv',
+    explanation: 'US is a reasonable first-line imaging modality for suspected nephrolithiasis in the ED. Stone imaging accuracy: CT is gold standard. US overestimates stone size 1/3 of time for stones < 10 mm and underestimates 1/3 of time for stones > 10 mm. Non-obstructing stones: removal at time of surgery for a symptomatic stone decreases relapse rates (16 vs. 63% in the observation group at 5 years, NEJM 2022).',
+    guideline: 'Dropkin 2024 — Kidney; US vs. CT (NEJM, 2014)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  RENAL PHYSIOLOGY
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-renal-phys-001', type: 'fib', topic: 'Renal Physiology',
+    topicFull: 'Nephron Physiology — Proximal Convoluted Tubule',
+    question: 'PCT reabsorbs ___ of the glomerular ultrafiltrate. Na+ is the ___ (only/one of many) solute actively reabsorbed in PCT — all others are passively reabsorbed with Na+ coupled transport. PCT is responsible for ___ (formation of ammonia from glutamine).',
+    answer: '2/3 (66%) / Only / Ammoniagenesis',
+    explanation: 'PCT: reabsorbs all amino acids, glucose, 2/3 of ultrafiltrate isosmotically. Na+ actively reabsorbed by Na+/K+-ATPase. All others (glucose, amino acids, HCO3–, Cl–) passively follow Na+. The thick ascending loop of Henle is the most ischemia-sensitive part of the kidney — may be damaged with prolonged ischemia during partial nephrectomy.',
+    guideline: 'Dropkin 2024 — Renal Pathophysiology; Nephron Physiology',
+  },
+
+  {
+    id: 'd-renal-phys-002', type: 'fib', topic: 'Renal Physiology',
+    topicFull: 'Nephron Physiology — Loop of Henle and DCT',
+    question: 'Thick ascending LoH: Na+ reabsorbed via ___ co-transporter (blocked by loop diuretics). DCT mnemonic: if asked about Vit D, Ca++, or Thiazides → pick ___. Thiazides block the ___ cotransporter in the early DCT.',
+    answer: '2Cl-K-Na (NKCC2) / DCT / Na-Cl cotransporter',
+    explanation: 'Thin descending LoH = permeable to water → filtrate becomes hypertonic. Thick ascending = water-impermeable, Na reabsorbed actively. DCT: Thiazides → ↓ Na-Cl → ↑ Ca++ reabsorption (net ↓ urinary Ca++ via volume depletion-stimulated PCT Ca++ reabsorption). PTH and Vit D stimulate Ca++ reabsorption in DCT. Renin secreted by JG cells in afferent arteriole in response to ↓ BP and ↓ Na+ delivery at macula densa.',
+    guideline: 'Dropkin 2024 — Renal Pathophysiology; Nephron Physiology',
+  },
+
+  {
+    id: 'd-renal-phys-003', type: 'fib', topic: 'Renal Physiology',
+    topicFull: 'Nephron Physiology — Collecting Duct',
+    question: 'ADH ↑ water permeability of the distal tubule and collecting duct — blocked in the kidney by ___ and blocked in the brain by ___. Amiloride blocks ___ channels in the DCT/collecting duct (K+-sparing).',
+    answer: 'Lithium / Alcohol / ENaC (epithelial sodium channels)',
+    explanation: 'Aldosterone → ↑ open Na+ channels + regulates Na+-K+ exchange in the collecting duct. Amiloride (Midamor®) blocks ENaC → reduces Na+ reabsorption and K+ secretion (K+-sparing diuretic). Desmopressin (DDAVP) works specifically in the collecting duct to absorb water. Principal cells facilitate NaCl reabsorption; intercalated cells facilitate acid secretion.',
+    guideline: 'Dropkin 2024 — Renal Pathophysiology; Nephron Physiology',
+  },
+
+  {
+    id: 'd-renal-phys-004', type: 'fib', topic: 'Renal Physiology',
+    topicFull: 'Renal Physiology — PTH',
+    question: 'PTH actions in kidney: ___ Phos reabsorption in PCT; ___ Ca++ reabsorption in ascending LoH, DCT, and collecting duct. PTH also activates ___ hydroxylase → ↑ Vit D3 → (+) gut Ca++ absorption.',
+    answer: 'Inhibits (-) Phos reabsorption / Stimulates (+) Ca++ reabsorption / 1-hydroxylase (1-alpha hydroxylase)',
+    explanation: 'PTH is secreted by chief cells in response to hypocalcemia. Also promotes bone resorption → Ca++ release. Hyperparathyroidism: Primary = inappropriate PTH from parathyroid gland → absorptive hypercalcemia. Secondary = appropriate PTH response to hypocalcemia (MC = Vit D deficiency). Tertiary = long-standing secondary process → gland hypertrophy → loses ability to respond to Ca++ levels.',
+    guideline: 'Dropkin 2024 — Renal Pathophysiology; Nephron Physiology',
+  },
+
+  {
+    id: 'd-renal-phys-005', type: 'fib', topic: 'Renal Physiology',
+    topicFull: 'Renal Physiology — FeNa and Whitaker Test',
+    question: 'FeNa formula: 100 × (urine Na / serum Na) × (serum Cr / urine Cr). FeNa < ___% = prerenal. FeNa ___–___% = intrarenal. FeNa > ___% = postrenal (BOO, b/l ureteral obstruction).',
+    answer: '< 1% prerenal / 1–4% intrarenal / > 4% postrenal',
+    explanation: 'Spot urine Na+: prerenal < 25 mEq/L (tubule still functioning, reabsorbing Na+); intrinsic renal > 40 mEq/L (tubule not reabsorbing Na+ effectively). Whitaker test (renal-function-independent): < 14 H2O = normal; 14–20 = mild; 21–34 = moderate; > 35 H2O = severe obstruction. Na+ deficit = body weight (kg) × (125 – plasma Na+) × V; V = 0.5 in men, 0.6 in women.',
+    guideline: 'Dropkin 2024 — Renal Pathophysiology; Na+-Based Tests',
+  },
+
+  {
+    id: 'd-renal-phys-006', type: 'fib', topic: 'Renal Physiology',
+    topicFull: 'Renal Physiology — ESRD Complications',
+    question: 'Nephrogenic Systemic Fibrosis (NSF): caused by ___ (Type I and III) gadolinium-based contrasts in ESRD patients. Type II agents are ___. Best prevention: ___ on the day of the scan.',
+    answer: 'Linear (Type I and III) / Safe / Hemodialysis (HD)',
+    explanation: 'Calciphylaxis: obliterative small vessel vasculopathy → skin necrosis and ulceration; affects CKD, obesity, DM patients; observation preferred (poor wound healing after debridement). Hyperkalemia treatment ladder: Ca++ gluconate (stabilize cardiac membrane) → IV glucose + insulin → IV Na-bicarb → Kayexalate (GI excretion) → hemodialysis. Hypercoagulability in ESRD due to loss of antithrombin III into the urine.',
+    guideline: 'Dropkin 2024 — Renal Pathophysiology; ESRD Complications',
+  },
+
+  {
+    id: 'd-renal-phys-007', type: 'fib', topic: 'Renal Physiology',
+    topicFull: 'Polycystic Kidney Disease',
+    question: 'ADPCKD HTN is caused by compression of intrarenal vessels → ___ → renin-mediated HTN → treat with ___. ADPCKD is associated with ___. ARPCKD is associated with ___.',
+    answer: 'Renal ischemia → ↑ renin / ACE inhibitor or ARB / Berry aneurysms / Liver cysts and liver failure',
+    explanation: 'ADPCKD cyst infections/pyelonephritis: treat with lipid-soluble antibiotics (fluoroquinolones) that penetrate cysts; CT if symptoms don\'t resolve. Indium-111 WBC scan can localize infected cyst if needed → percutaneous cyst drainage. Lithium nephropathy: 1–2 mm microcysts throughout BOTH medulla AND cortex (unique — other cystic diseases only have cortical cysts).',
+    guideline: 'Dropkin 2024 — Renal Pathophysiology; Polycystic Kidney Disease',
+  },
+
+  {
+    id: 'd-renal-phys-008', type: 'fib', topic: 'Renal Physiology',
+    topicFull: 'Renovascular Hypertension — 2K1C vs 1K1C',
+    question: '2K1C (two kidneys, one clip): diuresis ___ (possible/not possible) → renin-mediated HTN → responds to ___. 1K1C or 2K2C: diuresis ___ (possible/not possible) → volume-expanded HTN → responds to diuretics. Adding an ACEI to a 1K1C patient on a diuretic will ___.',
+    answer: 'Possible / ACEI or ARB / Not possible / Worsen renal function',
+    explanation: 'Captopril nuclear renography: if GFR drops significantly after captopril → kidney dependent on AT-II for filtration → RAS. Confirms with angiography. RVH likely to respond to intervention: unilateral lesion + ipsilateral renal vein renin ≥ 50% above peripheral and contralateral. RVH imaging: CT angiography (reasonable renal function), duplex US (non-obese with compromised function), MR angiography (obese with compromised function).',
+    guideline: 'Dropkin 2024 — Renal Pathophysiology; Renovascular HTN',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  URORADIOLOGY — CLASSIC SIGNS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-urorads-001', type: 'fib', topic: 'Uroradiology',
+    topicFull: 'Classic Uroradiology Signs — Stones',
+    question: 'Staghorn calculus = usually ___ stone. Jacks/Mulberry sign = ___ stone. Rim sign = soft tissue edema in ureter around impacted stone (absent in ___, or if stone > 4 mm or at UVJ).',
+    answer: 'Struvite (less commonly cystine or uric acid) / CaOx dihydrate / Phlebolith',
+    explanation: 'Comet sign: phlebolith = comet nucleus + tapered vessel tail behind it (distinguishes phlebolith from ureteral stone). Putty kidney: totally calcified auto-nephrectomized kidney from end-stage TB + moth-eaten appearance + pipestem ureter. Crescent sign: crescent of contrast in collecting tubules alongside a chronically dilated calyx.',
+    guideline: 'Dropkin 2024 — Uroradiology; Classic Signs (Radiographics, 2004)',
+  },
+
+  {
+    id: 'd-urorads-002', type: 'fib', topic: 'Uroradiology',
+    topicFull: 'Classic Uroradiology Signs — Kidney and Collecting System',
+    question: 'Balloon on a String = dilated collecting system with ureter exiting from ___ point on renal pelvis (UPJ). Dropping Lilly = obstructed ___ moiety ureter pushing ___ moiety collecting system downward/lateral (duplex).',
+    answer: 'High insertion point / Upper pole moiety / Lower pole moiety',
+    explanation: 'Renal agenesis: loop-to-loop sign (all colon in renal fossa) + Pancake sign (adrenal "lying down" flat in renal fossa). Faceless Kidney: cross-sectional slice with only solid components (between poles of duplicated system or infiltrative process). Phantom Calyx: obliterated calyx on excretory urogram from TB, acute pyelonephritis, UCC, trauma, stone passage, ischemia, or congenital anomaly.',
+    guideline: 'Dropkin 2024 — Uroradiology; Classic Signs (Radiographics, 2004)',
+  },
+
+  {
+    id: 'd-urorads-003', type: 'fib', topic: 'Uroradiology',
+    topicFull: 'Classic Uroradiology Signs — Ureter and Bladder',
+    question: 'Maiden Waist Deformity = medial deviation of both ureters at lumbosacral junction → caused by ___. Goblet sign = intraluminal filling defect from ___ (chronic/acute) process allowing distal ureter to adapt. Cobra Head/Spring Onion = ___.',
+    answer: 'Retroperitoneal fibrosis / Chronic process / Ureterocele in orthotopic position',
+    explanation: 'Bullet and Bodkin: ureteral encasement/compression → abrupt change in ureteral dilation. Stipple: pointillistic contrast trapped between papillary projections of urothelial carcinoma. Spaghetti sign: hematuria from above bladder → spaghetti-shaped clots in ureter. Pear/Tear Drop: bladder compressed by pelvic process (hematoma, lymphocele, urinoma, pelvic lipomatosis). Pie in the Sky: high bladder after trauma → pelvic hematoma, concern for urethral injury.',
+    guideline: 'Dropkin 2024 — Uroradiology; Classic Signs (Radiographics, 2004)',
+  },
+
+  {
+    id: 'd-urorads-004', type: 'fib', topic: 'Uroradiology',
+    topicFull: 'Classic Uroradiology Signs — Miscellaneous',
+    question: 'Keyhole sign = dilated posterior urethra in infant → suggests ___. String of Pearls = angiographic appearance of ___ (medial form). Spooked Wheel = traditionally associated with ___ (though not very specific). Threads and Streaks = angiographic appearance of vessels feeding ___ tumor thrombus.',
+    answer: 'Posterior urethral valves (PUV) / Fibromuscular dysplasia / Oncocytoma / RV or IVC tumor thrombus (RCC)',
+    explanation: 'Onion-peel sign: appearance of benign testicular epidermoid cyst on scrotal US. Reverse Rim sign: hypoattenuating cortex with intact medullary perfusion = cortical necrosis (e.g., sepsis). Spotted Nephrogram: small vessel occlusion from necrotizing vasculitis, scleroderma, or hypertensive nephrosclerosis. Nutcracker phenomenon: compression of left renal vein between aorta and SMA → left renal vein HTN → hematuria/flank pain.',
+    guideline: 'Dropkin 2024 — Uroradiology; Classic Signs (Radiographics, 2004)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  PREGNANCY
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-preg-001', type: 'fib', topic: 'Pregnancy',
+    topicFull: 'Pregnancy — Imaging Safety',
+    question: 'Per ACOG guideline, ___ and ___ are the imaging techniques of choice in pregnancy (no ionizing radiation risk). Gadolinium should be used ___ and only if it significantly improves diagnostic performance. Breastfeeding ___ (should/should not) be interrupted after gadolinium.',
+    answer: 'US and MRI / Limitedly / Should NOT be interrupted',
+    explanation: 'Radiation from X-ray, CT, or nuclear medicine is at doses much lower than associated with fetal harm — should NOT be withheld when clinically necessary. Low-dose non-con CT risks are limited to stochastic effects (slightly increased childhood/lifetime cancer risk). Laparoscopic access in pregnancy → left upper quadrant in midclavicular line to minimize uterus risk.',
+    guideline: 'Dropkin 2024 — Pregnancy; ACOG Guideline (2017)',
+  },
+
+  {
+    id: 'd-preg-002', type: 'fib', topic: 'Pregnancy',
+    topicFull: 'Pregnancy — Medications and Antibiotics',
+    question: 'Contraindicated in pregnancy: ___ (harms immature cartilage), trimethoprim (inhibits folate → teratogenic, especially in ___), tetracycline (fetal malformations + teeth discoloration), and sulfonamides (avoid in ___ trimester → kernicterus).',
+    answer: 'Fluoroquinolones / First trimester / Third trimester',
+    explanation: 'Safe in pregnancy: penicillin, cephalosporins, clindamycin. Nitrofurantoin: safe unless G-6-PD deficiency. Aminoglycosides: safe (theoretical nephrotoxicity/ototoxicity risk). Ceftriaxone and Bactrim specifically contraindicated in neonates with jaundice and infants < 1 month old (hemolytic anemia risk from immature liver interaction).',
+    guideline: 'Dropkin 2024 — Pregnancy; Medication Safety in Pregnancy',
+  },
+
+  {
+    id: 'd-preg-003', type: 'fib', topic: 'Pregnancy',
+    topicFull: 'Pregnancy — Urologic Pearls',
+    question: 'Supine Hypotensive Syndrome: gravid uterus compresses ___ → ↓ cardiac output → hypotension. Manage by placing a ___ under the right back. US resistive index > ___ and difference between kidneys > ___ = positive screen for ureteral obstruction in pregnancy.',
+    answer: 'IVC / Wedge / RI > 0.7 / Difference > 0.06',
+    explanation: 'Renal artery aneurysm (RAA) > 1.5 cm in women of childbearing age → open surgical repair (unless fully calcified and stable) due to catastrophic rupture risk in pregnancy. Endovascular stenting is also an option but requires lifelong anticoagulation. Pregnancy-associated hypercalciuria: ↑ Vit D (placental) → ↑ Ca++ absorption + ↓ PTH → physiologic absorptive hypercalciuria, but urine citrate and glycosaminoglycan also ↑ → unchanged stone formation risk.',
+    guideline: 'Dropkin 2024 — Pregnancy; Testing Pearls',
+  },
 ];
