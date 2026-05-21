@@ -2315,5 +2315,214 @@ export const DROPKIN_CARDS = [
     answer: '1.6% to 0.7%',
     explanation: 'Carson retrospective cohort (J Urol, 2004): 2261 IPPs with Inhibizone vs. 1944 without → infection rate 0.7 vs. 1.6% (p < 0.01). Within each group, DM, Peyronie\'s, and SCI were associated with higher infection rates. Antibiotic-impregnated prostheses are now standard of care for primary IPP implantation.',
     guideline: 'Dropkin 2024 — Perioperative; Inhibizone (J Urol, 2004)',
+  },// ══════════════════════════════════════════════════════════
+  //  UROTRAUMA — RENAL
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-trauma-001', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Renal Trauma — AAST Grading',
+    question: 'AAST Renal Trauma: Grade II = < ___ cm laceration without urinary extravasation. Grade III = > ___ cm laceration. Grade IV = laceration through parenchyma into collecting system OR main renal artery/vein with ___ hemorrhage.',
+    answer: '1 cm / 1 cm / Contained hemorrhage',
+    explanation: 'Key distinction: Grade II vs. III = 1 cm. Grade V = shattered kidney OR renal hilum avulsion. Imaging: CTAP with contrast (~30 sec delay) AND delayed (~10 min) images for any suspected renal injury. CT gold standard for radiologic staging. Stable patients → prefer non-invasive management regardless of grade.',
+    guideline: 'Dropkin 2024 — Trauma; AAST Renal Trauma Classification (J Am Coll Surg, 2008)',
+  },
+
+  {
+    id: 'd-trauma-002', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Renal Trauma — Intervention Threshold',
+    question: 'Hemodynamically unstable patients with renal trauma who fail resuscitation AND have a perirenal hematoma > ___ cm and/or vascular contrast extravasation with deep/complex laceration (AAST Grade ___–___) → immediate surgery or angioembolization.',
+    answer: '4 cm / Grade 3–5',
+    explanation: 'Stable patients with any grade renal injury (including urinary extravasation) can initially be observed. Follow-up CT at ≥ 48 hours is needed for Grade IV–V or if clinical complications arise (fever, worsening flank pain, ongoing blood loss, abdominal distension). Ureteral stent ± PCN ± percutaneous drain: indicated for enlarging urinoma, fever, increasing pain, ileus, fistula, or infection.',
+    guideline: 'Dropkin 2024 — Trauma; AUA Urotrauma Guideline (2020)',
+  },
+
+  {
+    id: 'd-trauma-003', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Renal Trauma — Pediatric Thresholds',
+    question: 'In pediatric blunt renal trauma, the threshold to intervene is > ___ RBC/hpf OR a deceleration injury. For penetrating pediatric renal trauma, the intervention threshold is > ___ RBC/hpf.',
+    answer: '50 RBC/hpf (blunt) / 5 RBC/hpf (penetrating)',
+    explanation: '25-year pediatric renal injury experience (J Urol, 2004): 374 pediatric renal injuries → 90% blunt (2% exploration rate), 10% penetrating (76% exploration rate). 99% renal preservation rate overall — observation and renal preservation are prioritized whenever possible. Children\'s kidneys are more susceptible to injury due to less retroperitoneal fat and relatively larger kidney size.',
+    guideline: 'Dropkin 2024 — Trauma; Pediatric Renal Injuries (J Urol, 2004)',
+  },
+
+  {
+    id: 'd-trauma-004', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Renal Trauma — Predictors of Bleeding',
+    question: 'Predictors of persistent bleeding requiring intervention in renal trauma include: depth of parenchymal injury, presence of ___, Grade III–IV injury, medial hematoma, and hematoma > ___ cm thick.',
+    answer: 'Arterial blush (intravascular contrast extravasation) / 3.5 cm',
+    explanation: 'MiGUTS nomogram (J Trauma, 2019): identified factors predicting need for bleeding intervention — shock (SBP < 90), concomitant injuries, penetrating mechanism, intravascular contrast extravasation, hematoma extension (para-renal > peri-renal > none/subcapsular), and hematoma rim distance. Stable patient with flank pain + microhematuria alone → no imaging needed (low risk).',
+    guideline: 'Dropkin 2024 — Trauma; MiGUTS (J Trauma, 2019)',
+  },
+
+  // ── URETERAL TRAUMA ────────────────────────────────────────
+
+  {
+    id: 'd-trauma-005', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Ureteral Trauma — Gynecologic Anatomy',
+    question: 'The MC site of ureteral injury during hysterectomy is under the ___ (which houses the uterine artery inferiorly and round ligament superiorly). The ureter crosses ___ over the common iliac bifurcation at the pelvic brim.',
+    answer: 'Broad Ligament / Anteriorly',
+    explanation: 'Female pelvic anatomy pearls: ureter crosses anteriorly over the common iliac bifurcation at the pelvic brim → runs under the Broad Ligament → enters bladder medial to the medial umbilical ligament (remnant of umbilical artery). The round ligament is the homologue of the gubernaculum. Ovarian arteries come off aorta below renal arteries. Left ovarian vein → left renal vein; right ovarian vein → IVC.',
+    guideline: 'Dropkin 2024 — Trauma; Female Pelvic Anatomy Testing Pearls',
+  },
+
+  {
+    id: 'd-trauma-006', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Ureteral Trauma — Management by Location',
+    question: 'Ureteral injuries ___ (proximal/distal) to the iliac vessels → primary repair over stent when possible. Injuries ___ to the iliac vessels → ureteral reimplant or primary repair over stent.',
+    answer: 'Proximal / Distal',
+    explanation: 'Stable patient at laparotomy: repair lacerations at time of surgery; traumatic contusion → stenting vs. resection and primary repair depending on viability. Unstable patient → temporary drainage ± ureteral ligation (if HDUS) followed by PCN → delayed definitive management. Post-op incomplete injury → attempt retrograde stent → if fails → PCN + delayed repair.',
+    guideline: 'Dropkin 2024 — Trauma; AUA Urotrauma Guideline (2020)',
+  },
+
+  {
+    id: 'd-trauma-007', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Ureteral Trauma — Arterioureteral Fistula',
+    question: 'Suspect arterioureteral fistula (AUF) if a patient bleeds significantly from a ureteral orifice after a long-term stent exchange. Initial management: ___ ± endovascular graft if stable. AUF is associated with chronic indwelling stent → endovascular repair is ___ morbid and ___ effective as open repair.',
+    answer: 'Angiography / Less morbid / As effective',
+    explanation: 'AUF is an uncommon but life-threatening complication of long-term ureteral stenting (often in patients with prior pelvic radiation, vascular surgery, or malignancy). Attempt to tamponade bleed with ureteral dilation balloon while patient is transported to IR. Surgical exploration if unstable or if endovascular attempts fail.',
+    guideline: 'Dropkin 2024 — Trauma; AUF Testing Pearls',
+  },
+
+  {
+    id: 'd-trauma-008', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Ureteral — Retroperitoneal Fibrosis',
+    question: 'Retroperitoneal fibrosis (Ormond\'s disease) is treated with ureteral stent(s) → ___ or tamoxifen monotherapy as first-line → ___ (e.g., mycophenolate mofetil) in conjunction with steroids as salvage → ureterolysis ± omental wrapping if medical management fails.',
+    answer: 'Steroids / Immunomodulators',
+    explanation: 'RPF can be idiopathic or secondary to malignancy, medication (methysergide), aortic aneurysm, infection, or chemical exposure. It can involve the collecting system and present without hydronephrosis. Peri-aortic fibrosis triggered by aortic aneurysm → regression occurs slowly after aneurysm exclusion (open or endovascular repair).',
+    guideline: 'Dropkin 2024 — Trauma; Retroperitoneal Fibrosis',
+  },
+
+  // ── BLADDER TRAUMA ─────────────────────────────────────────
+
+  {
+    id: 'd-trauma-009', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Bladder Trauma — Cystogram Protocol',
+    question: 'Retrograde cystography for suspected bladder injury requires instillation of ___ mL of contrast — lower volumes miss small injuries. Augmented bladder rupture: static cystogram is negative in ___% of cases → CT cystogram preferred.',
+    answer: '300 mL / 50%',
+    explanation: 'Indications: GH + pelvic fracture or mechanism concerning for bladder injury → retrograde cystography (static plain film or CT cystogram). CT cystogram with 300 mL of contrast preferred for augmented bladder (to dislodge bowel/omentum from perforation). Bladder neck injuries are rare but devastating for continence — high index of suspicion required as many are not detected on CT cystogram.',
+    guideline: 'Dropkin 2024 — Trauma; Bladder Trauma Testing Pearls',
+  },
+
+  {
+    id: 'd-trauma-010', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Bladder Trauma — Management',
+    question: 'All ___ bladder ruptures → surgical repair. Uncomplicated ___ bladder injury → catheter drainage alone. GSW involving bladder → always ___ and repair, even if extraperitoneal; rule out rectal injury.',
+    answer: 'Intraperitoneal / Extraperitoneal / Explore',
+    explanation: 'Complicated extraperitoneal injuries requiring surgical repair: concomitant bladder neck injury, rectal injury (also needs diverting colostomy), bone fragments in bladder, clot retention, or ongoing extravasation despite catheter. Intraperitoneal perforation during TURBT → exploratory laparotomy and cystorrhaphy. VVF repair with omental flap is based off the RIGHT gastroepiploic artery.',
+    guideline: 'Dropkin 2024 — Trauma; AUA Urotrauma Guideline (2020)',
+  },
+
+  // ── URETHRAL TRAUMA ────────────────────────────────────────
+
+  {
+    id: 'd-trauma-011', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Urethral Trauma — Initial Assessment',
+    question: 'Pelvic trauma with blood at the urethral meatus in a man → perform ___ before any catheter attempt. Initial management for most PFUI cases is ___ (SPT/urethral catheter) followed by delayed urethroplasty.',
+    answer: 'RUG (retrograde urethrogram) / Suprapubic tube (SPT)',
+    explanation: 'SPT is preferred initial management for most PFUI. A HDS patient with PFUI may have primary endoscopic realignment, but prolonged attempts should be avoided — place SPT → delayed urethroplasty. EUR vs. SPT trial (J Trauma, 2022): rates of urethral obstruction (97 vs. 94%) and urethroplasty (87 vs. 91%) were similar, supporting SPT + delayed repair as the preferred strategy.',
+    guideline: 'Dropkin 2024 — Trauma; AUA Urotrauma Guideline (2020)',
+  },
+
+  {
+    id: 'd-trauma-012', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Urethral Trauma — AAST Grades',
+    question: 'AAST Urethral Injury Scale: Grade I = contusion (blood at meatus, normal RUG). Grade III = ___ disruption (extravasation on RUG, some contrast makes it into bladder). Grade V = complete transection with > ___ cm separation OR extension into prostate/vagina.',
+    answer: 'Partial / 2 cm',
+    explanation: 'Grade I: blood at meatus, normal RUG → no treatment. Grade II: stretch injury, elongated urethra without extravasation → conservative management. Grade III-IV: partial or complete disruption → endoscopic realignment or SPT. Grade V: complete transection > 2 cm or proximal extension → SPT + delayed urethroplasty. Post-PFUI with 1 cm bulbomembranous stricture → EPA (excision and primary anastomosis) best — NOT DVIU (traumatic etiology, low success).',
+    guideline: 'Dropkin 2024 — Trauma; AAST Urethral Injury Scale',
+  },
+
+  {
+    id: 'd-trauma-013', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Genital Trauma — Penile Fracture',
+    question: 'Penile fracture classic triad: penile ___ (eggplant deformity), ___ sound during intercourse/masturbation, and immediate detumescence. Management: ___.',
+    answer: 'Ecchymosis / Cracking or snapping / Prompt surgical exploration and repair',
+    explanation: 'Equivocal signs/symptoms → penile US; if still uncertain → MRI or surgical exploration. Any penile fracture or penetrating trauma + blood at meatus, GH, or inability to void → evaluate for concomitant urethral injury (RUG or cystoscopy). Traumatic penile amputation: wrap in saline-soaked gauze + plastic bag on ice → warm ischemia time 6 hours, cold ischemia 16 hours → replantation.',
+    guideline: 'Dropkin 2024 — Trauma; AUA Urotrauma Guideline (2020)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  UPPER TRACT UROTHELIAL CARCINOMA (UTUC)
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-utuc-001', type: 'fib', topic: 'UTUC',
+    topicFull: 'Upper Tract UC — POUT Trial',
+    question: 'POUT trial (Lancet Oncol, 2020): adjuvant gemcitabine/cisplatin initiated within ___ days of nephroureterectomy (NUx) for pT2-T4 or pN+ UTUC improved 3-yr event-free survival from ___% to ___% (HR 0.45).',
+    answer: '90 days / 46% to 71%',
+    explanation: 'POUT (261 patients, MO UTUC): surveillance vs. adjuvant gem/cis → DFS HR 0.45 (p = 0.0001), 3-yr event-free 71 vs. 46%. Grade 3 AEs significantly more common with chemo (44 vs. 4%). This established adjuvant platinum-based chemotherapy as standard after NUx for advanced UTUC. Note: offer adjuvant nivolumab if patient had NAC but is still pT2-4 or pN+ at surgery.',
+    guideline: 'Dropkin 2024 — UTUC; POUT Trial (Lancet Oncol, 2020)',
+  },
+
+  {
+    id: 'd-utuc-002', type: 'fib', topic: 'UTUC',
+    topicFull: 'Upper Tract UC — OLYMPUS Trial / Jelmyto',
+    question: 'OLYMPUS trial (Lancet Oncol, 2020): MMC-containing reverse thermal gel (Jelmyto®/UGN-101) instilled into the renal pelvis weekly × 6 achieved ___% complete response in LG UTUC, but was associated with ureteral stenosis in ___% of patients.',
+    answer: '60% complete response / 44% ureteral stenosis',
+    explanation: 'Jelmyto (UGN-101) is a mitomycin-containing reverse thermal gel (liquid at room temp, gels at body temp) that allows sustained contact with upper tract mucosa. Of 41 complete responders, 23 maintained CR at 12 months with monthly maintenance. Ureteral stenosis is the major limiting side effect — must counsel patients. This is the first FDA-approved topical therapy for LG UTUC.',
+    guideline: 'Dropkin 2024 — UTUC; OLYMPUS Trial (Lancet Oncol, 2020)',
+  },
+
+  {
+    id: 'd-utuc-003', type: 'fib', topic: 'UTUC',
+    topicFull: 'Upper Tract UC — Key Pearls',
+    question: 'UTUC diagnosed before age ___ → genetic counseling/testing for Lynch syndrome (HNPCC). ___ nephropathy (from aristolochic acid consumption) increases risk of UTUC and ESRD.',
+    answer: '55 years / Balkan nephropathy',
+    explanation: 'Lynch syndrome (HNPCC): autosomal dominant mismatch repair gene mutations → elevated lifetime risk of UTUC, CRC, endometrial, ovarian, and other cancers. Balkan nephropathy is endemic in parts of Eastern Europe. Aristolochic acid is found in some herbal medicines. At NUx, always remove the entire distal ureter including the intramural tunnel and UO (to prevent local recurrence in the ureteral stump).',
+    guideline: 'Dropkin 2024 — UTUC; Testing Pearls',
+  },
+
+  {
+    id: 'd-utuc-004', type: 'fib', topic: 'UTUC',
+    topicFull: 'Upper Tract UC — LND Templates',
+    question: 'UTUC LND templates by tumor location: pyelocaliceal tumors → ipsilateral great vessel LNs from hilum to ___. Distal ½ of ureter → ipsilateral ___ LNs.',
+    answer: 'IMA (inferior mesenteric artery) / Pelvic LNs',
+    explanation: 'Proximal 2/3 of ureter → same as pyelocaliceal (hilum to aortic bifurcation). Distal ½ → ipsilateral pelvic LNs. Single-dose MMC after NUx reduces bladder recurrence in patients with no prior history of bladder cancer. Upper tract CIS with low nephron reserve → PCN + antegrade BCG more effective than stent + bladder BCG instillation.',
+    guideline: 'Dropkin 2024 — UTUC; AUA/SUO UTUC Guideline (2023)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  STRESS URINARY INCONTINENCE — KEY TRIALS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-sui-001', type: 'fib', topic: 'Urinary Incontinence',
+    topicFull: 'SUI — SISTEr Trial',
+    question: 'SISTEr trial (NEJM, 2007): fascial pubovaginal sling vs. Burch colposuspension for SUI → fascial sling slightly more likely to achieve continence (___ vs. 25%) and satisfaction (___ vs. 73%) at 5 years, but associated with more post-op UTI, voiding difficulty, and UUI.',
+    answer: '30% continence / 83% satisfaction',
+    explanation: 'SISTEr (655 women): fascial sling modestly superior for long-term continence and satisfaction, but at cost of higher rates of UTI, voiding dysfunction, and UUI in the sling group. Both had similar AE rates (~10%) at 5 years. This established fascial sling as the preferred surgical option over Burch for women with SUI.',
+    guideline: 'Dropkin 2024 — Bladder; SISTEr Trial (NEJM, 2007)',
+  },
+
+  {
+    id: 'd-sui-002', type: 'fib', topic: 'Urinary Incontinence',
+    topicFull: 'SUI — TOMUS Trial',
+    question: 'TOMUS trial (NEJM, 2010): retropubic (RP) vs. transobturator (TO) mid-urethral slings — objective efficacy at 12 months was ___. TO slings → more ___ complications (9 vs. 4%). RP slings → more ___ dysfunction (2.7 vs. 0%).',
+    answer: 'Similar / Neurologic complications / Bladder dysfunction (high PVR, UTI, erosion)',
+    explanation: 'At 5 years, RP slings had higher success (51 vs. 43%) though statistical equivalence was not demonstrated. Satisfaction was similar (79 vs. 85%). Mesh erosions were rare in both groups. The different complication profiles guide selection: TO preferred when concerned about bladder injury; RP preferred for long-term efficacy. Note: No VALUE trial (NEJM, 2012) showed UDS had NO effect on treatment selection or outcome for uncomplicated SUI.',
+    guideline: 'Dropkin 2024 — Bladder; TOMUS Trial (NEJM, 2010)',
+  },
+
+  {
+    id: 'd-sui-003', type: 'fib', topic: 'Urinary Incontinence',
+    topicFull: 'SUI — Weight Loss and Incontinence',
+    question: 'PRIDE trial (NEJM, 2009): a 6-month weight loss program achieving ___% body mass reduction in overweight/obese women led to a ___% reduction in weekly incontinence episodes (significant for SUI, not significant for UUI).',
+    answer: '8% body mass reduction / 47% reduction in incontinence episodes',
+    explanation: 'PRIDE (338 women): intervention group lost 8% body mass vs. 2% control → 47% reduction in weekly incontinence events (p < 0.05 for SUI). This is important counseling for overweight/obese women with SUI — weight loss is a meaningful non-surgical intervention that should be recommended. OPUS trial (NEJM, 2012): adding MUS at time of anterior prolapse repair improved continence but increased AEs.',
+    guideline: 'Dropkin 2024 — Bladder; PRIDE Trial (NEJM, 2009)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  FEMALE SEXUAL DYSFUNCTION
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-fsd-001', type: 'fib', topic: 'Sexual Dysfunction',
+    topicFull: 'Female Sexual Dysfunction — HSDD Treatment',
+    question: 'Two FDA-approved treatments for hypoactive sexual desire disorder (HSDD) in premenopausal women: ___ (Addyi®; daily oral serotonin modulator) and ___ (Vyleesi®; on-demand SC melanocortin receptor agonist). Both are contraindicated with ___.',
+    answer: 'Flibanserin / Bremelanotide / Alcohol (flibanserin) and uncontrolled HTN (bremelanotide)',
+    explanation: 'Flibanserin (DAISY, VIOLET, BEGONIA, SNOWDROP trials): daily oral, works on 5-HT1A/2A receptors and D4 receptors → modest increase in satisfying sexual events. Major SE: somnolence, dizziness — contraindicated with alcohol and CYP3A4 inhibitors. Bremelanotide: on-demand SC injection, α-MSH analogue (melanocortin receptor agonist) → causes nausea in ~40%. Contraindicated in uncontrolled HTN.',
+    guideline: 'Dropkin 2024 — Testis; Female Sexual Dysfunction Trials',
   },
 ];
