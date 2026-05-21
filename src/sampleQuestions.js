@@ -3403,4 +3403,78 @@ export const DROPKIN_CARDS = [
     explanation: 'Micropenis is distinct from buried/hidden penis (trapped by suprapubic fat pad — managed surgically). Hypogonadotropic hypogonadism is the most common cause — GnRH or gonadotropin replacement can stimulate penile growth if started early. Cremasteric reflex: sensory = ilioinguinal nerve + femoral branch of genitofemoral nerve → motor = genital branch of genitofemoral nerve. Absent in ~20% of normal males.',
     guideline: 'Dropkin 2024 — Pediatric Testis; Miscellaneous Testing Pearls',
   },
+  // ══════════════════════════════════════════════════════════
+  //  PELVIC ORGAN PROLAPSE / FEMALE SUI — ADDITIONAL TRIALS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-pop-001', type: 'fib', topic: 'Urinary Incontinence',
+    topicFull: 'POP/SUI — CARE and OPTIMAL Trials',
+    question: 'CARE trial (JAMA, 2013): 7-year follow-up after sacrocolpopexy showed very high failure rates: ~___% anatomic prolapse failure, ~___% SUI failure, mesh erosion rate ___%. OPTIMAL trial (JAMA, 2018): uterosacral vs. sacrospinous ligament suspension → surgical failure at 5 years ~___% for both.',
+    answer: '25% anatomic failure / 70% SUI failure / 11% erosion / ~65% surgical failure',
+    explanation: 'CARE: adding Burch urethropexy at time of sacrocolpopexy reduced SUI failure (62 vs. 77%, p < 0.01). Sacrocolpopexy sutures: placed through anterior spinous ligament at S1 level. If too proximal (L5-S1 disc space) → discitis (ambulation difficulties + low-grade fevers, diagnose with MRI). Anterior prolapse may resolve as result of sacrocolpopexy alone.',
+    guideline: 'Dropkin 2024 — Bladder; CARE (JAMA, 2013), OPTIMAL (JAMA, 2018)',
+  },
+
+  {
+    id: 'd-pop-002', type: 'fib', topic: 'Urinary Incontinence',
+    topicFull: 'POP/SUI — OPUS, SIMS, PFPT Trials',
+    question: 'OPUS (NEJM, 2012): MUS at time of anterior prolapse repair improved SUI (27 vs. 43%) but increased ___. SIMS (NEJM, 2022): single-incision mini-sling ___ to MUS at 36 months, but more ___. PFPT vs MUS (NEJM, 2013): MUS outperformed PT for SUI (91 vs. 64% subjective improvement at 12 months).',
+    answer: 'AEs (bladder perforation 7%, UTI 31%) / Non-inferior / Dyspareunia (17 vs. 6%)',
+    explanation: 'Mesh MUS removal rates (JAMA, 2018): 1.4% at 1 year, 2.7% at 5 years, 3.3% at 9 years. Retropubic sling removal higher than transobturator (3.6 vs. 2.7% at 9 years). Osteitis pubis: 2.5% risk after retropubic bladder neck suspension — suprapubic pain + fever + difficulty with thigh adduction; treat with anti-inflammatory medications (not surgery unless severe).',
+    guideline: 'Dropkin 2024 — Bladder; OPUS, SIMS, PFPT Trials',
+  },
+
+  {
+    id: 'd-pop-003', type: 'fib', topic: 'Urinary Incontinence',
+    topicFull: 'POP/SUI — Surgical Pearls',
+    question: 'Trocar perforation during MUS: bladder perforation → remove and ___; urethral perforation → remove and ___, place Foley while heals. Fascial sling: if tight with high PVR post-op → ___ first and wait ___ months before intervening (unlike synthetic sling → incise within 1 month).',
+    answer: 'Re-pass trocar / Abort case / CIC (clean intermittent catheterization) / 3 months',
+    explanation: 'Obturator nerve, artery, and vein pass through superolateral corner of obturator foramen → pass trocar for TO sling MEDIALLY and INFERIORLY to avoid injury. Staccato voiding on uroflow s/p sling → UDS to differentiate BOO vs. detrusor underactivity. Sacrocolpopexy bleeding from sacral suture placement → MC cause is middle sacral vessel injury → sterile tack through anterior longitudinal ligament; hemodynamic instability → suspect iliac vein injury (left > right).',
+    guideline: 'Dropkin 2024 — Bladder; POP and SUI Surgical Complications',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  URETHRA — ADDITIONAL PEARLS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-uretha-g001', type: 'fib', topic: 'Urethral Stricture',
+    topicFull: 'Urethra — Anatomy and French Scale',
+    question: 'Urethral segments: Posterior = ___ + ___. Anterior = bulbar + pendulous (penile). French scale: 1 mm = ___ French. A tube with X Fr diameter has ___ mm circumference (ratio 1:3). Goal of urethroplasty: ~___ Fr proximally and ~24 Fr distal to bulbar urethra.',
+    answer: 'Prostatic + Membranous / 3 French / X mm circumference (because circumference = π × diameter, and 1 mm = 3 Fr) / ~30 Fr',
+    explanation: 'Male urethral blood supply: internal iliac → internal pudendal → BCD: Bulbourethral (artery of bulb), Cavernosal (deep artery), Dorsal penile artery. Dorsal penile artery also gives circumflex branches and provides majority of blood flow to glans. RUG quality: oblique image → only one obturator ring visible. If both rings visible (Mardi Gras mask) → AP projection → underestimates stricture length.',
+    guideline: 'Dropkin 2024 — Urethra; Anatomy and Urethra Math Testing Pearls',
+  },
+
+  {
+    id: 'd-uretha-g002', type: 'fib', topic: 'Urethral Stricture',
+    topicFull: 'Urethra — Stricture Management Pearls',
+    question: 'DVIU is NEVER indicated for stricture > ___ cm in men who are otherwise candidates for surgery. Urethral rest (___ months) before urethroplasty reduces inflammation and identifies fibrotic areas. Ejaculatory dysfunction occurs in ~___% after urethroplasty from bulbospongiosus dissection — usually resolves within ___ months.',
+    answer: '1.5 cm / ~3 months / 20% / 6 months',
+    explanation: 'Post-traumatic bulbar/bulbomembranous strictures (straddle injury) → EPA is best (spongiofibrous tissue surrounds lumen → DVIU/dilation unlikely to work). If urethra was not transected at injury → NTAU (non-transecting anastomotic urethroplasty) may be an option. US (though rarely used) is most accurate for determining graft length needed for anterior urethral stricture. Pelvic XRT strictures are most commonly in the bulbomembranous urethra.',
+    guideline: 'Dropkin 2024 — Urethra; Stricture Management Testing Pearls',
+  },
+
+  {
+    id: 'd-uretha-g003', type: 'fib', topic: 'Urethral Stricture',
+    topicFull: 'Urethra — Ureteral Reconstruction Options',
+    question: 'Ureteral reconstruction by situation: Stricture distal to iliacs → reimplant ± ___ (small gap) or ± ___ (larger gap). Endopyelotomy contraindicated for ureteral strictures > ___ cm. Ileal ureter used for > ___ cm upper ureteral stricture with Cr < 2 ng/dL.',
+    answer: 'Psoas hitch / Boari flap / 2 cm / 4 cm',
+    explanation: 'Psoas hitch: puts femoral nerve at risk if suture thrown too deep into psoas. Ureterocalicostomy: for UPJ and proximal strictures 2–3 cm with dilated lower pole calyx. Trans-U-U (ureteroureterostomy): contraindicated in patients with history of stones. Ileal ureter: distal end plugged INTO bladder (not used as interposition → ileal mucus would clog distal ureter). After iliac vascular surgery → 5% develop hydronephrosis from secondary RPF → 4 weeks steroids → U-U if fails.',
+    guideline: 'Dropkin 2024 — Trauma; Ureteral Reconstruction Testing Pearls',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  GENITAL TRAUMA — ADDITIONAL PEARLS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-gentrauma-001', type: 'fib', topic: 'Urotrauma',
+    topicFull: 'Genital Trauma — Fascial Layers and Penile Amputation',
+    question: 'Hematoma from corporal or urethral injury that tracks to perineum/scrotum/abdomen is contained by: ___ fascia (perineum), ___ fascia (scrotum), and ___ fascia (abdomen). Penile amputation: warm ischemia tolerance ___ hrs, cold ischemia ___ hrs. Microsurgically reattach dorsal ___ and ___ for best outcomes.',
+    answer: 'Colles\' fascia / Dartos fascia / Scarpa\'s fascia / 6 hrs warm / 16 hrs cold / Dorsal arteries and vein / Dorsal nerves',
+    explanation: 'Penile replantation: wrap in saline-soaked gauze in plastic bag on ice. Microsurgical reattachment of dorsal arteries, vein, and dorsal nerves preserves distal penile skin sensation. Cavernosal arteries are difficult to access and not necessary to anastomose. Methylene blue = MAOI → serotonin syndrome risk with SSRIs/TCAs. ICG (indocyanine green): fluorescent molecule with Na-iodide for IV solubility → avoid in patients with severe iodine allergies.',
+    guideline: 'Dropkin 2024 — Trauma; Genital Trauma Testing Pearls',
+  },
 ];
