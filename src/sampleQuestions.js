@@ -3285,4 +3285,122 @@ export const DROPKIN_CARDS = [
     explanation: 'AUA White Paper on reducing opioid prescribing: use multimodal analgesia (NSAIDs + acetaminophen ± gabapentin as first-line); limit post-op opioids; if opioids needed → prescribe lowest effective dose for shortest duration; counsel patients that post-op pain is expected and NSAIDs are often equally effective. Ureteral stenting → hyperplasia + inflammation of urothelium + SM hypertrophy → ↓ ureteral contractility → ↑ VUR + ↑ intrapelvic pressure.',
     guideline: 'Dropkin 2024 — Perioperative; SKOPE (J Urol, 2021); AUA Opioid White Paper (2021)',
   },
+  // ══════════════════════════════════════════════════════════
+  //  CRYPTORCHIDISM — EXPANDED
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-crypto-001', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Cryptorchidism — Key Management Pearls',
+    question: 'Immediate urology consult required for: ___ nonpalpable testes (any male newborn), OR unilateral nonpalpable testis + ___ (evaluate for DSD). Hormonal therapy ___ (should/should not) be used to induce testicular descent.',
+    answer: 'Bilateral / Hypospadias / Should NOT',
+    explanation: 'Spontaneous descent may occur in first 6 months due to "mini-puberty" (HPG axis activation → T surge). If no descent by 6 months → orchiopexy within the next year (6–18 months). Rationale: reduce infertility (germ cell loss begins ~12 months) and testis cancer risk. Bilateral nonpalpable testes without CAH → measure MIF (Sertoli product) + consider hCG stimulation test (T should rise 20-fold if testicular tissue present) to evaluate for anorchia.',
+    guideline: 'Dropkin 2024 — Pediatric Testis; AUA Cryptorchidism Guideline (2014)',
+  },
+
+  {
+    id: 'd-crypto-002', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Cryptorchidism — Non-Palpable Testis Surgery',
+    question: 'Non-palpable testis in a pre-pubertal boy → EUA ± surgical exploration identifying status of ___ (testicular vessels/vas deferens). Testis located 2 cm above the internal ring with no vascular redundancy → best managed with two-stage ___ technique (vessels divided intra-abdominally in stage 1).',
+    answer: 'Testicular vessels (vas status is irrelevant) / Fowler-Stevens',
+    explanation: 'Cryptorchid testis diagnosed post-pubertally → orchiectomy vs. orchiopexy (if normal contralateral testis with very short vessels/vas, dysmorphic/hypoplastic testis, or post-pubertal age → orchiectomy). Observe if > 50 years old or high anesthetic risk. Retractile testes → monitor annually until puberty (risk of secondary ascent). Ilioinguinal nerve runs in cremaster layer — spared by opening cremaster without individual dissection.',
+    guideline: 'Dropkin 2024 — Pediatric Testis; AUA Cryptorchidism Guideline (2014)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  SEX CHROMOSOME DISORDERS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-dsd-001', type: 'fib', topic: 'Embryology',
+    topicFull: 'Sex Chromosome Disorders — Klinefelter Syndrome',
+    question: 'Klinefelter syndrome (___): incidence 1:850, testicular atrophy, eunuchoid body, gynecomastia. Dysgenesis of Sertoli cells → ↓ inhibin → ↑ ___. Abnormal Leydig cells → ↑ LH → ↑ estrogen. SA always shows ___ → treat with micro-TESE.',
+    answer: '47XXY / FSH / Azoospermia',
+    explanation: 'Klinefelter features: Barr body (inactivated X), female hair distribution, may have developmental delay, common cause of hypogonadism in infertility workup. Oligospermia may be present in mosaic pattern (46XY/47XXY). ↑ risk of non-germ cell testicular tumors. Treat with TRT. Micro-TESE has reasonable success in motivated patients.',
+    guideline: 'Dropkin 2024 — Pediatric Testis; Sex Chromosome Disorders',
+  },
+
+  {
+    id: 'd-dsd-002', type: 'fib', topic: 'Embryology',
+    topicFull: 'Sex Chromosome Disorders — CAIS and 5AR Deficiency',
+    question: 'CAIS (Complete Androgen Insensitivity Syndrome): 46XY with ___ external female genitalia, short vagina, no uterus. BL orchiectomy recommended ___ (before/after) puberty. 5AR deficiency: female/ambiguous genitalia with ___ internal male structures; penis may grow at puberty due to Type ___ 5AR activity.',
+    answer: 'Normal female external genitalia / After puberty / Normal (epididymis, vas, SV) / Type I 5AR (in brain and liver)',
+    explanation: 'CAIS: risk of seminoma by age 30 is ~20% (risk before puberty is minimal) → gonadectomy post-puberty. Vaginal dilation is usually sufficient for vaginal lengthening; vaginoplasty PRN. PMDS (Persistent Müllerian Duct Syndrome): failure of MIS → testes present (often undescended) + müllerian products. Tx: split uterus in midline (not hysterectomy → risk of bilateral vasal injury). "Yo-yo" gonads (pulling one down elevates the other).',
+    guideline: 'Dropkin 2024 — Pediatric Testis; Sex Chromosome Disorders',
+  },
+
+  {
+    id: 'd-dsd-003', type: 'fib', topic: 'Embryology',
+    topicFull: 'Sex Chromosome Disorders — Turner and Kallmann',
+    question: 'Turner syndrome (___): associated with coarctation of aorta and ___ kidney. If Y material present → risk of GCNIS/gonadoblastoma → consider ___. Kallmann syndrome: defective migration of GnRH cells → ___ + anosmia.',
+    answer: '45X / Horseshoe kidney / Gonadectomy / Hypogonadotropic hypogonadism',
+    explanation: 'Turner: infantile uterus, traditionally infertile, may have a few germ cells, can be chimeric with some 46XY cells. Different BPs in arms vs. legs = coarctation. XYY (1:1000): phenotypically normal, very tall, severe acne, antisocial behavior, NORMAL fertility. Kallmann: treat with GnRH pulsatile therapy or gonadotropin replacement to restore fertility.',
+    guideline: 'Dropkin 2024 — Pediatric Testis; Sex Chromosome Disorders',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  MALE INFERTILITY — ADDITIONAL PEARLS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-inf-g001', type: 'fib', topic: 'Male Infertility',
+    topicFull: 'Male Infertility — CBAVD Details',
+    question: 'CBAVD is associated with CFTR mutation in ___% of patients. ___% of CBAVD patients\' brothers will have vassal agenesis. CBAVD + no identifiable CF mutations → ___% still have unilateral renal agenesis.',
+    answer: '85% / 7% / 10–15%',
+    explanation: 'All CBAVD patients (including unilateral absence, CUAVD) should have CFTR genetic testing + renal US. Even with negative CFTR testing, it is likely a false negative (only a portion of 1000+ CFTR mutations are identified on panels). CF is autosomal recessive. Sperm retrieval + IVF/ICSI is an option. Partner should also be tested for genetic counseling purposes.',
+    guideline: 'Dropkin 2024 — Testis; Male Infertility, Obstructive Causes',
+  },
+
+  {
+    id: 'd-inf-g002', type: 'fib', topic: 'Male Infertility',
+    topicFull: 'Male Infertility — Vasectomy Reversal Prognosis',
+    question: 'Vasectomy reversal patency rate: ___% if within 3 years of vasectomy, decreasing to ___% at 15 years. Best prognosis factors: short time interval (most important), proximal vas length > ___ cm, presence of ___, smaller luminal diameter.',
+    answer: '97% / 71% / 2.7 cm / Sperm granuloma',
+    explanation: 'After vasoepididymostomy with sperm in epididymal fluid: can take up to 1 year or longer before sperm appear in ejaculate. Vasoepididymostomy should be performed distally on epididymis (lengthens sperm maturation time during epididymal transit → higher pregnancy rates). Primary Ciliary Dyskinesia (Kartagener syndrome when + situs inversus): AR, ultrastructural cilia defects → poor motility → get sperm viability testing (high % viable expected) → treat with ICSI.',
+    guideline: 'Dropkin 2024 — Testis; Obstructive Infertility Treatment',
+  },
+
+  {
+    id: 'd-inf-g003', type: 'fib', topic: 'Male Infertility',
+    topicFull: 'Male Infertility — Varicocelectomy Pearls',
+    question: 'Laparoscopic varicocelectomy risks injury to the ___ nerve near gonadal vessel ligation anterior to the psoas → numbness of anterior thigh. After prior inguinal hernia repair → ___ approach preferred for varicocelectomy. "Subclinical" varicocele (Doppler US only) ___ (should/should not) be treated.',
+    answer: 'Genitofemoral nerve / Subinguinal approach / Should NOT be treated',
+    explanation: 'Varicocele grading: I = palpable on Valsalva only; II = palpable at rest; III = visible at rest. Only clinical varicoceles (Grade I–III) with associated male factor infertility should be treated. Subclinical varicoceles (detected only by Doppler US, not palpable) → do not treat. Varicocelectomy and vasovasostomy should NOT be done simultaneously (vassal vessels provide testicular venous drainage after varicocele repair).',
+    guideline: 'Dropkin 2024 — Testis; Varicocele Testing Pearls',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  PENILE CANCER — ADDITIONAL PEARLS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-penca-g001', type: 'fib', topic: 'Penile Cancer',
+    topicFull: 'Penile Cancer — HPV Vaccination and Circumcision',
+    question: 'HPV vaccination schedule: ages 9–14 → ___ dose schedule. Ages 15–26 (not previously vaccinated) OR immunocompromised → ___ dose schedule. Circumcision reduces penile HPV prevalence (6 vs. 20%) and female partners\' cervical cancer risk (OR ___).',
+    answer: '2-dose schedule / 3-dose schedule / OR 0.42',
+    explanation: 'Female partners of penile cancer patients have a 3× higher risk of cervical cancer → screen with Pap smear. Circumcision and HIV (Lancet, 2007): reduced HIV incidence from 4 to 2% in high-risk men age 18–24; did NOT affect sexual function or enjoyment. Extramammary Paget\'s Disease (EMPD): intraepithelial adenocarcinoma of apocrine gland skin; associated with underlying malignancy in ~20% → evaluate urethra/bladder with cystoscopy if EMPD of penis/scrotum. Kaposi\'s sarcoma in transplant patient → decrease immunosuppression first.',
+    guideline: 'Dropkin 2024 — Penis; Penile Ca Misc Testing Pearls; NEJM (2002), Lancet (2007)',
+  },
+
+  {
+    id: 'd-penca-g002', type: 'fib', topic: 'Penile Cancer',
+    topicFull: 'Penile Cancer — Benign Lesions and Urethral Histology',
+    question: 'Urethral segment histology by malignancy type: fossa navicularis/penile urethra → ___. Bulbar → ___. Membranous → ___. Prostatic urethra → ___.',
+    answer: 'Squamous cell carcinoma (SCC) / SCC / SCC > Adenocarcinoma / Adenocarcinoma (urothelial in prostate)',
+    explanation: 'Benign penile lesions: papilloma (no Tx needed), condyloma acuminatum (excision if desired), Zoon\'s (plasma cell) balanitis (topical steroids vs. circumcision). CIS with (+) margin on glans biopsy → excision of previous scar + laser Tx or topical 5-FU or imiquimod. Partial penectomy for high-grade cancers — as long as a functional penile stump remains with negative margin (use intraop frozen sections).',
+    guideline: 'Dropkin 2024 — Penis/Urethra; Penile Ca Misc, Urethral Histology Table',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  MICROPENIS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-misc-001', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Micropenis — Definition and Workup',
+    question: 'Micropenis = normally formed penis that is ___ SD below the mean length due to hormone deficiencies during development (MC cause: ___ hypogonadism). Workup: karyotype, ___ testing, ± pituitary imaging. Treatment: hormone replacement.',
+    answer: '2.5 SD / Hypogonadotropic hypogonadism / Endocrine testing',
+    explanation: 'Micropenis is distinct from buried/hidden penis (trapped by suprapubic fat pad — managed surgically). Hypogonadotropic hypogonadism is the most common cause — GnRH or gonadotropin replacement can stimulate penile growth if started early. Cremasteric reflex: sensory = ilioinguinal nerve + femoral branch of genitofemoral nerve → motor = genital branch of genitofemoral nerve. Absent in ~20% of normal males.',
+    guideline: 'Dropkin 2024 — Pediatric Testis; Miscellaneous Testing Pearls',
+  },
 ];
