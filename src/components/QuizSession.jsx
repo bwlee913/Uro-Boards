@@ -22,17 +22,30 @@ function saveShownIds(set) {
 
 const shownIds = getShownIds()
 
-function pickQuestions(pool, count) {
-  const unseen = pool.filter(q => !shownIds.has(q.id))
-  // Reset if you've seen everything
-  if (unseen.length < count) {
-    shownIds.clear()
-    saveShownIds(shownIds)
-    const shuffled = [...pool].sort(() => Math.random() - 0.5)
-    return shuffled.slice(0, count)
-  }
-  const shuffled = [...unseen].sort(() => Math.random() - 0.5)
-  return shuffled.slice(0, count)
+function pickQuestions(count) {
+  const guidelineCount = Math.ceil(count / 3) // 1 per 3 questions
+  const dropkinCount = count - guidelineCount
+
+  // Pick from SAMPLE_QUESTIONS (guideline/MC questions)
+  const unseenGuideline = SAMPLE_QUESTIONS.filter(q => !shownIds.has(q.id))
+  const guidelineSource = unseenGuideline.length >= guidelineCount
+    ? unseenGuideline
+    : SAMPLE_QUESTIONS
+  const picked1 = [...guidelineSource]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, guidelineCount)
+
+  // Pick from DROPKIN_CARDS (textbook Zanki cards)
+  const unseenDropkin = DROPKIN_CARDS.filter(q => !shownIds.has(q.id))
+  const dropkinSource = unseenDropkin.length >= dropkinCount
+    ? unseenDropkin
+    : DROPKIN_CARDS
+  const picked2 = [...dropkinSource]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, dropkinCount)
+
+  // Combine and shuffle so guideline questions don't always appear first
+  return [...picked1, ...picked2].sort(() => Math.random() - 0.5)
 }
 
 async function fetchAIQuestion(topic) {
