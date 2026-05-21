@@ -1988,5 +1988,332 @@ export const DROPKIN_CARDS = [
     answer: '1 or more / Corpus spongiosum',
     explanation: 'T1b requires only 1 of: LVI, PNI, or high grade (G3/sarcomatoid) to be present. T2 = corpus spongiosum ± urethra. T3 = corpus cavernosum (including TA) ± urethra. T4 = adjacent structures. TIP chemotherapy for advanced/metastatic disease = Paclitaxel, Ifosfamide, Cisplatin.',
     guideline: 'Dropkin 2024 — Penis; NCCN Penile Cancer Guideline (2024)',
+  },// ══════════════════════════════════════════════════════════
+  //  PEDIATRIC UROLOGY — VUR
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-ped-001', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'VUR — Grading',
+    question: 'VUR grading: I = ureteral reflux only → II = reflux into renal pelvis → III = mild dilation of ureter + pelvicalyceal system → IV = tortuous ureter, fornices blunted but ___ → V = severe dilation everywhere, loss of ___.',
+    answer: 'Preserved / Fornices',
+    explanation: 'Key distinction: Grade IV has blunted but PRESERVED fornices; Grade V has LOST fornices with severe dilation everywhere. Risk of VUR in offspring ~1/2; in siblings ~1/4. Renal scarring after UTI can be prevented with early initiation of antibiotics — the CUTIE study showed median fever duration before antibiotics was longer (72 vs. 48 hrs) in those who developed new scarring.',
+    guideline: 'Dropkin 2024 — Pediatric; AUA VUR Guideline (2017); Testing Pearls',
+  },
+
+  {
+    id: 'd-ped-002', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'VUR — CAP Indications',
+    question: 'In children < 1 year old, continuous antibiotic prophylaxis (CAP) is required for: any VUR + prior febrile UTI, OR grade ___–___ VUR without prior fUTI. CAP is optional for grade I–II VUR without prior fUTI.',
+    answer: 'III–V',
+    explanation: 'AUA VUR Guideline: < 1 yr + (prior fUTI OR grade III-V) → CAP mandatory. < 1 yr + grade I-II + no fUTI → CAP optional. > 1 yr with VUR + BBD, recurrent fUTI, or renal cortical abnormalities → CAP + BBD treatment required (observation not recommended). Starting CAP after recent infection: don\'t use the same antibiotic just used (resistance risk).',
+    guideline: 'Dropkin 2024 — Pediatric; AUA VUR Guideline (2017)',
+  },
+
+  {
+    id: 'd-ped-003', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'VUR — RIVUR Trial',
+    question: 'RIVUR (NEJM, 2014): Bactrim prophylaxis in children with VUR + prior UTIs reduced rUTIs (13 vs. 24%) but did ___ reduce renal scarring. Bactrim-resistant UTI was much more common in the prophylaxis group (___% vs. 19%).',
+    answer: 'Did NOT / 63%',
+    explanation: 'RIVUR (607 children, age 2–71 months, grade I–IV VUR): Bactrim prophylaxis for 2 years reduced rUTIs especially in children with prior febrile UTI or BBD, but renal scarring rates were not significantly different. The key takeaway: no intervention for VUR has been shown to improve or reduce renal scarring.',
+    guideline: 'Dropkin 2024 — Pediatric; RIVUR (NEJM, 2014)',
+  },
+
+  {
+    id: 'd-ped-004', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'VUR — Surgical Pearls',
+    question: 'Bilateral ___ (intravesical/extravesical) ureteral reimplant risks bladder denervation and should NOT be performed. Bulking agents are more effective for ___ (lower/higher) grades of VUR.',
+    answer: 'Extravesical / Lower grades',
+    explanation: 'Robotic ureteral reimplant is typically extravesical; open can use either approach. Bilateral extravesical → risk of bilateral bladder denervation (urinary retention). Bulking agents (Deflux) are instilled into or beneath the ureteral orifice — effective for grade I–III but less so for higher grades where reimplant is preferred.',
+    guideline: 'Dropkin 2024 — Pediatric; VUR Surgery Testing Pearls',
+  },
+
+  // ── PEDIATRIC — HYDRONEPHROSIS / UTD ──────────────────────
+
+  {
+    id: 'd-ped-005', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Pediatric — UTD Classification',
+    question: 'Antenatal UTD: A-1 (APRPD 4–7mm at 16–28 wks OR 7–10mm at 28+ wks) → first postnatal US at ___ weeks. A2-3 (APRPD > 7mm at 16–28 wks OR > 10mm at 28+ wks) → first postnatal US at ___ hours or prior to discharge.',
+    answer: '4 weeks / 48 hours',
+    explanation: 'The UTD classification (J Ped Urol, 2014) uses APRPD and SFU grading. P3 (high risk, SFU grade 4 + APRPD > 14mm + abnl parenchyma/bladder) → US at 1 month + VCUG + consider DMSA. A male with prenatal hydroureter + thickened bladder wall (even if amniotic fluid is normal) → RUS + VCUG prior to discharge to rule out PUV.',
+    guideline: 'Dropkin 2024 — Pediatric; UTD Classification (J Ped Urol, 2014)',
+  },
+
+  {
+    id: 'd-ped-006', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Pediatric — Oligohydramnios',
+    question: 'Oligohydramnios (< ___ cc) is the biggest predictor of poor outcome in bilateral prenatal hydronephrosis and is highly associated with GU abnormalities. Earlier onset is associated with more severe symptoms.',
+    answer: '500 cc',
+    explanation: 'Oligohydramnios reflects inadequate fetal urine production — a major marker of renal compromise. Bilateral renal agenesis (Potter sequence) = oligohydramnios, pulmonary hypoplasia, limb deformities, characteristic facies. Prenatal intervention (vesico-amniotic shunting) may be considered for severe bilateral obstruction causing oligohydramnios.',
+    guideline: 'Dropkin 2024 — Pediatric; Hydronephrosis Testing Pearls',
+  },
+
+  // ── PEDIATRIC — POSTERIOR URETHRAL VALVES ──────────────────
+
+  {
+    id: 'd-ped-007', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Posterior Urethral Valves — Initial Management',
+    question: 'PUV management: place urethral catheter (~ ___ Fr) after birth → diagnose with VCUG → treat with endoscopic valve ablation vs. temporary vesicostomy. Vesicostomy prolapse avoided by stoma ~ ___ Fr at the bladder dome (Blocksom technique).',
+    answer: '5 Fr / 24 Fr',
+    explanation: 'VURD syndrome (Valves, Unilateral Reflux, renal Dysplasia) — these patients generally do WELL because the unilateral dysplastic kidney acts as a "pop-off" valve. After vesicostomy, UDS findings (e.g. low capacity) do NOT predict failure of vesicostomy closure — just close the bladder without augmentation based on UDS alone.',
+    guideline: 'Dropkin 2024 — Pediatric Bladder; PUV',
+  },
+
+  {
+    id: 'd-ped-008', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Posterior Urethral Valves — Bladder Dysfunction by Age',
+    question: 'PUV bladder dysfunction by age: infants = decreased capacity/compliance. Childhood/prepubertal = normal voiding with ___. Post-pubertal/adolescence = ___ failure + nephrogenic DI.',
+    answer: 'Detrusor overactivity (DO) / Myogenic failure',
+    explanation: '"Valve bladder syndrome": nephrogenic DI → progressive hydronephrosis, high UOP, poorly compliant bladder. The "safe zone" of urine capacity = the capacity associated with 15 mmHg of bladder pressure. Management: timed voiding, anticholinergics, alpha-blockers, CIC, overnight bladder drainage → augmentation rarely needed as bladder may become more compliant over time.',
+    guideline: 'Dropkin 2024 — Pediatric Bladder; PUV',
+  },
+
+  // ── PEDIATRIC — ENURESIS ────────────────────────────────────
+
+  {
+    id: 'd-ped-009', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Pediatric — Nocturnal Enuresis',
+    question: 'Pediatric bladder capacity formula: (age + 2) × ___. When nocturnal voided volume > ___% of this capacity → ddAVP preferred. When < 70% → ___.',
+    answer: '30 cc / 70% / Anticholinergics',
+    explanation: 'Primary nocturnal enuresis: still 10% of healthy 10-year-olds. Start treatment at age ≥ 6. Bedwetting alarm is the BEST treatment but labor-intensive. If alarm fails → collect voiding diary → calculate nocturnal voided volume as % of (age+2)×30. ddAVP: risk of hyponatremia → check BMP, restrict fluids at bedtime, oral formulation preferred. Secondary enuresis (develops 6+ months after dry period) → psychological stress RF → evaluate for trauma/abuse.',
+    guideline: 'Dropkin 2024 — Pediatric Bladder; Enuresis',
+  },
+
+  // ── PEDIATRIC — ANATOMY / MISC ──────────────────────────────
+
+  {
+    id: 'd-ped-010', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Pediatric — Duplicated Ureter (Weigert-Meyer)',
+    question: 'Weigert-Meyer rule for duplicated ureters (mnemonic UPIM): Upper pole → ___ (inferior and medial UO) → prone to obstruction (ectopic ureter, ureterocele). Lower pole → ___ (superior and lateral UO) → prone to VUR and UPJ-O.',
+    answer: 'Inferior and medial / Superior and lateral',
+    explanation: 'UPIM: Upper Pole Inferior Medial. The upper pole moiety drains lower and more medially — prone to obstruction (ectopic ureter below verumontanum in boys causing epididymitis; beyond bladder neck in girls causing continuous wetness). Lower pole drains higher and laterally — prone to reflux and UPJ-O. Ureterocele = MC cause of BOO in female infants.',
+    guideline: 'Dropkin 2024 — Pediatric Bladder; Duplicated Ureter',
+  },
+
+  {
+    id: 'd-ped-011', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Pediatric — Tethered Cord',
+    question: 'Tethered cord classic presentation: UUI + fecal soiling + foot/gait abnormality. Conus medullaris normally terminates at ___ in newborns and ___ in adults. MC UDS finding in tethered cord is detrusor ___.',
+    answer: 'L2–L3 in newborns / L1–L2 in adults / Overactivity',
+    explanation: 'Suspected tethered cord → spinal MRI (US if < 3 months old, as ossification hasn\'t rendered US inadequate). Absolute diagnosis: conus medullaris below L3 (suspected if below L2). Risk factors: early infancy + puberty (periods of rapid linear growth), spina bifida. Tethered cord can recur after release. Neurosurgical decompression is indicated.',
+    guideline: 'Dropkin 2024 — Pediatric Bladder; Tethered Cord',
+  },
+
+  {
+    id: 'd-ped-012', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Pediatric — Ectopic Ureter',
+    question: 'Constant urine leakage in a young girl suggests ectopic ureter draining below the external sphincter. The most sensitive diagnostic test is ___, which is more sensitive than RUS.',
+    answer: 'MR Urogram (MRU)',
+    explanation: 'In a girl who is constantly wet (true incontinence between normal voids), suspect an ectopic ureter from the upper pole of a duplicated system inserting beyond the external sphincter (bladder neck, vagina, or perineum). MR urogram is more sensitive than CT or ultrasound for identifying a small, poorly functioning upper pole moiety. RUS may be completely normal.',
+    guideline: 'Dropkin 2024 — Pediatric; Ectopic Ureter Testing Pearl',
+  },
+
+  {
+    id: 'd-ped-013', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Pediatric — UTI Pearls',
+    question: 'Bagged urine specimens in infants: if negative → > ___% chance no UTI. If positive → unreliable due to contamination. Bactrim is contraindicated in infants < ___ months due to risk of kernicterus and hematopoietic dysfunction.',
+    answer: '99% / 6 months',
+    explanation: 'A negative bagged specimen reliably rules out UTI. A positive bagged specimen must be confirmed by catheterization or suprapubic aspiration before treating. Spinning top urethra on VCUG → external sphincter overactivity → in young (< 5) child with OAB try antimuscarinics → consider biofeedback in older child after uroflow-CMG confirms DESD.',
+    guideline: 'Dropkin 2024 — Pediatric Bladder; UTI Related Testing Pearls',
+  },
+
+  {
+    id: 'd-ped-014', type: 'fib', topic: 'Pediatric Urology',
+    topicFull: 'Pediatric — Sacral Agenesis and Prune Belly',
+    question: 'Sacral agenesis: congenital absence of 1+ sacral vertebrae associated with chromosome ___ deletion and maternal ___. Prune Belly (Eagle-Barrett) syndrome = abdominal wall laxity + ___ + urinary tract abnormalities.',
+    answer: 'Chromosome 7 / Maternal DM (diabetes mellitus) / Cryptorchidism',
+    explanation: 'Sacral agenesis: ALL have voiding dysfunction (DO with DESD vs. detrusor areflexia with denervated outlet). Prune Belly: abdominal wall laxity (from weak musculature) + bilateral cryptorchidism + wide bladder neck + bilateral megaureters. Treatment individualized: vesicostomy, CIC, orchiopexy, abdominal wall reconstruction.',
+    guideline: 'Dropkin 2024 — Pediatric Bladder; Sacral Agenesis, Prune Belly',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  URETHRAL STRICTURE DISEASE
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-ureths-001', type: 'fib', topic: 'Urethral Stricture',
+    topicFull: 'Urethral Stricture — First-Choice Graft Material',
+    question: 'The first-choice material for substitution urethroplasty is ___ mucosa (buccal and lingual grafts are equivalent). Allograft, xenograft, synthetic materials, single-stage tubularized graft urethroplasty, and ___ skin should NOT be used.',
+    answer: 'Oral (buccal or lingual) / Hair-bearing skin',
+    explanation: 'Oral mucosa is first-choice because it is hairless, moist, resistant to infection, and has a rich submucosal vascular plexus enabling good graft take. Buccal mucosa harvest sites do NOT need primary closure — non-closure is non-inferior for pain and morbidity (Eur Urol, 2018). Lichen sclerosus: biopsy suspected LS and urethral cancer; do NOT use genital skin for reconstruction.',
+    guideline: 'Dropkin 2024 — Urethra; AUA Urethral Stricture Guideline (2023)',
+  },
+
+  {
+    id: 'd-ureths-002', type: 'fib', topic: 'Urethral Stricture',
+    topicFull: 'Urethral Stricture — DVIU Success Rate',
+    question: 'Per Santucci (J Urol, 2010): with each successive DVIU the time to recurrence is shorter. By DVIU #___, no patient was stricture-free at 10 months post-procedure.',
+    answer: '5 (fifth DVIU)',
+    explanation: 'DVIU success rate is much lower than previously reported. OPEN trial (Eur Urol, 2020): urethroplasty superior to DVIU for recurrent short bulbar strictures — recurrence HR 0.46 and re-intervention HR 0.52, both favoring urethroplasty. Foley catheter should be removed after 72 hours if DVIU is uncomplicated.',
+    guideline: 'Dropkin 2024 — Urethra; Santucci J Urol 2010; OPEN Trial Eur Urol 2020',
+  },
+
+  {
+    id: 'd-ureths-003', type: 'fib', topic: 'Urethral Stricture',
+    topicFull: 'Urethral Stricture — ROBUST III Trial',
+    question: 'ROBUST III (J Urol, 2022): ___ (Optilume®) balloon dilation was superior to standard dilation for recurrent anterior strictures ≤ 3 cm (anatomical success 75 vs. 27%). Patients should use condoms × ___ days and avoid pregnancy × ___ months post-procedure.',
+    answer: 'Paclitaxel-coated / 30 days / 6 months',
+    explanation: 'Paclitaxel is a fibroblast inhibitor that reduces scar formation after balloon dilation. ROBUST III (127 men, mean 3.6 prior treatments): freedom from additional intervention at 1 year: 83 vs. 22% (p < 0.001). Systemic absorption was low — not detectable in urine by 30 days or semen by 6 months.',
+    guideline: 'Dropkin 2024 — Urethra; ROBUST III (J Urol, 2022)',
+  },
+
+  {
+    id: 'd-ureths-004', type: 'fib', topic: 'Urethral Stricture',
+    topicFull: 'Urethral Stricture — Graft Take Phases',
+    question: 'Graft take phases: Imbibition (___ hours) → Inosculation (___–___ hours) → Revascularization (96 hours to ___ days).',
+    answer: '0–48 hours / 48–96 hours / 7 days',
+    explanation: 'Imbibition (0–48h): graft directly absorbs nutrients from host bed. Inosculation (48–96h): fine capillaries begin to align, initiating microcirculation. Revascularization (96h–7d): completed vascular network established. Wound healing: Hemostasis → Inflammation (D0–3-5) → Proliferation (D3-5 to 7) → Remodeling (D7–365); ~80% tensile strength by ~6 weeks.',
+    guideline: 'Dropkin 2024 — Urethra; Graft Take and Wound Healing',
+  },
+
+  {
+    id: 'd-ureths-005', type: 'fib', topic: 'Urethral Stricture',
+    topicFull: 'Urethral Stricture — PFUI Management',
+    question: 'Pelvic fracture urethral injury (PFUI): delay definitive repair until major injuries are stabilized and patient can safely be positioned in ___. Avoid ___ endoscopic stricture management after PFUI.',
+    answer: 'Dorsal lithotomy / Delayed',
+    explanation: 'Operative planning for PFUI requires RUG + VCUG and/or RUG + antegrade cystoscopy — critical to confirm the urethra is patent proximal to the injury before planning repair. Delayed endoscopic management (DVIU) after PFUI has poor outcomes and should be avoided. Perineal urethrostomy is a long-term option for patients with long penile or panurethral strictures who are poor urethroplasty candidates.',
+    guideline: 'Dropkin 2024 — Urethra; AUA Urethral Stricture Guideline (2023)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  INTERSTITIAL CYSTITIS / BLADDER PAIN SYNDROME
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-ic-001', type: 'fib', topic: 'IC/BPS',
+    topicFull: 'IC/BPS — Definition and FDA-Approved Treatments',
+    question: 'IC/BPS = unpleasant sensation related to the bladder + LUTS of more than ___ weeks, in the absence of infection or other identifiable causes. The only two FDA-approved therapies are intravesical ___ and PO ___ (Elmiron®).',
+    answer: '6 weeks / DMSO (hold 20 minutes) / Pentosan polysulfate',
+    explanation: 'Pentosan polysulfate (Elmiron): "coats" the bladder mucosa, low benefits in clinical trials, but carries real risk of serious pigmentary maculopathy — contraindicated in patients with macular degeneration. K+ sensitivity testing is no longer used (poor sensitivity/specificity). The 2022 guideline eliminated "lines" of therapy — treatment should be individualized.',
+    guideline: 'Dropkin 2024 — Bladder; AUA IC/BPS Guideline (2022)',
+  },
+
+  {
+    id: 'd-ic-002', type: 'fib', topic: 'IC/BPS',
+    topicFull: 'IC/BPS — Contraindicated Treatments',
+    question: 'Four contraindicated treatments in IC/BPS: long-term PO ___, intravesical ___, high-pressure + long-duration hydrodistention, and systemic (oral) long-term ___.',
+    answer: 'Antibiotics / BCG / Glucocorticoids',
+    explanation: 'Physical therapy should be offered (if trained clinicians available) but AVOID pelvic floor strengthening (Kegel) exercises in IC/BPS — these can worsen pelvic floor hypertonia. Hunner lesion IC: initial treatment CAN be surgical (fulguration or triamcinolone injection); cyclosporine A is an option for Hunner lesion patients. SNM is FDA-approved for IC/BPS.',
+    guideline: 'Dropkin 2024 — Bladder; AUA IC/BPS Guideline (2022)',
+  },
+
+  {
+    id: 'd-ic-003', type: 'fib', topic: 'IC/BPS',
+    topicFull: 'IC/BPS — Ketamine Cystitis',
+    question: 'Ketamine cystitis shares similar symptomatology, cystoscopy, and biopsy findings with non-Hunner\'s IC and is distinguished by ___. Severe fibrosis often leads to ___, though intravesical therapies can be tried first.',
+    answer: 'Patient history (recreational ketamine use) / Cystectomy',
+    explanation: 'Ketamine (dissociative anesthetic, common recreational drug) causes severe bladder fibrosis — a contracted, fibrotic bladder that may ultimately require cystectomy or urinary diversion. First try intravesical chondroitin sulfate or hyaluronic acid. Cessation of ketamine use is essential but may not fully reverse established fibrosis.',
+    guideline: 'Dropkin 2024 — Bladder; IC/BPS Testing Pearls',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  UTI PEARLS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-uti-001', type: 'fib', topic: 'UTI',
+    topicFull: 'UTI — Intravaginal Estrogen for rUTI',
+    question: 'In postmenopausal women with recurrent UTIs, intravaginal estrogen is very effective because it ↑ ___ concentrations and ↓ vaginal pH → ↓ UTIs. Unlike systemic estrogen, intravaginal estrogen ___ (can/cannot) be used in women with a history of breast cancer.',
+    answer: 'Lactobacillus / Can',
+    explanation: 'Intravaginal estrogen restores the premenopausal vaginal flora (lactobacillus dominant, acidic pH) that protects against uropathogens. It has minimal systemic absorption and is NOT contraindicated in breast cancer survivors. Low-dose prophylactic antibiotics are an alternative. Lactobacillus probiotics can be tried but evidence is lacking.',
+    guideline: 'Dropkin 2024 — Bladder; rUTI Testing Pearls',
+  },
+
+  {
+    id: 'd-uti-002', type: 'fib', topic: 'UTI',
+    topicFull: 'UTI — Key Pearls',
+    question: 'Pseudomonas produces a ___ (positive/negative) nitrite on UA despite being gram-negative, because it lacks the machinery to convert nitrates to nitrites. The most common bacteria in emphysematous cystitis are ___ and Klebsiella.',
+    answer: 'Negative nitrite / E. coli',
+    explanation: 'Emphysematous cystitis: fermentation of glucose → gas formation in bladder wall — more common in diabetics. XGP kidney: E. coli + Proteus most common → treatment is nephrectomy. After starting antibiotics, urine is sterile within hours even though fever and flank pain may continue for days. Spermicide use IS a RF for rUTI (alters vaginal flora); tampon use, parity, hot tub use are NOT RFs.',
+    guideline: 'Dropkin 2024 — Bladder; UTI Testing Pearls',
+  },
+
+  {
+    id: 'd-uti-003', type: 'fib', topic: 'UTI',
+    topicFull: 'UTI — Uncomplicated vs. Recurrent Treatment',
+    question: 'Uncomplicated UTI → ___ days of Bactrim (quinolones reserved for rUTI or Bactrim resistance). For rUTI in young women → trial of cranberry supplement or nightly/post-coital prophylaxis with Bactrim, Macrobid, or cephalexin for ___ months.',
+    answer: '3 days / 6 months',
+    explanation: 'Fluoroquinolones are reserved for resistant bacteria on culture — not first-line for uncomplicated UTI due to resistance concerns. Complicated UTI in an older man → higher risk of obstructive/malignant etiology → warrants urologic workup (CTU + cystoscopy) in delayed fashion after treatment/resolution. Asymptomatic candiduria in a neonate → IV fluconazole to decrease risk of candidemia.',
+    guideline: 'Dropkin 2024 — Bladder; UTI Testing Pearls; AUA/CUA/SUFU rUTI Guideline (2022)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  NEUROGENIC BLADDER / UDS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-neuro-003', type: 'fib', topic: 'Neurogenic Bladder',
+    topicFull: 'Neurogenic Bladder — UDS Findings by Lesion Level',
+    question: 'SCI at T6–8 to S2: causes DO + DESD but ___ autonomic dysreflexia and ___ intact bladder sensation. Injury below S2: ___ DO + detrusor areflexia.',
+    answer: 'No autonomic dysreflexia / No intact sensation / No DO',
+    explanation: 'UDS by level: CVA/Parkinson\'s → DO, no DESD, intact sensation. Pons to T6 → DO + DESD + DISD + autonomic dysreflexia + intact sensation. T6-8 to S2 → DO + DESD, NO dysreflexia, NO intact sensation. Below S2 → NO DO, areflexia, may have fixed EUS tone or open/contracted IS. MS → DO, maybe DESD, intact sensation. Multiple System Atrophy → DO, EUS denervation, open bladder neck at rest.',
+    guideline: 'Dropkin 2024 — Bladder; Neurologic Insults and UDS Findings Table',
+  },
+
+  {
+    id: 'd-neuro-004', type: 'fib', topic: 'Neurogenic Bladder',
+    topicFull: 'Neurogenic Bladder — SCI Bladder Compliance',
+    question: 'In SCI patients managed with CIC, bladder compliance < ___ mL/cmH₂O is the most predictive finding for new hydronephrosis development.',
+    answer: '10 mL/cmH₂O',
+    explanation: 'Poor bladder compliance in SCI → high intravesical pressures → impaired upper tract drainage → hydronephrosis → renal deterioration. Management: anticholinergics, beta-3 agonists, intravesical Botox. Renal stones are 8× more likely after SCI — remove all nidi for infection and maximize urinary drainage. Prophylactic antibiotics should be avoided in chronically catheterized SCI patients.',
+    guideline: 'Dropkin 2024 — Bladder; SCI Neurogenic Bladder Testing Pearls',
+  },
+
+  {
+    id: 'd-neuro-005', type: 'fib', topic: 'Neurogenic Bladder',
+    topicFull: 'Sacral Neuromodulation — Nerve Roots',
+    question: 'Correct SNM placement at S3 produces: great toe ___ AND ___ (anal bellows = rhythmic pelvic floor contractions). S2 stimulation produces foot plantar flexion + internal rotation.',
+    answer: 'Plantarflexion / Anal bellows',
+    explanation: 'S3 is the target for SNM because it produces anal bellows without lower extremity movement. Tibial nerve (L4-S3) stimulation: needle 3–4 cm cephalad to medial malleolus → correct placement: great toe plantarflexion + tickling sensation in sole of foot. SNM is FDA-approved for: non-obstructive retention, UUI, urgency/frequency, chronic fecal incontinence, IC/BPS. NOT FDA-approved for neurogenic bladder.',
+    guideline: 'Dropkin 2024 — Bladder; SNM Testing Pearls',
+  },
+
+  {
+    id: 'd-neuro-006', type: 'fib', topic: 'Neurogenic Bladder',
+    topicFull: 'Sacral Neuromodulation — Troubleshooting',
+    question: 'Elevated impedance in ___ electrodes of an SNM device suggests the lead needs replacement. Elevated impedance in ___ (one/all) electrode but others functioning normally → reprogram the device first.',
+    answer: 'All electrodes / One electrode',
+    explanation: 'SNM troubleshooting: recurrent voiding symptoms after prior success → interrogate device. If one electrode has elevated impedance but others are normal → reprogram first (electrode reassignment). If all electrodes have elevated impedance → lead replacement likely needed. Device infection: remove BOTH lead and generator; re-insertion can be attempted later. Contemporary SNM devices (Axonics®, InterStim II®) are MR Conditional for 1.5T and 3T full-body scans.',
+    guideline: 'Dropkin 2024 — Bladder; SNM Testing Pearls',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  PERIOPERATIVE MANAGEMENT
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-periop-003', type: 'fib', topic: 'Perioperative Management',
+    topicFull: 'Perioperative — Antimicrobial Prophylaxis Principles',
+    question: 'Per AUA Best Practice Statement, routine cystoscopy and urodynamic studies ___ (do/do not) require antimicrobial prophylaxis in healthy adults without infectious signs/symptoms. Single-dose AMP is appropriate for ___ uncomplicated urologic cases.',
+    answer: 'Do NOT / The majority of',
+    explanation: 'AMP should only be used where medically indicated — systemic antimicrobial use is the primary driver of resistance in both the index patient and community. Class IV wounds are by definition infected → empiric AMP until cultures inform targeted therapy. Transrectal prostate biopsy = Class III/contaminated → requires AMP. Single-dose is preferred; prolonged post-urethroplasty antibiotics were shown to be unnecessary (J Urol, 2022).',
+    guideline: 'Dropkin 2024 — Perioperative; AUA Antimicrobial Prophylaxis Best Practice Statement (2019)',
+  },
+
+  {
+    id: 'd-periop-004', type: 'fib', topic: 'Perioperative Management',
+    topicFull: 'Perioperative — Chlorhexidine vs. Povidone-Iodine',
+    question: 'Chlorhexidine-alcohol is significantly more protective than povidone-iodine for ___ and ___ incisional infections, but NOT for organ-space infections (NEJM, 2010). Chlorhexidine mechanism: cation binds to ___ charged bacterial cell wall → bactericidal at high concentrations.',
+    answer: 'Superficial (4 vs. 9%) / Deep (1 vs. 3%) / Negatively',
+    explanation: 'Chlorhexidine-alcohol (NEJM, 2010, 800 patients): significantly fewer superficial (4 vs. 9%, p=0.008) and deep (1 vs. 3%, p=0.05) incisional SSIs vs. povidone-iodine. Isopropyl alcohol: membrane damage and protein degeneration, primarily Gram(+). Povidone-iodine: oxidation of lipids + salt formation with proteins, broad spectrum.',
+    guideline: 'Dropkin 2024 — Perioperative; Chlorhexidine vs. Povidone-Iodine (NEJM, 2010)',
+  },
+
+  {
+    id: 'd-periop-005', type: 'fib', topic: 'Perioperative Management',
+    topicFull: 'Perioperative — Infective Endocarditis Prophylaxis',
+    question: 'Per AHA guideline: antimicrobial prophylaxis solely to prevent infective endocarditis is ___ recommended for GU procedures. If a high IE-risk patient has enterococcal UTI/colonization → "may be reasonable" to give ___ or ampicillin prior to elective procedure.',
+    answer: 'NOT / Amoxicillin',
+    explanation: 'IE is much more likely from random bacteremias of daily life than from GU procedures. AMP is unlikely to prevent IE and potential harms outweigh benefits. The only time AMP is reasonable is for high-risk patients undergoing DENTAL procedures. AUA does NOT recommend prophylactic antibiotics to prevent bacterial endocarditis associated with UDS or other GU procedures presuming negative UA and sterile technique.',
+    guideline: 'Dropkin 2024 — Perioperative; AHA IE Prevention Guideline (2007)',
+  },
+
+  {
+    id: 'd-periop-006', type: 'fib', topic: 'Perioperative Management',
+    topicFull: 'Perioperative — Inhibizone IPP',
+    question: 'Inhibizone® (rifampin + minocycline) antibiotic-impregnated IPP reduces infection rate in virgin IPP insertions from ___% to ___% at 180 days (J Urol, 2004).',
+    answer: '1.6% to 0.7%',
+    explanation: 'Carson retrospective cohort (J Urol, 2004): 2261 IPPs with Inhibizone vs. 1944 without → infection rate 0.7 vs. 1.6% (p < 0.01). Within each group, DM, Peyronie\'s, and SCI were associated with higher infection rates. Antibiotic-impregnated prostheses are now standard of care for primary IPP implantation.',
+    guideline: 'Dropkin 2024 — Perioperative; Inhibizone (J Urol, 2004)',
   },
 ];
