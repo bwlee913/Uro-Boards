@@ -195,25 +195,25 @@ export const SAMPLE_QUESTIONS = [
 
   // ── OVERACTIVE BLADDER ─────────────────────────────────
 
-  {
+  
     {
-  id: 'oab-001',
-  type: 'mc',
-  topic: 'Overactive Bladder',
-  topicFull: 'Overactive Bladder',
-  question:
-    'The 2024 AUA/SUFU OAB guideline made a major departure from prior guidelines by eliminating step therapy in favor of:',
-  options: [
-    'Antimuscarinics as mandatory first-line pharmacotherapy',
-    'Shared decision-making with a menu of treatment options offered simultaneously',
-    'Onabotulinumtoxin A as preferred initial treatment',
-    'Mandatory urodynamics before any pharmacotherapy',
-  ],
-  answer: 1,
-  explanation:
-    'The 2024 AUA/SUFU OAB guideline eliminated the prior step-therapy approach. Clinicians now offer patients a personalized "menu" of options — behavioral/lifestyle interventions, antimuscarinics, beta-3 agonists (mirabegron), onabotulinumtoxin A, and neuromodulation — through shared decision-making based on patient goals, preferences, and tolerance. No single treatment is mandated as first-line.',
-  guideline: 'AUA/SUFU Idiopathic OAB Guideline (2024), Cameron et al., J Urol 2024',
-},
+    id: 'oab-001',
+    type: 'mc',
+    topic: 'Overactive Bladder',
+    topicFull: 'Overactive Bladder',
+    question:
+      'The 2024 AUA/SUFU OAB guideline made a major departure from prior guidelines by eliminating step therapy in favor of:',
+    options: [
+      'Antimuscarinics as mandatory first-line pharmacotherapy',
+      'Shared decision-making with a menu of treatment options offered simultaneously',
+      'Onabotulinumtoxin A as preferred initial treatment',
+      'Mandatory urodynamics before any pharmacotherapy',
+    ],
+    answer: 1,
+    explanation:
+      'The 2024 AUA/SUFU OAB guideline eliminated the prior step-therapy approach. Clinicians now offer patients a personalized "menu" of options — behavioral/lifestyle interventions, antimuscarinics, beta-3 agonists (mirabegron), onabotulinumtoxin A, and neuromodulation — through shared decision-making based on patient goals, preferences, and tolerance. No single treatment is mandated as first-line.',
+    guideline: 'AUA/SUFU Idiopathic OAB Guideline (2024), Cameron et al., J Urol 2024',
+  },
 
   // ── ERECTILE DYSFUNCTION ────────────────────────────────
 
@@ -1319,7 +1319,7 @@ export const DROPKIN_CARDS = [
     explanation: 'Topiramate creates a urinary milieu identical to distal RTA: high urine pH, hypercalciuria, severe hypocitraturia. Treatment: either stop topiramate or start K-Cit. Similarly, zonisamide (sulfonamide anticonvulsant) affects 4% of long-term users with CaPhos stones by the same mechanism.',
     guideline: 'Dropkin 2024 — Kidney Stones; Drug-Induced Stones',
   },
-// ══════════════════════════════════════════════════════════
+  // ══════════════════════════════════════════════════════════
   //  TESTIS ONCOLOGY
   // ══════════════════════════════════════════════════════════
 
@@ -2525,4 +2525,5 @@ export const DROPKIN_CARDS = [
     explanation: 'Flibanserin (DAISY, VIOLET, BEGONIA, SNOWDROP trials): daily oral, works on 5-HT1A/2A receptors and D4 receptors → modest increase in satisfying sexual events. Major SE: somnolence, dizziness — contraindicated with alcohol and CYP3A4 inhibitors. Bremelanotide: on-demand SC injection, α-MSH analogue (melanocortin receptor agonist) → causes nausea in ~40%. Contraindicated in uncontrolled HTN.',
     guideline: 'Dropkin 2024 — Testis; Female Sexual Dysfunction Trials',
   },
+
 ];
