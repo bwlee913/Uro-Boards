@@ -3074,4 +3074,215 @@ export const DROPKIN_CARDS = [
     explanation: 'Renal artery aneurysm (RAA) > 1.5 cm in women of childbearing age → open surgical repair (unless fully calcified and stable) due to catastrophic rupture risk in pregnancy. Endovascular stenting is also an option but requires lifelong anticoagulation. Pregnancy-associated hypercalciuria: ↑ Vit D (placental) → ↑ Ca++ absorption + ↓ PTH → physiologic absorptive hypercalciuria, but urine citrate and glycosaminoglycan also ↑ → unchanged stone formation risk.',
     guideline: 'Dropkin 2024 — Pregnancy; Testing Pearls',
   },
+  // ══════════════════════════════════════════════════════════
+  //  ADVANCED PROSTATE CANCER — M0 CRPC
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-m0crpc-001', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'M0 CRPC — Second-Generation ARSIs',
+    question: 'M0 CRPC with PSADT ≤ ___ months → offer apalutamide (SPARTAN), darolutamide (ARAMIS), or enzalutamide (PROSPER) + continued ADT. ___ (Abiraterone) is NOT approved for M0 CRPC. Key difference: darolutamide ___ (does/does not) cross the BBB → fewer CNS SEs.',
+    answer: '10 months / Abiraterone / Does NOT cross the BBB',
+    explanation: 'MFS results: SPARTAN (apalutamide) = 41 vs. 16 mos. ARAMIS (darolutamide) = 40 vs. 18 mos. PROSPER (enzalutamide) = 37 vs. 15 mos. All improved OS. Darolutamide\'s lack of BBB penetration → less fatigue, cognitive impairment, falls, and seizure risk vs. enzalutamide. Observation with continued ADT is acceptable for PSADT > 10 months (lower metastasis risk).',
+    guideline: 'Dropkin 2024 — Prostate; AUA/SUO Advanced PCa Guideline (2023); SPARTAN, ARAMIS, PROSPER',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  ADVANCED PROSTATE CANCER — M1 CSPC
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-m1cspc-001', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'M1 CSPC — CHAARTED Trial',
+    question: 'CHAARTED (NEJM, 2015): docetaxel + ADT for M1 CSPC improved OS primarily in ___ volume disease (defined as ≥ 4 bone mets with ≥ 1 outside spine/pelvis AND/OR ___ metastases). High-volume defined by location/number of bone mets + presence of ___ mets.',
+    answer: 'High volume / Visceral metastases / Visceral',
+    explanation: 'CHAARTED: 790 men with M1 CSPC → docetaxel + ADT vs. ADT alone. High-volume OS: 49 vs. 33 mos (p < 0.001). Low-volume: OS similar at initial analysis but docetaxel still offered. Docetaxel is given as 6 cycles every 3 weeks. Survival benefit primarily in high-volume disease patients.',
+    guideline: 'Dropkin 2024 — Prostate; CHAARTED (NEJM, 2015)',
+  },
+
+  {
+    id: 'd-m1cspc-002', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'M1 CSPC — Key ARSI Trials',
+    question: 'LATITUDE/STAMPEDE: abiraterone + ADT for ___ risk M1 CSPC. TITAN: apalutamide + ADT improved OS regardless of disease ___. ENZAMET: enzalutamide + ADT improved 3-yr OS (___ vs. 72%); increased risk of ___ (1 vs. 0%).',
+    answer: 'High risk / Volume (high or low) / 80% / Seizures',
+    explanation: 'ARASENS (NEJM, 2022): darolutamide + ADT + docetaxel vs. ADT + docetaxel → OS 65 vs. 54% (p < 0.01) — triple therapy. PEACE-I (Lancet, 2022): abiraterone + ADT ± docetaxel → rPFS 4.5 vs. 2.2 yrs (p < 0.01) and OS 5.7 vs. 4.7 yrs. For newly diagnosed M1 CSPC with painful mets → LHRH antagonists (degarelix, abarelix IM) act faster than LHRH agonists to prevent T-flare.',
+    guideline: 'Dropkin 2024 — Prostate; TITAN, ENZAMET, ARASENS, PEACE-I',
+  },
+
+  {
+    id: 'd-m1cspc-003', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'M1 CSPC — Relugolix (HERO) and PRONOUNCE',
+    question: 'HERO (NEJM, 2020): oral daily relugolix (LHRH ___) achieved sustained T suppression in ___% vs. 89% with leuprolide AND had significantly fewer ___ adverse events. PRONOUNCE: LHRH agonists and antagonists have ___ cardiac risk.',
+    answer: 'Antagonist / 97% / Cardiac / Similar cardiac risk',
+    explanation: 'Relugolix (Orgovyx®): oral LHRH antagonist — faster castration, more rapid T recovery after discontinuation, fewer cardiac AEs. PRONOUNCE (Circulation, 2021): degarelix vs. leuprolide → major CV events 5.5 vs. 4.1% (p = 0.53) — NOT statistically different. The fastest medication to lower testosterone is ketoconazole (quickly inhibits steroidogenesis).',
+    guideline: 'Dropkin 2024 — Prostate; HERO (NEJM, 2020); PRONOUNCE (Circulation, 2021)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  ADVANCED PROSTATE CANCER — M1 CRPC
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-m1crpc-001', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'M1 CRPC — Docetaxel and Sipuleucel-T',
+    question: 'TAX-327 (NEJM, 2004): docetaxel improved OS by ___ months vs. mitoxantrone (19 vs. 16.5 mos). IMPACT (NEJM, 2010): sipuleucel-T improved OS by ___ months (26 vs. 22 mos) with no effect on PSA or imaging PFS. Sipuleucel-T premedication: ___ + ___.',
+    answer: '~2.5 months / 4 months / Acetaminophen + antihistamine',
+    explanation: 'Sipuleucel-T (Provenge®): immunostimulant — dendritic cells removed via leukapheresis → incubated with PAP antigen + GM-CSF → activated blood product re-infused q2 weeks × 3. Requires: ANC > 1.5k, Plt > 100k, Hgb > 10 prior to each dose. MC SEs: chills, fatigue, pyrexia (cytokine release). Offer for asymptomatic or minimally symptomatic M1 CRPC.',
+    guideline: 'Dropkin 2024 — Prostate; TAX-327 (NEJM, 2004); IMPACT (NEJM, 2010)',
+  },
+
+  {
+    id: 'd-m1crpc-002', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'M1 CRPC — Abiraterone and Enzalutamide',
+    question: 'COUGAR (COU-AA-301, NEJM, 2011): abiraterone s/p chemo → OS ___ vs. 11 mos. MC mineralocorticoid AEs of abiraterone: fluid retention, ___, hypokalemia — managed with ↑ prednisone dose. AFFIRM (NEJM, 2012): enzalutamide s/p chemo → OS ___ vs. 14 mos.',
+    answer: '15 months / HTN / 18 months',
+    explanation: 'PREVAIL (NEJM, 2014): enzalutamide chemo-naive M1 CRPC → rPFS at 1 yr 65 vs. 14% (p < 0.001); time to chemo and first skeletal events also prolonged. MC AEs: fatigue and HTN. Abiraterone SEs are due to mineralocorticoid excess from adrenal precursors being shunted away from androgen/glucocorticoid pathways → hypokalemia, HTN, edema. AQUARiUS: patients report less fatigue and cognitive impairment with abiraterone vs. enzalutamide.',
+    guideline: 'Dropkin 2024 — Prostate; COUGAR, AFFIRM, PREVAIL',
+  },
+
+  {
+    id: 'd-m1crpc-003', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'M1 CRPC — Radium-223 and Cabazitaxel',
+    question: 'ALSYMPCA (NEJM, 2013): radium-223 for M1 CRPC with ≥ 2 bony mets, ___ visceral mets, and ___ LN > 3 cm → OS +3 mos (14 vs. 11 mos). CARD (NEJM, 2019): in M1 CRPC s/p docetaxel AND prior abi or enza → ___ was superior to switching to the other ARSI.',
+    answer: 'No visceral mets / No LN > 3 cm / Cabazitaxel',
+    explanation: 'Radium-223 (Xofigo®): alpha-particle emitter incorporated into bone like Ca++. MC AEs: myelosuppression and bone pain. Cabazitaxel (Jevtana®) provides 30% decreased risk of dying vs. docetaxel in docetaxel-resistant M1 CRPC. TROPIC (2010): cabazitaxel vs. mitoxantrone s/p docetaxel. FIRSTANA: cabazitaxel vs. docetaxel chemo-naive (similar efficacy). 18F-fluoride PET scan: most sensitive/specific for identifying bony mets in high-risk PCa.',
+    guideline: 'Dropkin 2024 — Prostate; ALSYMPCA (NEJM, 2013); CARD (NEJM, 2019)',
+  },
+
+  {
+    id: 'd-m1crpc-004', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'M1 CRPC — PARP Inhibitors and 177Lu-PSMA',
+    question: 'PROfound (NEJM, 2020): olaparib for M1 CRPC s/p abi or enza with deleterious ___ gene mutations (greatest benefit: BRCA1/2). VISION (NEJM, 2021): 177Lu-PSMA-617 for ___ (+) M1 CRPC s/p prior docetaxel + ARSI.',
+    answer: 'HRR (homologous recombination repair) / PSMA',
+    explanation: 'PARP inhibitor indication: deleterious germline or somatic HRR gene-mutated M1 CRPC s/p abi or enza AND/OR taxane-based chemotherapy. PROpel: olaparib + abiraterone (with or without DNA repair defects). Sequence of agents: if progression through abi or enza → obtain PSMA PET → if (+) → offer 177Lu-PSMA-617. Pembrolizumab: mismatch repair deficient or microsatellite instability-high M1 CRPC (KEYNOTE-199). Predictors of lethal PCa: BRCA-2 (greatest risk), BRCA-1, MSH-2, African-American race.',
+    guideline: 'Dropkin 2024 — Prostate; PROfound (NEJM, 2020); VISION (NEJM, 2021)',
+  },
+
+  {
+    id: 'd-m1crpc-005', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'M1 CRPC — Bone Health',
+    question: 'Denosumab (Prolia®/Xgeva®): mAb to ___ → prevents maturation of pre-osteoclasts → SQ injection. Zoledronic acid: bisphosphonate → inhibits enzymatic function in osteoclasts → IV injection. BOTH should be prescribed for M1 CRPC + bony mets to prevent ___. Major risk of both: jaw ___.',
+    answer: 'RANK-ligand / Skeletal-related events / Osteonecrosis',
+    explanation: 'Denosumab and zoledronic acid have NOT been shown to prevent skeletal events in M1 CSPC with bony mets — only use for M1 CRPC with bony mets. Jaw osteonecrosis risk is especially high in the first 6 months after denosumab injection. All advanced PCa patients on ADT should receive supplemental Ca++, Vit D, smoking cessation, and weight-bearing exercise for osteoporosis prevention.',
+    guideline: 'Dropkin 2024 — Prostate; Bone Health in Advanced PCa',
+  },
+
+  {
+    id: 'd-m1crpc-006', type: 'fib', topic: 'Prostate Cancer',
+    topicFull: 'M1 CRPC — AR-V7 Resistance',
+    question: 'AR-V7 (androgen receptor splice variant-7) is detected in ___ tumor cells of M1 CRPC patients. AR-V7 positivity predicts lower response to ___ (abi/enza) but does NOT preclude response. Preferred treatment for AR-V7 positive patients: ___ chemotherapy.',
+    answer: 'Circulating tumor cells (CTCs) / Androgen receptor signaling inhibitors (ARSI) / Taxane (docetaxel or cabazitaxel)',
+    explanation: 'AR-V7 lacks the ligand-binding domain → constitutively active → not suppressed by enzalutamide or abiraterone. However, Bernemann et al (Eur Urol, 2017) showed AR-V7 does not completely preclude response to next-gen ADT. Gynecomastia a/w ↑ serum estrogen:testosterone ratio — MC with bicalutamide because negative feedback is inhibited, causing ↑ LH → ↑ androgen levels → ↑ aromatization.',
+    guideline: 'Dropkin 2024 — Prostate; AR-V7 Resistance Testing Pearls',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  ADVANCED / METASTATIC BLADDER CANCER
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-adv-blca-001', type: 'fib', topic: 'Bladder Cancer',
+    topicFull: 'Advanced UC — First-Line Cisplatin-Ineligible',
+    question: 'IMVigor 210 (Lancet, 2017): atezolizumab for cisplatin-ineligible ___ (+) advanced UC → ORR ___%, OS 16 mos. KEYNOTE-052 (Lancet Oncol, 2017): pembrolizumab for cisplatin-ineligible advanced UC → ORR ___%, CR rate 20%.',
+    answer: 'PD-L1 (+) / 23% ORR / 24% ORR',
+    explanation: 'Both are approved for cisplatin-ineligible patients. EV-302/KEYNOTE-A39 (2023): enfortumab vedotin (mAb to Nectin-4 + vedotin payload) + pembrolizumab vs. gem/cisplatin or gem/carboplatin for untreated la/mUC → PFS 13 vs. 6 mos and OS 32 vs. 16 mos (both p < 0.01) — now the preferred first-line approach. CheckMate 901: nivo + ipi + gem/cis vs. gem/cis for untreated unresectable or M1 UC.',
+    guideline: 'Dropkin 2024 — Bladder; IMVigor 210, KEYNOTE-052, EV-302/KN-A39',
+  },
+
+  {
+    id: 'd-adv-blca-002', type: 'fib', topic: 'Bladder Cancer',
+    topicFull: 'Advanced UC — Second-Line and Maintenance',
+    question: 'KEYNOTE-045 (NEJM, 2017): pembrolizumab vs. chemo s/p platinum → OS ___ vs. 7 mos. JAVELIN (NEJM, 2020): avelumab maintenance after gem/cis → 1-yr OS ___ vs. 58%. EV-301 (NEJM, 2021): enfortumab vedotin s/p platinum + immunoTx → OS ___ vs. 9 mos.',
+    answer: '10 months / 71% / 13 months',
+    explanation: 'Erdafitinib (Balversa®): TKI → FGFR → ↓ tumor angiogenesis + growth. BLC2001 (NEJM, 2019): erdafitinib for FGFR-altered advanced UC s/p chemo ± immunoTx → 40% ORR, 14 mos OS. THOR-1 (NEJM, 2023): erdafitinib vs. chemo s/p immunoTx in FGFR-altered M1 UC → OS 12 vs. 8 mos (p = 0.005). CheckMate 275: nivolumab for UC progression s/p NAC or AC → 20% ORR.',
+    guideline: 'Dropkin 2024 — Bladder; KEYNOTE-045, JAVELIN, EV-301, THOR-1',
+  },
+
+  {
+    id: 'd-adv-blca-003', type: 'fib', topic: 'Bladder Cancer',
+    topicFull: 'Advanced UC — Adjuvant Immunotherapy',
+    question: 'CheckMate 274 (NEJM, 2021): adjuvant nivolumab s/p RC ± NAC → DFS ___ vs. 11 mos. IMvigor010 (Lancet Oncol, 2021): adjuvant atezolizumab was a ___ (positive/negative) trial overall, but benefited patients with ___ (+) ctDNA at baseline (DFS 5.9 vs. 4.4 mos and OS 26 vs. 16 mos).',
+    answer: '21 months / Negative trial / Circulating tumor DNA (ctDNA)',
+    explanation: 'CheckMate 274: DFS favored nivo among all patients (75 vs. 60% at 6 months) and PD-L1 ≥ 1% patients (75 vs. 56%). G3+ toxicity higher with nivo (18 vs. 7%). IMvigor010 was the first randomized study suggesting ctDNA could select patients for adjuvant therapy — landmark finding for precision oncology in bladder cancer.',
+    guideline: 'Dropkin 2024 — Bladder; CheckMate 274, IMvigor010',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  ADVANCED RCC — FIRST-LINE COMBINATION TRIALS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-adv-rcc-001', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Advanced RCC — First-Line IO Combinations',
+    question: 'KEYNOTE-426 (NEJM, 2019): pembro + axitinib vs. sunitinib → 1-yr OS ___% vs. 78%, PFS 15 vs. 11 mos, regardless of ___. CheckMate 9ER (NEJM, 2021): cabo + nivo → 12-mo OS ___% vs. 76%, PFS 17 vs. 8 mos.',
+    answer: '90% / PD-L1 status / 86%',
+    explanation: 'CLEAR (NEJM, 2021): lenvatinib + pembro vs. lenvatinib + temsirolimus vs. sunitinib → PFS 24 vs. 15 vs. 9 mos (p < 0.001 for lenv+pembro vs. sunitinib); OS HR favored lenvatinib + pembro; MC AEs: HTN, diarrhea, fatigue, elevated lipase. COSMIC-313 (NEJM, 2023): cabo + nivo + ipi vs. nivo + ipi → PFS favored triple (NR vs. 11 mos); G3-4 AEs 73 vs. 41% — more toxic.',
+    guideline: 'Dropkin 2024 — Kidney; KEYNOTE-426, CheckMate 9ER, CLEAR, COSMIC-313',
+  },
+
+  {
+    id: 'd-adv-rcc-002', type: 'fib', topic: 'Kidney Oncology',
+    topicFull: 'Advanced RCC — CheckMate 214',
+    question: 'CheckMate 214 (NEJM, 2018): nivo + ipi vs. sunitinib for ___ and ___ risk untreated advanced RCC → 18-mo OS ___% vs. 60%; ORR 42 vs. 27%; G3-4 AEs 93 vs. 97%. High-dose glucocorticoids needed for immune-mediated AEs in ___% of nivo/ipi patients.',
+    answer: 'Poor / Intermediate risk / 75% / 35%',
+    explanation: 'CheckMate 214: NOT superior in favorable-risk patients (sunitinib remains preferred for favorable risk). Nivo + ipi: 3 mg/kg nivo + 1 mg/kg ipi q3 weeks × 4 cycles → then nivo maintenance. Immune-mediated AEs (colitis, pneumonitis) in 35% required high-dose steroids. Complete response rate 9% vs. 1% for sunitinib — durable CRs are a unique feature of IO combination therapy.',
+    guideline: 'Dropkin 2024 — Kidney; CheckMate 214 (NEJM, 2018)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  PRIAPISM
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-priap-001', type: 'fib', topic: 'Priapism',
+    topicFull: 'Priapism — Ischemic vs Non-Ischemic',
+    question: 'Ischemic (low-flow) priapism: cavernosal blood gas PO2 < ___, PCO2 > ___, pH < ___. Rigid and painful — is a urologic ___. Non-ischemic (high-flow): NOT rigid, NOT painful, cavernosal PO2 normal — is ___ (is/is not) an emergency.',
+    answer: 'PO2 < 30 / PCO2 > 60 / pH < 7.25 / Emergency / Is NOT an emergency',
+    explanation: 'Non-ischemic priapism: usually from blunt perineal/penile trauma → AV fistula → unregulated arterial inflow. Management: initial observation (~4 weeks) → duplex US to assess fistula → embolization is first-line Tx if patient desires treatment; repeat embolization preferred over surgical ligation (ED and recurrence risks). Recurrent ischemic priapism: counsel that optimal prevention strategies are unknown; hormonal regulators may impair fertility and sexual function.',
+    guideline: 'Dropkin 2024 — Penis; AUA/SMSNA Priapism Guideline (2022)',
+  },
+
+  {
+    id: 'd-priap-002', type: 'fib', topic: 'Priapism',
+    topicFull: 'Priapism — Ischemic Management',
+    question: 'Acute ischemic priapism: inform patient that if priapism > ___ hours, likelihood of recovering erectile function is low. First-line medical intervention: intracavernosal ___ (best CV safety profile, pure alpha agonist), ___ mcg/mL, 1 mL at 3 or 9 o\'clock, ≥ ___ minutes apart for ~1 hour.',
+    answer: '36 hours / Phenylephrine / 100–500 mcg/mL / 5 minutes',
+    explanation: 'Don\'t delay intervention with conservative measures. If phenylephrine fails → surgical shunts: distal corporoglandular first (Winter, Ebbehoj, Al-Ghorab → passage through glans) → if distal fails → tunneling (passage from glans down into corporal body) → if fails → proximal shunt (Quackels). Post-shunt: if erection persists → cavernosal blood gas or duplex US to confirm ischemia before repeating. IPP: consider for untreated acute ischemic priapism > 36 hrs or persistent after shunting/tunneling.',
+    guideline: 'Dropkin 2024 — Penis; AUA/SMSNA Priapism Guideline (2022)',
+  },
+
+  {
+    id: 'd-priap-003', type: 'fib', topic: 'Priapism',
+    topicFull: 'Priapism — Sickle Cell and ICI-Related',
+    question: 'For priapism in sickle cell disease: ___ (do/do not) delay standard priapism management for disease-specific interventions. Exchange transfusions ___ (should/should not) be used as primary Tx. Prolonged erection ≤ 4 hrs s/p ICI → intracavernosal ___. Erection > 4 hrs s/p ICI → return to ED immediately.',
+    answer: 'Do NOT delay / Should NOT / Phenylephrine',
+    explanation: 'Counsel ICI patients at initial visit to return to ED if erection > 4 hours — provide a written plan. Sickle cell: standard priapism management first, then disease-specific interventions. For recurrent ischemic priapism: hormonal regulators (GnRH agonists, anti-androgens, 5ARIs) may help but impair fertility and sexual function — must counsel. Phosphodiesterase-5 inhibitors (paradoxically used in some cases of recurrent ischemic priapism to prevent stuttering episodes).',
+    guideline: 'Dropkin 2024 — Penis; AUA/SMSNA Priapism Guideline (2022)',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  POSTOBSTRUCTIVE DIURESIS
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-pod-001', type: 'fib', topic: 'Renal Physiology',
+    topicFull: 'Postobstructive Diuresis — Management',
+    question: 'Postobstructive diuresis (POD) after relief of bilateral or unilateral obstruction in a solitary kidney: physiologic POD is ___ (appropriate/inappropriate) excretion of accumulated fluid and resolves spontaneously. Pathologic POD: replace fluids at ___% of urine output rate using ___ solutions to avoid perpetuating diuresis.',
+    answer: 'Appropriate / 50% (0.5×) / Hypotonic (e.g., 0.45% NS)',
+    explanation: 'POD mechanism: accumulated urea + Na during obstruction → osmotic diuresis after relief + tubular dysfunction → ADH resistance. Monitor electrolytes q6–8 hrs. Discharge criteria: UOP < 200 mL/hr. If truly euvolemic → do NOT replace all losses (will perpetuate diuresis). Pathologic POD occurs even after euvolemia is restored → can cause severe dehydration, hypovolemia, and dangerous electrolyte imbalances if not carefully managed.',
+    guideline: 'Dropkin 2024 — Renal Physiology; Postobstructive Diuresis',
+  },
+
+  // ══════════════════════════════════════════════════════════
+  //  OPIOID PRESCRIBING / SKOPE TRIAL
+  // ══════════════════════════════════════════════════════════
+
+  {
+    id: 'd-opioid-001', type: 'fib', topic: 'Perioperative Management',
+    topicFull: 'Opioids — SKOPE Trial and Stent Discomfort',
+    question: 'SKOPE trial (J Urol, 2021): ketorolac vs. oxycodone after URS → ketorolac was ___ for pain control at 1 week with significantly ___ opioid consumption in the ketorolac group. For ureteral stent discomfort: ___ and ___ both reduce stent-related lower urinary tract symptoms.',
+    answer: 'Non-inferior / Less opioid consumption / Alpha-blockers (tamsulosin) / Antimuscarinics',
+    explanation: 'AUA White Paper on reducing opioid prescribing: use multimodal analgesia (NSAIDs + acetaminophen ± gabapentin as first-line); limit post-op opioids; if opioids needed → prescribe lowest effective dose for shortest duration; counsel patients that post-op pain is expected and NSAIDs are often equally effective. Ureteral stenting → hyperplasia + inflammation of urothelium + SM hypertrophy → ↓ ureteral contractility → ↑ VUR + ↑ intrapelvic pressure.',
+    guideline: 'Dropkin 2024 — Perioperative; SKOPE (J Urol, 2021); AUA Opioid White Paper (2021)',
+  },
 ];
