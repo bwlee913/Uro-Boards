@@ -74,35 +74,37 @@ export default function QuizSession({ userName, onComplete }) {
   // ── Load questions on mount ──────────────────────────────
 
   useEffect(() => {
-    const load = async () => {
-      setLoading(true)
+   const load = async () => {
+  setLoading(true)
+  try {
+    const samples = pickQuestions(SESSION_SIZE)
+    setQuestions(samples)
+  } catch (e) {
+    console.error('pickQuestions failed:', e)
+  }
+  setLoading(false)
 
-      // Start with questions from full pool
-      const samples = pickQuestions(SESSION_SIZE)
-      setQuestions(samples)
-      setLoading(false)
-
-      // Attempt to enrich with one AI-generated question (non-blocking)
-      if (!fetchedAI.current) {
-        fetchedAI.current = true
-        setAiLoading(true)
-        const topic = AUA_TOPICS[Math.floor(Math.random() * AUA_TOPICS.length)]
-        const aiQ = await fetchAIQuestion(topic)
-        if (aiQ) {
-          setQuestions(prev => {
-            // Replace the last sample question with the AI one if it loaded before we reached it
-            const currentAnswer = answers.length
-            if (currentAnswer < SESSION_SIZE - 1) {
-              const next = [...prev]
-              next[SESSION_SIZE - 1] = aiQ
-              return next
-            }
-            return prev
-          })
-        }
-        setAiLoading(false)
+  // AI question fetch is completely fire-and-forget
+  if (!fetchedAI.current) {
+    fetchedAI.current = true
+    setTimeout(async () => {
+      setAiLoading(true)
+      const topic = AUA_TOPICS[Math.floor(Math.random() * AUA_TOPICS.length)]
+      const aiQ = await fetchAIQuestion(topic)
+      if (aiQ) {
+        setQuestions(prev => {
+          if (answers.length < SESSION_SIZE - 1) {
+            const next = [...prev]
+            next[SESSION_SIZE - 1] = aiQ
+            return next
+          }
+          return prev
+        })
       }
-    }
+      setAiLoading(false)
+    }, 0)
+  }
+}
 
     load()
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
