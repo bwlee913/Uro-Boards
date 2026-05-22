@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { SAMPLE_QUESTIONS, DROPKIN_CARDS, AUA_TOPICS } from '../sampleQuestions.js'
 
-const ALL_QUESTIONS = [...SAMPLE_QUESTIONS, ...DROPKIN_CARDS]
 import MultipleChoice from './MultipleChoice.jsx'
 import FillBlank from './FillBlank.jsx'
 
@@ -79,7 +78,7 @@ export default function QuizSession({ userName, onComplete }) {
       setLoading(true)
 
       // Start with questions from full pool
-      const samples = pickQuestions(ALL_QUESTIONS, SESSION_SIZE)
+      const samples = pickQuestions(SESSION_SIZE)
       setQuestions(samples)
       setLoading(false)
 
