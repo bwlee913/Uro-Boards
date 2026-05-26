@@ -122,23 +122,15 @@ export default function QuizSession({ userName, onComplete }) {
     ])
   }
 
-  const handleNext = () => {
+ const handleNext = () => {
     const nextIdx = currentIdx + 1
     if (nextIdx < SESSION_SIZE) {
       setCurrentIdx(nextIdx)
+    } else {
+      onComplete({ answers: [...answers], questions })
     }
-    // If this was the last question, the useEffect will fire onComplete
   }
 
-  // After the final answer is recorded, wait a beat then complete
-  useEffect(() => {
-    if (answers.length === SESSION_SIZE && questions.length === SESSION_SIZE) {
-      const timer = setTimeout(() => {
-        onComplete({ answers, questions })
-      }, 2200) // give user time to read the explanation before screen transitions
-      return () => clearTimeout(timer)
-    }
-  }, [answers.length, questions.length]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Render ───────────────────────────────────────────────
 
